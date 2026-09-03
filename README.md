@@ -4,11 +4,13 @@
   <img alt="Kyrris — Développeur Fullstack TypeScript & Spécialiste Écosystème Google IA" src="./assets/generated/banner-dark.svg?v=20" width="100%">
 </picture>
 
+<br><br>
+
 <p align="center">
-  <a href="https://github.com/kyriss-69?tab=followers"><img alt="Abonnés GitHub" src="https://img.shields.io/github/followers/kyriss-69?style=for-the-badge&logo=github&label=ABONNÉS&labelColor=130924&color=a855f7"></a>
-  <a href="https://discord.com"><img alt="Discord" src="https://img.shields.io/badge/DISCORD-COMMUNAUTÉ-130924?style=for-the-badge&logo=discord&logoColor=a855f7"></a>
-  <a href="mailto:contact.evolysdigital@gmail.com"><img alt="Contact" src="https://img.shields.io/badge/CONTACT-EMAIL-130924?style=for-the-badge&logo=gmail&logoColor=c084fc"></a>
+  <a href="https://discord.com" target="_blank"><img alt="Discord" src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"></a>
 </p>
+
+<br>
 
 <p align="center">
   Je conçois des architectures monorepo haute performance et des applications intelligentes —<br>
