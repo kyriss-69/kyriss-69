@@ -184,10 +184,10 @@
   </g>
   </g>
 
-  <!-- SECTION 2 : MA VISION (TERMINAL) -->
+  <!-- SECTION 2 : MA VISION (PHILOSOPHIE TECHNIQUE) -->
   <g transform="translate(0 355)">
-    <text x="60" y="24" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">MA VISION // TERMINAL &amp; PHILOSOPHIE TECHNIQUE</text>
-    <path d="M570 19H1140" stroke="url(#accent-signal)" stroke-width="2" stroke-linecap="round"/>
+    <text x="60" y="24" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">MA VISION // PHILOSOPHIE TECHNIQUE</text>
+    <path d="M460 19H1140" stroke="url(#accent-signal)" stroke-width="2" stroke-linecap="round"/>
     <g transform="translate(0 15)">
       <!-- Fond global et halo d'ambiance néon -->
 
@@ -196,8 +196,8 @@
   <circle cx="600" cy="195" r="320" fill="url(#term-glow)"/>
 
   <!-- En-tête de section intégrée -->
-  <text x="60" y="46" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">MA VISION // TERMINAL &amp; PHILOSOPHIE TECHNIQUE</text>
-  <path d="M580 41H1140" stroke="url(#accent-signal)" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="60" y="46" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">MA VISION // PHILOSOPHIE TECHNIQUE</text>
+  <path d="M460 41H1140" stroke="url(#accent-signal)" stroke-width="2.5" stroke-linecap="round"/>
 
   <!-- FENÊTRE TERMINAL CODE AÉRÉE -->
   <g transform="translate(60 66)">

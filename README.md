@@ -5,9 +5,9 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/vision-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/vision-light.svg">
-  <img alt="Ma Vision : Spécialisé dans les stacks SaaS modernes et l'écosystème Google AI" src="./assets/generated/vision-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/vision-dark.svg?v=40">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/vision-light.svg?v=40">
+  <img alt="Ma Vision : Spécialisé dans les stacks SaaS modernes et l'écosystème Google AI" src="./assets/generated/vision-dark.svg?v=40" width="100%">
 </picture>
 
 <picture>
