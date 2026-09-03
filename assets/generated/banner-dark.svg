@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
   <title id="title">Kyrris — DÉVELOPPEUR WEB &amp; EXPLORATEUR IA</title>
-  <desc id="description">Bannière haute fidélité pour le profil de Kyrris.</desc>
+  <desc id="description">Bannière haute fidélité pour le profil de Kyrris avec terminal de code et texte dynamique.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#090510"/>
@@ -22,6 +22,28 @@
       <feGaussianBlur stdDeviation="6" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+
+    <!-- Chemins animés pour l'effet texte dactylographié en boucle -->
+    <path id="typePath0">
+      <animate id="t0" attributeName="d" begin="0s;t3.end" dur="4.2s" fill="remove"
+        values="m108,277 h0 ; m108,277 h540 ; m108,277 h540 ; m108,277 h0"
+        keyTimes="0; 0.45; 0.82; 1" />
+    </path>
+    <path id="typePath1">
+      <animate id="t1" attributeName="d" begin="t0.end" dur="4.2s" fill="remove"
+        values="m108,277 h0 ; m108,277 h540 ; m108,277 h540 ; m108,277 h0"
+        keyTimes="0; 0.45; 0.82; 1" />
+    </path>
+    <path id="typePath2">
+      <animate id="t2" attributeName="d" begin="t1.end" dur="4.2s" fill="remove"
+        values="m108,277 h0 ; m108,277 h540 ; m108,277 h540 ; m108,277 h0"
+        keyTimes="0; 0.45; 0.82; 1" />
+    </path>
+    <path id="typePath3">
+      <animate id="t3" attributeName="d" begin="t2.end" dur="4.2s" fill="remove"
+        values="m108,277 h0 ; m108,277 h540 ; m108,277 h540 ; m108,277 h0"
+        keyTimes="0; 0.45; 0.82; 1" />
+    </path>
   </defs>
   <style>
     .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, "Fira Code", monospace; }
@@ -36,7 +58,7 @@
   <!-- Halo lumineux d'ambiance néon -->
   <circle cx="940" cy="180" r="230" fill="url(#card-glow)"/>
 
-  <!-- GAUCHE: IDENTITÉ & BADGES PROPRES -->
+  <!-- GAUCHE: IDENTITÉ & SLOGAN -->
   <path d="M42 40H246" stroke="url(#signal)" stroke-width="3.5" stroke-linecap="round"/>
   <circle cx="42" cy="40" r="5" fill="#a855f7" filter="url(#soft-glow)"/>
 
@@ -44,18 +66,27 @@
   <text x="68" y="169" class="sans" fill="#f5f3ff" font-size="58" font-weight="800" letter-spacing="-1.2">KYRRIS</text>
   <text x="72" y="214" class="mono" fill="#a78bfa" font-size="16.5" font-weight="600" letter-spacing="1.6">REACT · NEXT.JS · TYPESCRIPT · NODE.JS · IA &amp; DATA</text>
 
-  <!-- Badges de statut aérés et impeccables -->
-  <g transform="translate(70 252)">
-    <rect width="185" height="38" rx="19" fill="#130924" stroke="#3b1569" stroke-width="1.4"/>
-    <circle cx="20" cy="19" r="4.5" fill="#10b981" filter="url(#soft-glow)"/>
-    <text x="35" y="24" class="mono" fill="#f5f3ff" font-size="11.5" font-weight="650" letter-spacing="0.6">DISPONIBLE // ACTIF</text>
-  </g>
-  <g transform="translate(268 252)">
-    <rect width="215" height="38" rx="19" fill="#130924" stroke="#3b1569" stroke-width="1.4"/>
-    <text x="20" y="24" class="mono" fill="#c084fc" font-size="11.5" font-weight="650" letter-spacing="0.6">WEB FULLSTACK &amp; IA</text>
+  <!-- Pilule avec effet texte dactylographié (s'écrit, s'efface et boucle) -->
+  <g transform="translate(68 252)">
+    <rect width="615" height="50" rx="25" fill="#130924" stroke="#3b1569" stroke-width="1.6"/>
+    <circle cx="25" cy="25" r="6" fill="#a855f7" filter="url(#soft-glow)"/>
   </g>
 
-  <!-- DROITE: FENÊTRE TERMINAL IDE CODE -->
+  <!-- Textes animés le long des chemins dynamiques -->
+  <text class="mono" fill="#f5f3ff" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
+    <textPath href="#typePath0" xlink:href="#typePath0">CONSTRUIRE LE WEB MODERNE ET PERFORMANT 🚀</textPath>
+  </text>
+  <text class="mono" fill="#f5f3ff" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
+    <textPath href="#typePath1" xlink:href="#typePath1">EXPLORER LE POTENTIEL DES AGENTS &amp; DE L&apos;IA 🧠</textPath>
+  </text>
+  <text class="mono" fill="#f5f3ff" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
+    <textPath href="#typePath2" xlink:href="#typePath2">REACT · NEXT.JS · TYPESCRIPT · NODE.JS 💻</textPath>
+  </text>
+  <text class="mono" fill="#f5f3ff" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
+    <textPath href="#typePath3" xlink:href="#typePath3">EN QUÊTE DE NOUVEAUX DÉFIS TECH ⚡</textPath>
+  </text>
+
+  <!-- DROITE: FENÊTRE TERMINAL IDE CODE AVEC SYNTAXE ÉCLATANTE -->
   <g transform="translate(710 42)">
     <rect width="445" height="276" rx="16" fill="#130924" stroke="#3b1569" stroke-width="1.6"/>
 
@@ -76,31 +107,39 @@
     <circle cx="418" cy="20" r="4" fill="#10b981" filter="url(#soft-glow)"/>
     <text x="364" y="24" class="mono" fill="#a78bfa" font-size="10.5" font-weight="600">ONLINE</text>
 
-    <!-- Code TypeScript moderne -->
-    <g class="mono" font-size="12" letter-spacing="0.2">
-      <text x="18" y="70" fill="#6d28d9" font-weight="600">1</text>
-      <text x="42" y="70"><tspan fill="#ec4899" font-weight="700">const</tspan> <tspan fill="#c084fc">developer</tspan> = {</text>
+    <!-- Code TypeScript moderne avec accolades, flèches et ponctuation parfaitement visibles -->
+    <g class="mono" font-size="12" letter-spacing="0.2" fill="#f5f3ff">
+      <!-- Ligne 1 -->
+      <text x="18" y="70" fill="#8b5cf6" font-weight="600">1</text>
+      <text x="42" y="70"><tspan fill="#ec4899" font-weight="700">const</tspan> <tspan fill="#c084fc">developer</tspan> <tspan fill="#ec4899" font-weight="700">=</tspan> <tspan fill="#f5f3ff" font-weight="700">{</tspan></text>
 
-      <text x="18" y="96" fill="#6d28d9" font-weight="600">2</text>
-      <text x="56" y="96"><tspan fill="#a78bfa">name</tspan>: <tspan fill="#a7f3d0">"Kyrris"</tspan>,</text>
+      <!-- Ligne 2 -->
+      <text x="18" y="96" fill="#8b5cf6" font-weight="600">2</text>
+      <text x="56" y="96"><tspan fill="#c084fc">name</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#a7f3d0">"Kyrris"</tspan><tspan fill="#f5f3ff" font-weight="700">,</tspan></text>
 
-      <text x="18" y="122" fill="#6d28d9" font-weight="600">3</text>
-      <text x="56" y="122"><tspan fill="#a78bfa">role</tspan>: <tspan fill="#a7f3d0">"Fullstack &amp; AI Explorer"</tspan>,</text>
+      <!-- Ligne 3 -->
+      <text x="18" y="122" fill="#8b5cf6" font-weight="600">3</text>
+      <text x="56" y="122"><tspan fill="#c084fc">role</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#a7f3d0">"Fullstack &amp; AI Explorer"</tspan><tspan fill="#f5f3ff" font-weight="700">,</tspan></text>
 
-      <text x="18" y="148" fill="#6d28d9" font-weight="600">4</text>
-      <text x="56" y="148"><tspan fill="#a78bfa">stack</tspan>: [<tspan fill="#a7f3d0">"Next.js"</tspan>, <tspan fill="#a7f3d0">"React"</tspan>, <tspan fill="#a7f3d0">"Node.js"</tspan>],</text>
+      <!-- Ligne 4 -->
+      <text x="18" y="148" fill="#8b5cf6" font-weight="600">4</text>
+      <text x="56" y="148"><tspan fill="#c084fc">stack</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff" font-weight="700">[</tspan><tspan fill="#a7f3d0">"Next.js"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#a7f3d0">"React"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#a7f3d0">"Node.js"</tspan><tspan fill="#f5f3ff" font-weight="700">],</tspan></text>
 
-      <text x="18" y="174" fill="#6d28d9" font-weight="600">5</text>
-      <text x="56" y="174"><tspan fill="#a78bfa">passion</tspan>: <tspan fill="#a7f3d0">"AI Agents &amp; Modern Web"</tspan>,</text>
+      <!-- Ligne 5 -->
+      <text x="18" y="174" fill="#8b5cf6" font-weight="600">5</text>
+      <text x="56" y="174"><tspan fill="#c084fc">passion</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#a7f3d0">"AI Agents &amp; Modern Web"</tspan><tspan fill="#f5f3ff" font-weight="700">,</tspan></text>
 
-      <text x="18" y="200" fill="#6d28d9" font-weight="600">6</text>
-      <text x="56" y="200"><tspan fill="#c084fc">build</tspan>: () =&gt; <tspan fill="#fbcfe8">"🚀 Ship clean code"</tspan></text>
+      <!-- Ligne 6 -->
+      <text x="18" y="200" fill="#8b5cf6" font-weight="600">6</text>
+      <text x="56" y="200"><tspan fill="#c084fc">build</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff">()</tspan> <tspan fill="#ec4899" font-weight="800">=&gt;</tspan> <tspan fill="#fbcfe8">"🚀 Ship clean code"</tspan></text>
 
-      <text x="18" y="226" fill="#6d28d9" font-weight="600">7</text>
-      <text x="42" y="226">};</text>
+      <!-- Ligne 7 -->
+      <text x="18" y="226" fill="#8b5cf6" font-weight="600">7</text>
+      <text x="42" y="226"><tspan fill="#f5f3ff" font-weight="700">};</tspan></text>
 
-      <text x="18" y="252" fill="#6d28d9" font-weight="600">8</text>
-      <text x="42" y="252"><tspan fill="#ec4899" font-weight="700">export default</tspan> <tspan fill="#c084fc">developer</tspan>;<rect class="cursor" x="238" y="240" width="7" height="14" rx="1" fill="#a855f7"/></text>
+      <!-- Ligne 8 -->
+      <text x="18" y="252" fill="#8b5cf6" font-weight="600">8</text>
+      <text x="42" y="252"><tspan fill="#ec4899" font-weight="700">export default</tspan> <tspan fill="#c084fc">developer</tspan><tspan fill="#f5f3ff" font-weight="700">;</tspan><rect class="cursor" x="242" y="240" width="7" height="14" rx="1" fill="#a855f7"/></text>
     </g>
   </g>
 
