@@ -21,8 +21,8 @@
   <style>
     .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
     .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
-    .rotate-orbit { transform-origin: 955px 185px; animation: rot-orbit 20s linear infinite; }
-    .pulse-gemini { transform-origin: 955px 185px; animation: pulse-gem 3.5s ease-in-out infinite; }
+    .rotate-orbit { transform-origin: 955px 194px; animation: rot-orbit 20s linear infinite; }
+    .pulse-gemini { transform-origin: 955px 194px; animation: pulse-gem 3.5s ease-in-out infinite; }
     @keyframes rot-orbit { to { transform: rotate(360deg); } }
     @keyframes pulse-gem { 0%, 100% { transform: scale(0.94); opacity: 0.85; } 50% { transform: scale(1.06); opacity: 1; } }
     @media (prefers-reduced-motion: reduce) { .rotate-orbit, .pulse-gemini { animation: none; } }
@@ -36,68 +36,89 @@
   <text x="60" y="48" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">SPÉCIALISATION // ÉCOSYSTÈME GOOGLE &amp; IA AGENTIQUE</text>
   <path d="M780 43H1140" stroke="url(#google-gradient)" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- PANNEAU GAUCHE : LES 3 PILIERS GOOGLE -->
+  <!-- PANNEAU GAUCHE : LES 3 PILIERS GOOGLE AVEC BADGES ALIGNÉS À DROITE (ZÉRO CHEVAUCHEMENT) -->
   <g transform="translate(60 76)">
     <!-- Fond panneau -->
     <rect width="680" height="236" rx="18" fill="#ffffff" stroke="#e9d5ff" stroke-width="1.4"/>
 
     <!-- PILIER 1 : GOOGLE ANTIGRAVITY -->
-    <g transform="translate(26 22)">
+    <g transform="translate(24 16)">
+      <!-- Pastille icône -->
       <circle cx="16" cy="16" r="16" fill="#1e1035" stroke="#a855f7" stroke-width="1.2"/>
       <text x="16" y="22" text-anchor="middle" font-size="15">🌌</text>
 
-      <text x="46" y="16" class="sans" fill="#2e1065" font-size="15" font-weight="750" letter-spacing="-0.2">Google Antigravity (AGY)</text>
+      <!-- Titre principal -->
+      <text x="46" y="21" class="sans" fill="#2e1065" font-size="15" font-weight="750" letter-spacing="-0.2">Google Antigravity (AGY)</text>
 
-      <!-- Badge tag -->
-      <rect x="236" y="4" width="130" height="20" rx="10" fill="#2a124a" stroke="#a855f7" stroke-width="0.8"/>
-      <text x="301" y="17" text-anchor="middle" class="mono" fill="#c084fc" font-size="9" font-weight="700" letter-spacing="0.6">AGENTIC WORKFLOWS</text>
+      <!-- Badge aligné proprement à droite -->
+      <g transform="translate(488 5)">
+        <rect width="144" height="22" rx="11" fill="#2a124a" stroke="#a855f7" stroke-width="1"/>
+        <circle cx="12" cy="11" r="3.5" fill="#c084fc"/>
+        <text x="22" y="15" class="mono" fill="#c084fc" font-size="9" font-weight="700" letter-spacing="0.6">AGENTIC WORKFLOWS</text>
+      </g>
 
-      <text x="46" y="38" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
+      <!-- Description nette sur 2 lignes -->
+      <text x="46" y="44" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
         Maîtrise avancée du développement assisté par agents : subagents autonomes,
       </text>
-      <text x="46" y="54" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
-        protocoles MCP (Model Context Protocol), skills et orchestration de contextes complexes.
+      <text x="46" y="60" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
+        protocoles MCP (Model Context Protocol), skills et orchestration de contextes.
       </text>
     </g>
 
     <!-- Séparateur 1 -->
-    <line x1="26" y1="94" x2="654" y2="94" stroke="#e9d5ff" stroke-width="0.8" opacity="0.6"/>
+    <line x1="24" y1="88" x2="656" y2="88" stroke="#e9d5ff" stroke-width="0.8" opacity="0.6"/>
 
     <!-- PILIER 2 : GOOGLE GEMINI 2.0 -->
-    <g transform="translate(26 104)">
+    <g transform="translate(24 96)">
+      <!-- Pastille icône -->
       <circle cx="16" cy="16" r="16" fill="#151b3b" stroke="#60a5fa" stroke-width="1.2"/>
       <text x="16" y="22" text-anchor="middle" font-size="15">✨</text>
 
-      <text x="46" y="16" class="sans" fill="#2e1065" font-size="15" font-weight="750" letter-spacing="-0.2">Google Gemini 2.0 (Flash &amp; Pro)</text>
+      <!-- Titre principal -->
+      <text x="46" y="21" class="sans" fill="#2e1065" font-size="15" font-weight="750" letter-spacing="-0.2">Google Gemini 2.0 (Flash &amp; Pro)</text>
 
-      <!-- Badge tag -->
-      <rect x="286" y="4" width="144" height="20" rx="10" fill="#14214d" stroke="#60a5fa" stroke-width="0.8"/>
-      <text x="358" y="17" text-anchor="middle" class="mono" fill="#93c5fd" font-size="9" font-weight="700" letter-spacing="0.6">CONTEXT &amp; REASONING</text>
+      <!-- Badge aligné proprement à droite -->
+      <g transform="translate(488 5)">
+        <rect width="144" height="22" rx="11" fill="#14214d" stroke="#60a5fa" stroke-width="1"/>
+        <circle cx="12" cy="11" r="3.5" fill="#60a5fa"/>
+        <text x="22" y="15" class="mono" fill="#93c5fd" font-size="9" font-weight="700" letter-spacing="0.6">CONTEXT &amp; REASONING</text>
+      </g>
 
-      <text x="46" y="38" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
+      <!-- Description nette sur 2 lignes -->
+      <text x="46" y="44" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
         Exploitation des fenêtres de contexte ultra-larges (1M+ tokens), function calling,
       </text>
-      <text x="46" y="54" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
-        raisonnement multimodal et intégration directe dans des stacks web TypeScript (Nest/Nuxt).
+      <text x="46" y="60" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
+        raisonnement multimodal et intégration directe dans des APIs TypeScript (Nest/Nuxt).
       </text>
     </g>
 
     <!-- Séparateur 2 -->
-    <line x1="26" y1="176" x2="654" y2="176" stroke="#e9d5ff" stroke-width="0.8" opacity="0.6"/>
+    <line x1="24" y1="168" x2="656" y2="168" stroke="#e9d5ff" stroke-width="0.8" opacity="0.6"/>
 
     <!-- PILIER 3 : GOOGLE CLOUD & DEV ECOSYSTEM -->
-    <g transform="translate(26 186)">
+    <g transform="translate(24 176)">
+      <!-- Pastille icône -->
       <circle cx="16" cy="16" r="16" fill="#0f2926" stroke="#34d399" stroke-width="1.2"/>
       <text x="16" y="22" text-anchor="middle" font-size="15">☁️</text>
 
-      <text x="46" y="16" class="sans" fill="#2e1065" font-size="15" font-weight="750" letter-spacing="-0.2">Google Cloud Platform &amp; Vertex AI</text>
+      <!-- Titre principal -->
+      <text x="46" y="21" class="sans" fill="#2e1065" font-size="15" font-weight="750" letter-spacing="-0.2">Google Cloud Platform &amp; Vertex AI</text>
 
-      <!-- Badge tag -->
-      <rect x="290" y="4" width="140" height="20" rx="10" fill="#0d3329" stroke="#34d399" stroke-width="0.8"/>
-      <text x="360" y="17" text-anchor="middle" class="mono" fill="#6ee7b7" font-size="9" font-weight="700" letter-spacing="0.6">INFRASTRUCTURE IA</text>
+      <!-- Badge aligné proprement à droite -->
+      <g transform="translate(488 5)">
+        <rect width="144" height="22" rx="11" fill="#0d3329" stroke="#34d399" stroke-width="1"/>
+        <circle cx="12" cy="11" r="3.5" fill="#34d399"/>
+        <text x="22" y="15" class="mono" fill="#6ee7b7" font-size="9" font-weight="700" letter-spacing="0.6">INFRASTRUCTURE IA</text>
+      </g>
 
-      <text x="46" y="34" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
-        Déploiement conteneurisé sur Cloud Run, APIs d'intelligence artificielle et intégrations cloud.
+      <!-- Description nette sur 2 lignes -->
+      <text x="46" y="42" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
+        Déploiement conteneurisé sur Cloud Run, gestion d&apos;infrastructures modernes,
+      </text>
+      <text x="46" y="58" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
+        intégration d&apos;APIs d&apos;intelligence artificielle et cloud sécurisé.
       </text>
     </g>
   </g>
@@ -116,7 +137,6 @@
 
     <!-- Étoile Gemini 4 branches holographique -->
     <g class="pulse-gemini">
-      <!-- Forme de l'étoile Gemini (courbes de bézier formant l'étoile emblématique) -->
       <path d="M 955 152 Q 955 194 997 194 Q 955 194 955 236 Q 955 194 913 194 Q 955 194 955 152 Z"
             fill="url(#google-gradient)" filter="url(#glow-filter)"/>
       <circle cx="955" cy="194" r="5" fill="#ffffff"/>

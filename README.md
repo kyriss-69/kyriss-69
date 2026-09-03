@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=8">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=8">
-  <img alt="Kyrris — Développeur Fullstack TypeScript & Spécialiste Écosystème Google IA" src="./assets/generated/banner-dark.svg?v=8" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=9">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=9">
+  <img alt="Kyrris — Développeur Fullstack TypeScript & Spécialiste Écosystème Google IA" src="./assets/generated/banner-dark.svg?v=9" width="100%">
 </picture>
 
 <p align="center">
@@ -18,25 +18,25 @@
 ## Signal actuel
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/signal-dark.svg?v=8">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/signal-light.svg?v=8">
-  <img alt="Signal actuel : Plateforme SaaS, Veille & IA, Nouveaux Défis" src="./assets/generated/signal-dark.svg?v=8" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/signal-dark.svg?v=9">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/signal-light.svg?v=9">
+  <img alt="Signal actuel : Plateforme SaaS, Veille & IA, Nouveaux Défis" src="./assets/generated/signal-dark.svg?v=9" width="100%">
 </picture>
 
 ## Boîte à outils
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/stack-dark.svg?v=8">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/stack-light.svg?v=8">
-  <img alt="Stack technique : TypeScript, Nuxt 3, Vue 3, Tailwind CSS, Pinia, NestJS 11, Prisma, PostgreSQL 16, Redis, Socket.IO, Turborepo, Bun, BullMQ, Docker, GitHub Actions" src="./assets/generated/stack-dark.svg?v=8" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/stack-dark.svg?v=9">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/stack-light.svg?v=9">
+  <img alt="Stack technique : TypeScript, Nuxt 3, Vue 3, Tailwind CSS, Pinia, NestJS 11, Prisma, PostgreSQL 16, Redis, Socket.IO, Turborepo, Bun, BullMQ, Docker, GitHub Actions" src="./assets/generated/stack-dark.svg?v=9" width="100%">
 </picture>
 
 ## Spécialisation Écosystème Google & IA
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/google-ecosystem-dark.svg?v=8">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/google-ecosystem-light.svg?v=8">
-  <img alt="Spécialisation Écosystème Google & IA Agentique : Antigravity, Gemini 2.0, Cloud" src="./assets/generated/google-ecosystem-dark.svg?v=8" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/google-ecosystem-dark.svg?v=9">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/google-ecosystem-light.svg?v=9">
+  <img alt="Spécialisation Écosystème Google & IA Agentique : Antigravity, Gemini 2.0, Cloud" src="./assets/generated/google-ecosystem-dark.svg?v=9" width="100%">
 </picture>
 
 > [!TIP]
@@ -98,7 +98,7 @@ architecture NestJS  ·  Google Antigravity & Gemini  ·  CI/CD & Docker
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/footer-dark.svg?v=8">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/footer-light.svg?v=8">
-  <img alt="Pied de page de Kyrris" src="./assets/generated/footer-dark.svg?v=8" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/footer-dark.svg?v=9">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/footer-light.svg?v=9">
+  <img alt="Pied de page de Kyrris" src="./assets/generated/footer-dark.svg?v=9" width="100%">
 </picture>
