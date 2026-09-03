@@ -1,0 +1,48 @@
+name: Générer les éléments du profil
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"
+  push:
+    branches: [main]
+    paths:
+      - "profile.config.json"
+      - "scripts/**"
+      - "package.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt du profil
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Actualiser les statistiques et générer les SVG
+        run: npm run refresh-stats
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Enregistrer les éléments actualisés
+        run: |
+          if git diff --quiet; then
+            echo "Les éléments du profil sont déjà à jour."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/generated data/public-stats.json
+          git commit -m "chore(profile): actualiser le pouls public"
+          git push

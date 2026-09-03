@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title description">
+  <title id="title">Pouls GitHub public de kyriss-69</title>
+  <desc id="description">Statistiques GitHub publiques de Kyrris.</desc>
+  <defs>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7e22ce"/><stop offset=".55" stop-color="#9333ea"/><stop offset="1" stop-color="#c026d3"/></linearGradient>
+    <radialGradient id="metric-glow"><stop stop-color="#7e22ce" stop-opacity=".2"/><stop offset="1" stop-color="#7e22ce" stop-opacity="0"/></radialGradient>
+    <symbol id="icon-repo" viewBox="0 0 24 24"><path d="M5 4.5h10.5A2.5 2.5 0 0 1 18 7v13H7.5A2.5 2.5 0 0 1 5 17.5z"/><path d="M5 17.5A2.5 2.5 0 0 1 7.5 15H18M9 8h5"/></symbol>
+    <symbol id="icon-project" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 4v5"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+    <symbol id="icon-pull" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M6 7.5V16a3 3 0 0 0 3 3h6.5M18 16.5V9a4 4 0 0 0-4-4h-2M14 2l-3 3 3 3"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0M16 5.5a3 3 0 0 1 0 5.8M17 14.5a5 5 0 0 1 3.5 4.8"/></symbol>
+  </defs>
+  <style>
+    .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
+    .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+    .ring { stroke-dasharray: 490; stroke-dashoffset: 490; animation: draw-ring 2.4s cubic-bezier(.2,.8,.2,1) forwards, breathe 4.5s ease-in-out 2.4s infinite; }
+    .orbit { transform-origin: 955px 188px; animation: orbit 12s linear infinite; }
+    .signal-node { animation: node-pulse 3s ease-in-out infinite; }
+    @keyframes draw-ring { to { stroke-dashoffset: 62; } }
+    @keyframes breathe { 0%, 100% { opacity: .72; } 50% { opacity: 1; } }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    @keyframes node-pulse { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .ring { animation: none; stroke-dashoffset: 62; } .orbit, .signal-node { animation: none; } }
+  </style>
+  <rect width="1200" height="350" rx="22" fill="#faf5ff"/>
+  <text x="60" y="50" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">POULS GITHUB // KYRISS-69</text>
+  <text x="1140" y="50" text-anchor="end" class="mono" fill="#6b21a8" font-size="11">MIS À JOUR 2026-09-03</text>
+  <rect x="60" y="76" width="680" height="234" rx="18" fill="#ffffff" stroke="#e9d5ff"/>
+
+      <g transform="translate(82 112)">
+        <use href="#icon-repo" x="0" y="-13" width="20" height="20" fill="none" stroke="#7e22ce" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="36" y="2" class="mono" fill="#6b21a8" font-size="13" font-weight="650" letter-spacing="1">DÉPÔTS PUBLICS</text>
+        <text x="620" y="2" text-anchor="end" class="sans" fill="#2e1065" font-size="18" font-weight="750">1</text>
+        <path d="M36 17H620" stroke="#e9d5ff" opacity=".55"/>
+      </g>
+      <g transform="translate(82 154)">
+        <use href="#icon-project" x="0" y="-13" width="20" height="20" fill="none" stroke="#9333ea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="36" y="2" class="mono" fill="#6b21a8" font-size="13" font-weight="650" letter-spacing="1">PROJETS ORIGINAUX PUBLICS</text>
+        <text x="620" y="2" text-anchor="end" class="sans" fill="#2e1065" font-size="18" font-weight="750">1</text>
+        <path d="M36 17H620" stroke="#e9d5ff" opacity=".55"/>
+      </g>
+      <g transform="translate(82 196)">
+        <use href="#icon-star" x="0" y="-13" width="20" height="20" fill="none" stroke="#c026d3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="36" y="2" class="mono" fill="#6b21a8" font-size="13" font-weight="650" letter-spacing="1">ÉTOILES REÇUES</text>
+        <text x="620" y="2" text-anchor="end" class="sans" fill="#2e1065" font-size="18" font-weight="750">0</text>
+        <path d="M36 17H620" stroke="#e9d5ff" opacity=".55"/>
+      </g>
+      <g transform="translate(82 238)">
+        <use href="#icon-pull" x="0" y="-13" width="20" height="20" fill="none" stroke="#7e22ce" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="36" y="2" class="mono" fill="#6b21a8" font-size="13" font-weight="650" letter-spacing="1">PULL REQUESTS PUBLIQUES</text>
+        <text x="620" y="2" text-anchor="end" class="sans" fill="#2e1065" font-size="18" font-weight="750">0</text>
+        <path d="M36 17H620" stroke="#e9d5ff" opacity=".55"/>
+      </g>
+      <g transform="translate(82 280)">
+        <use href="#icon-users" x="0" y="-13" width="20" height="20" fill="none" stroke="#9333ea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="36" y="2" class="mono" fill="#6b21a8" font-size="13" font-weight="650" letter-spacing="1">ABONNÉS GITHUB</text>
+        <text x="620" y="2" text-anchor="end" class="sans" fill="#2e1065" font-size="18" font-weight="750">1</text>
+
+      </g>
+  <g>
+    <circle cx="955" cy="188" r="128" fill="url(#metric-glow)"/>
+    <circle cx="955" cy="188" r="78" fill="#ffffff" stroke="#e9d5ff" stroke-width="10"/>
+    <circle class="ring" cx="955" cy="188" r="78" fill="none" stroke="url(#ring)" stroke-width="10" stroke-linecap="round" transform="rotate(-90 955 188)"/>
+    <g class="orbit"><circle cx="955" cy="100" r="5" fill="#9333ea"/></g>
+    <g class="signal-node" fill="#7e22ce"><circle cx="934" cy="160" r="5"/><circle cx="976" cy="160" r="5"/><circle cx="955" cy="139" r="5"/></g>
+    <path d="M934 160 955 139l21 21-21 25z" fill="none" stroke="#7e22ce" stroke-width="2" opacity=".8"/>
+    <text x="955" y="212" text-anchor="middle" class="sans" fill="#2e1065" font-size="28" font-weight="800">2026</text>
+    <text x="955" y="235" text-anchor="middle" class="mono" fill="#6b21a8" font-size="10" font-weight="700" letter-spacing="2">PRÉSENT DEPUIS</text>
+    <text x="955" y="304" text-anchor="middle" class="mono" fill="#9333ea" font-size="11" font-weight="700" letter-spacing="2">DÉVELOPPEUR ACTIF</text>
+  </g>
+  <rect x="1" y="1" width="1198" height="348" rx="21" fill="none" stroke="#e9d5ff"/>
+</svg>

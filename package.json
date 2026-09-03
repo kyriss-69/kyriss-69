@@ -1,0 +1,10 @@
+{
+  "name": "kyriss-profile",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate": "node scripts/generate-profile.mjs",
+    "refresh-stats": "node scripts/generate-profile.mjs --refresh-stats"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "username": "kyriss-69",
+  "name": "Kyrris",
+  "identity": "DÉVELOPPEUR WEB & EXPLORATEUR IA",
+  "headline": "REACT · NEXT.JS · TYPESCRIPT · NODE.JS · IA & DATA",
+  "statement": "CONSTRUIRE LE WEB MODERNE, EXPLORER LE POTENTIEL DE L'INTELLIGENCE ARTIFICIELLE",
+  "contact": {
+    "discord": "https://discord.com",
+    "email": "contact.evolysdigital@gmail.com"
+  },
+  "stack": [
+    { "label": "TypeScript", "color": "#3178c6" },
+    { "label": "React", "color": "#61dafb" },
+    { "label": "Next.js", "color": "#ffffff" },
+    { "label": "JavaScript", "color": "#f7df1e" },
+    { "label": "Node.js", "color": "#339933" },
+    { "label": "Tailwind CSS", "color": "#38b2ac" },
+    { "label": "Python", "color": "#3776ab" },
+    { "label": "Docker", "color": "#2496ed" },
+    { "label": "Git", "color": "#f05032" },
+    { "label": "VS Code", "color": "#0078d4" }
+  ]
+}

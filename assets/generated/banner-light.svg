@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+  <title id="title">Kyrris — DÉVELOPPEUR WEB &amp; EXPLORATEUR IA</title>
+  <desc id="description">Bannière néon violette haute fidélité pour le profil de Kyrris.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#faf5ff"/>
+      <stop offset="1" stop-color="#f3e8ff"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7e22ce"/>
+      <stop offset="0.55" stop-color="#9333ea"/>
+      <stop offset="1" stop-color="#c026d3"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#7e22ce" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#7e22ce" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#e9d5ff" stroke-width="1"/>
+    </pattern>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
+    .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+    .strand { fill: none; stroke: url(#signal); stroke-width: 2.2; stroke-linecap: round; opacity: .58; stroke-dasharray: 9 11; animation: flow 18s linear infinite; }
+    .s2 { animation-duration: 24s; animation-direction: reverse; opacity: .45; }
+    .s3 { animation-duration: 21s; }
+    .s4 { animation-duration: 27s; animation-direction: reverse; opacity: .38; }
+    .s5 { animation-duration: 23s; opacity: .42; }
+    .node { transform-box: fill-box; transform-origin: center; animation: pulse 4.8s ease-in-out infinite; }
+    .node:nth-of-type(2n) { animation-delay: -2.3s; }
+    .cursor { animation: blink 1.2s steps(2, start) infinite; }
+    @keyframes flow { to { stroke-dashoffset: -200; } }
+    @keyframes pulse { 0%, 100% { opacity: .5; transform: scale(.82); } 50% { opacity: 1; transform: scale(1.12); } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .strand, .node, .cursor { animation: none; } }
+  </style>
+  <rect width="1200" height="360" rx="24" fill="url(#background)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#grid)" opacity=".72"/>
+  <circle cx="1040" cy="170" r="260" fill="url(#glow)"/>
+  <path d="M42 40H246" stroke="url(#signal)" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="42" cy="40" r="5" fill="#7e22ce" filter="url(#soft-glow)"/>
+  <text x="72" y="93" class="mono" fill="#7e22ce" font-size="16" font-weight="700" letter-spacing="3">KYRISS-69 // DÉVELOPPEUR WEB &amp; EXPLORATEUR IA</text>
+  <text x="68" y="169" class="sans" fill="#2e1065" font-size="56" font-weight="800" letter-spacing="-1.2">KYRRIS</text>
+  <text x="72" y="214" class="mono" fill="#6b21a8" font-size="16.5" font-weight="600" letter-spacing="1.6">REACT · NEXT.JS · TYPESCRIPT · NODE.JS · IA &amp; DATA</text>
+  <g transform="translate(72 258)">
+    <rect width="660" height="50" rx="25" fill="#ffffff" stroke="#e9d5ff"/>
+    <circle cx="25" cy="25" r="6" fill="#7e22ce" filter="url(#soft-glow)"/>
+    <text x="44" y="31" class="mono" fill="#2e1065" font-size="12" font-weight="650" letter-spacing=".4">CONSTRUIRE LE WEB MODERNE, EXPLORER LE POTENTIEL DE L&apos;INTELLIGENCE ARTIFICIELLE</text>
+    <rect class="cursor" x="626" y="17" width="8" height="16" rx="1" fill="#9333ea"/>
+  </g>
+  <g><path class="strand s1" d="M705 80 C790 28 842 54 910 106 S1038 174 1190 92"/>
+      <path class="strand s2" d="M680 178 C770 130 824 154 882 214 S1034 310 1195 224"/>
+      <path class="strand s3" d="M746 302 C812 236 882 264 926 224 S1050 120 1192 152"/>
+      <path class="strand s4" d="M858 34 C886 104 956 108 1006 74 S1102 26 1194 48"/>
+      <path class="strand s5" d="M818 346 C842 292 920 302 976 272 S1080 242 1194 316"/></g>
+  <g filter="url(#soft-glow)">
+    <circle class="node" cx="825" cy="60" r="6" fill="#7e22ce"/>
+    <circle class="node" cx="910" cy="106" r="8" fill="#9333ea"/>
+    <circle class="node" cx="1006" cy="74" r="5" fill="#c026d3"/>
+    <circle class="node" cx="882" cy="214" r="7" fill="#7e22ce"/>
+    <circle class="node" cx="976" cy="272" r="6" fill="#9333ea"/>
+    <circle class="node" cx="1080" cy="242" r="5" fill="#c026d3"/>
+    <circle class="node" cx="1134" cy="112" r="8" fill="#7e22ce"/>
+  </g>
+  <g class="mono" font-size="11" fill="#6b21a8" letter-spacing="1">
+    <text x="928" y="101">NEXT.JS</text>
+    <text x="899" y="237">TYPESCRIPT</text>
+    <text x="1022" y="294">AGENTS IA</text>
+    <text x="1064" y="267">WEB FULLSTACK</text>
+  </g>
+  <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="#e9d5ff"/>
+</svg>
