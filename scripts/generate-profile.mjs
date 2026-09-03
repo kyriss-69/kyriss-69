@@ -875,6 +875,7 @@ function renderUnified(theme) {
       .replace(/<\/svg>\s*$/, '')
       .replace(/<rect width="1200" height="\d+" rx="\d+" fill="[^"]+"\/>/, '')
       .replace(/<rect x="1" y="1" width="1198" height="\d+" rx="\d+" fill="none" stroke="[^"]+"\/>/, '')
+      .replace(/\s*xlink:href="[^"]*"/g, '')
       .trim();
   }
 
@@ -887,7 +888,7 @@ function renderUnified(theme) {
   const totalHeight = 1660;
 
   return `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 ${totalHeight}" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 ${totalHeight}" role="img" aria-labelledby="title description">
   <title id="title">Profil Développeur Complet de ${escapeXml(config.username)}</title>
   <desc id="description">Présentation complète unifiée de Kyrris : Identité, Vision, Signal SaaS, Boîte à outils et Écosystème Google AI.</desc>
   <defs>
