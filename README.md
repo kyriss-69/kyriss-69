@@ -9,16 +9,16 @@
 <p align="center">
   <a href="https://github.com/kyriss-69?tab=followers"><img alt="GitHub Followers" src="https://img.shields.io/github/followers/kyriss-69?style=for-the-badge&logo=github&logoColor=white&color=181717&label=Followers"></a>&nbsp;&nbsp;
   <a href="https://discord.com" target="_blank"><img alt="Discord" src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"></a>&nbsp;&nbsp;
-  <a href="https://github.com/evolysdigital" target="_blank"><img alt="Organisation" src="https://img.shields.io/badge/Organisation-Evolys%20Digital-a855f7?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/zcorp69" target="_blank"><img alt="Organisation" src="https://img.shields.io/badge/Organisation-zcorp69-a855f7?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
 <br>
 
-<p align="center">
-  Spécialisé dans les stacks techniques SaaS modernes et l'écosystème Google AI // Google Cloud.<br>
-  Passionné d'open source, de modèles d'IA et de R&amp;D logicielle, j'aime transformer des idées ambitieuses<br>
-  en solutions concrètes grâce aux outils avancés de l'écosystème Google AI.
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/bio-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/bio-light.svg">
+  <img alt="Spécialisé dans les stacks SaaS modernes et l'écosystème Google AI" src="./assets/generated/bio-dark.svg" width="100%">
+</picture>
 
 ## Signal actuel
 

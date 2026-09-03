@@ -59,6 +59,7 @@ await mkdir(outputDirectory, { recursive: true });
 
 for (const [name, theme] of Object.entries(themes)) {
   await writeSvg(`banner-${name}.svg`, renderBanner(theme));
+  await writeSvg(`bio-${name}.svg`, renderBio(theme));
   await writeSvg(`signal-${name}.svg`, renderSignal(theme));
   await writeSvg(`signal-v2-${name}.svg`, renderSignal(theme));
   await writeSvg(`saas-focus-${name}.svg`, renderSignal(theme));
@@ -254,6 +255,62 @@ function renderBanner(theme) {
   </g>
 
   <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="${theme.panelBorder}"/>
+</svg>`;
+}
+
+function renderBio(theme) {
+  return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" role="img" aria-labelledby="title description">
+  <title id="title">Vision &amp; Présentation de ${escapeXml(config.username)}</title>
+  <desc id="description">Vision et spécialisation technique de Kyrris.</desc>
+  <defs>
+    <linearGradient id="bio-gradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4285f4"/>
+      <stop offset="33%" stop-color="#a855f7"/>
+      <stop offset="66%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#34a853"/>
+    </linearGradient>
+    <radialGradient id="bio-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="${theme.accent}" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="${theme.accent}" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+    .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
+  </style>
+
+  <!-- Fond global & bordure -->
+  <rect width="1200" height="150" rx="22" fill="${theme.background}"/>
+  <rect x="1" y="1" width="1198" height="148" rx="21" fill="none" stroke="${theme.panelBorder}"/>
+
+  <!-- Panneau central vitré glassmorphic -->
+  <rect x="60" y="14" width="1080" height="122" rx="16" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.3"/>
+  <circle cx="600" cy="75" r="280" fill="url(#bio-glow)"/>
+
+  <!-- Ligne lumineuse en haut du panneau -->
+  <path d="M60 14 H1140" stroke="url(#bio-gradient)" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Pastille décorative gauche -->
+  <circle cx="102" cy="75" r="18" fill="${theme.background === '#090510' ? '#1c0e35' : '#f3e8ff'}" stroke="${theme.accent}" stroke-width="1.2"/>
+  <text x="102" y="81" text-anchor="middle" font-size="15">⚡</text>
+
+  <!-- Textes avec typographie soignée -->
+  <g transform="translate(142 0)">
+    <text x="0" y="52" class="sans" fill="${theme.text}" font-size="17" font-weight="750" letter-spacing="-0.2">
+      Spécialisé dans les stacks techniques SaaS modernes et l&apos;écosystème Google AI // Google Cloud.
+    </text>
+    <text x="0" y="81" class="sans" fill="${theme.muted}" font-size="13.5" font-weight="500">
+      Passionné d&apos;open source, de modèles d&apos;IA et de R&amp;D logicielle, j&apos;aime transformer des idées ambitieuses
+    </text>
+    <text x="0" y="103" class="sans" fill="${theme.muted}" font-size="13.5" font-weight="500">
+      en solutions concrètes grâce aux outils avancés de l&apos;écosystème Google AI.
+    </text>
+  </g>
+
+  <!-- Pastille décorative droite -->
+  <circle cx="1098" cy="75" r="18" fill="${theme.background === '#090510' ? '#1c0e35' : '#f3e8ff'}" stroke="${theme.accentTwo}" stroke-width="1.2"/>
+  <text x="1098" y="81" text-anchor="middle" font-size="15">🌌</text>
 </svg>`;
 }
 
