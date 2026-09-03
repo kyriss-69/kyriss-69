@@ -60,8 +60,8 @@ await mkdir(outputDirectory, { recursive: true });
 for (const [name, theme] of Object.entries(themes)) {
   await writeSvg(`banner-${name}.svg`, renderBanner(theme));
   await writeSvg(`signal-${name}.svg`, renderSignal(theme));
-  await writeSvg(`google-suite-${name}.svg`, renderGoogleSuite(theme));
-  await writeSvg(`google-ecosystem-${name}.svg`, renderGoogleSuite(theme));
+  await writeSvg(`google-clean-${name}.svg`, renderGoogleClean(theme));
+  await writeSvg(`google-suite-${name}.svg`, renderGoogleClean(theme));
   await writeSvg(`stack-${name}.svg`, renderStack(theme));
   await writeSvg(`metrics-${name}.svg`, renderMetrics(theme));
   await writeSvg(`footer-${name}.svg`, renderFooter(theme));
@@ -350,9 +350,9 @@ function renderSignal(theme) {
 </svg>`;
 }
 
-function renderGoogleSuite(theme) {
+function renderGoogleClean(theme) {
   return `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 375" role="img" aria-labelledby="title description">
   <title id="title">Spécialisation Écosystème Google &amp; IA de Kyrris</title>
   <desc id="description">Présentation de la spécialisation dans les outils Google, Antigravity et Gemini.</desc>
   <defs>
@@ -375,25 +375,25 @@ function renderGoogleSuite(theme) {
   <style>
     .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
     .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
-    .rotate-orbit { transform-origin: 955px 195px; animation: rot-orbit 20s linear infinite; }
-    .pulse-gemini { transform-origin: 955px 195px; animation: pulse-gem 3.5s ease-in-out infinite; }
+    .rotate-orbit { transform-origin: 955px 202px; animation: rot-orbit 20s linear infinite; }
+    .pulse-gemini { transform-origin: 955px 202px; animation: pulse-gem 3.5s ease-in-out infinite; }
     @keyframes rot-orbit { to { transform: rotate(360deg); } }
     @keyframes pulse-gem { 0%, 100% { transform: scale(0.94); opacity: 0.85; } 50% { transform: scale(1.06); opacity: 1; } }
     @media (prefers-reduced-motion: reduce) { .rotate-orbit, .pulse-gemini { animation: none; } }
   </style>
 
   <!-- Fond & Bordure externe -->
-  <rect width="1200" height="360" rx="22" fill="${theme.background}"/>
-  <rect x="1" y="1" width="1198" height="358" rx="21" fill="none" stroke="${theme.panelBorder}"/>
+  <rect width="1200" height="375" rx="22" fill="${theme.background}"/>
+  <rect x="1" y="1" width="1198" height="373" rx="21" fill="none" stroke="${theme.panelBorder}"/>
 
   <!-- En-tête -->
   <text x="60" y="48" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">SPÉCIALISATION // ÉCOSYSTÈME GOOGLE &amp; IA AGENTIQUE</text>
   <path d="M780 43H1140" stroke="url(#google-gradient)" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- PANNEAU GAUCHE : ÉPURÉ SANS BADGES, AVEC RESPIRATION EN BAS -->
-  <g transform="translate(60 70)">
-    <!-- Fond panneau élargi pour laisser respirer le bas -->
-    <rect width="680" height="260" rx="18" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.4"/>
+  <!-- PANNEAU GAUCHE : ÉPURÉ SANS BADGES, AVEC 30PX DE RESPIRATION EN BAS -->
+  <g transform="translate(60 66)">
+    <!-- Cadre étendu en hauteur pour une respiration maximale -->
+    <rect width="680" height="276" rx="18" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.4"/>
 
     <!-- PILIER 1 : GOOGLE ANTIGRAVITY (2.0 & IDE) -->
     <g transform="translate(24 16)">
@@ -414,7 +414,7 @@ function renderGoogleSuite(theme) {
     <line x1="24" y1="92" x2="656" y2="92" stroke="${theme.panelBorder}" stroke-width="0.8" opacity="0.6"/>
 
     <!-- PILIER 2 : GOOGLE GEMINI -->
-    <g transform="translate(24 102)">
+    <g transform="translate(24 104)">
       <circle cx="16" cy="16" r="16" fill="#151b3b" stroke="#60a5fa" stroke-width="1.2"/>
       <text x="16" y="22" text-anchor="middle" font-size="15">✨</text>
       
@@ -429,10 +429,10 @@ function renderGoogleSuite(theme) {
     </g>
 
     <!-- Séparateur 2 -->
-    <line x1="24" y1="178" x2="656" y2="178" stroke="${theme.panelBorder}" stroke-width="0.8" opacity="0.6"/>
+    <line x1="24" y1="180" x2="656" y2="180" stroke="${theme.panelBorder}" stroke-width="0.8" opacity="0.6"/>
 
-    <!-- PILIER 3 : GOOGLE CLOUD & VERTEX AI (AVEC 20PX DE MARGE EN BAS) -->
-    <g transform="translate(24 188)">
+    <!-- PILIER 3 : GOOGLE CLOUD & VERTEX AI (30PX DE MARGE AU-DESSUS DU BAS) -->
+    <g transform="translate(24 192)">
       <circle cx="16" cy="16" r="16" fill="#0f2926" stroke="#34d399" stroke-width="1.2"/>
       <text x="16" y="22" text-anchor="middle" font-size="15">☁️</text>
       
@@ -450,38 +450,38 @@ function renderGoogleSuite(theme) {
   <!-- PANNEAU DROIT : HOLOGRAPHIC GEMINI & ANTIGRAVITY CORE -->
   <g id="google-hologram">
     <!-- Halo d'ambiance -->
-    <circle cx="955" cy="195" r="126" fill="url(#ai-glow)"/>
+    <circle cx="955" cy="202" r="126" fill="url(#ai-glow)"/>
 
     <!-- Anneau radar extérieur avec rotation -->
-    <circle cx="955" cy="195" r="105" fill="none" stroke="${theme.panelBorder}" stroke-width="1.4"/>
-    <circle cx="955" cy="195" r="105" fill="none" stroke="url(#google-gradient)" stroke-width="2" stroke-dasharray="14 36 6 18" class="rotate-orbit"/>
+    <circle cx="955" cy="202" r="108" fill="none" stroke="${theme.panelBorder}" stroke-width="1.4"/>
+    <circle cx="955" cy="202" r="108" fill="none" stroke="url(#google-gradient)" stroke-width="2" stroke-dasharray="14 36 6 18" class="rotate-orbit"/>
 
     <!-- Anneau intermédiaire -->
-    <circle cx="955" cy="195" r="76" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.5"/>
+    <circle cx="955" cy="202" r="78" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.5"/>
 
     <!-- Étoile Gemini 4 branches holographique -->
     <g class="pulse-gemini">
-      <path d="M 955 153 Q 955 195 997 195 Q 955 195 955 237 Q 955 195 913 195 Q 955 195 955 153 Z" 
+      <path d="M 955 160 Q 955 202 997 202 Q 955 202 955 244 Q 955 202 913 202 Q 955 202 955 160 Z" 
             fill="url(#google-gradient)" filter="url(#glow-filter)"/>
-      <circle cx="955" cy="195" r="5" fill="#ffffff"/>
+      <circle cx="955" cy="202" r="5" fill="#ffffff"/>
     </g>
 
     <!-- Satellite Haut : ANTIGRAVITY 2.0 & IDE -->
-    <g transform="translate(865 107)">
+    <g transform="translate(865 114)">
       <rect width="180" height="24" rx="12" fill="${theme.panel}" stroke="#a855f7" stroke-width="1"/>
       <circle cx="12" cy="12" r="3.5" fill="#c084fc"/>
       <text x="24" y="16" class="mono" fill="${theme.text}" font-size="9.5" font-weight="700" letter-spacing="0.6">ANTIGRAVITY // 2.0 &amp; IDE</text>
     </g>
 
     <!-- Satellite Bas : GOOGLE GEMINI -->
-    <g transform="translate(885 259)">
+    <g transform="translate(885 266)">
       <rect width="140" height="24" rx="12" fill="${theme.panel}" stroke="#60a5fa" stroke-width="1"/>
       <circle cx="12" cy="12" r="3.5" fill="#60a5fa"/>
       <text x="24" y="16" class="mono" fill="${theme.text}" font-size="9.5" font-weight="700" letter-spacing="0.8">GOOGLE GEMINI</text>
     </g>
 
     <!-- Statut en bas -->
-    <text x="955" y="310" text-anchor="middle" class="mono" fill="${theme.accentTwo}" font-size="10" font-weight="700" letter-spacing="2">GOOGLE AI // ÉCOSYSTÈME MAÎTRISÉ</text>
+    <text x="955" y="318" text-anchor="middle" class="mono" fill="${theme.accentTwo}" font-size="10" font-weight="700" letter-spacing="2">GOOGLE AI // ÉCOSYSTÈME MAÎTRISÉ</text>
   </g>
 </svg>`;
 }
