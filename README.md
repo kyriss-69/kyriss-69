@@ -12,13 +12,15 @@
   <a href="https://github.com/zcorp69" target="_blank"><img alt="Organisation" src="https://img.shields.io/badge/Organisation-zcorp69-a855f7?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
-<br>
+<br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/bio-dark.svg?v=6">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/bio-light.svg?v=6">
-  <img alt="Spécialisé dans les stacks SaaS modernes et l'écosystème Google AI" src="./assets/generated/bio-dark.svg?v=6" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/bio-dark.svg?v=10">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/bio-light.svg?v=10">
+  <img alt="Spécialisé dans les stacks SaaS modernes et l'écosystème Google AI" src="./assets/generated/bio-dark.svg?v=10" width="100%">
 </picture>
+
+<br><br>
 
 ## Signal actuel
 

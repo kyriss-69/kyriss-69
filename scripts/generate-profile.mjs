@@ -260,19 +260,19 @@ function renderBanner(theme) {
 
 function renderBio(theme) {
   return `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 256" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 290" role="img" aria-labelledby="title description">
   <title id="title">Terminal de vision de ${escapeXml(config.username)}</title>
   <desc id="description">Terminal exécutant la spécialisation et la vision technique de Kyrris.</desc>
   <defs>
     <radialGradient id="term-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="${theme.accent}" stop-opacity="0.22"/>
+      <stop offset="0%" stop-color="${theme.accent}" stop-opacity="0.24"/>
       <stop offset="100%" stop-color="${theme.accent}" stop-opacity="0"/>
     </radialGradient>
     
-    <!-- Masque animé pour effet frappe de la commande (s'arrête exactement à la fin du texte) -->
+    <!-- Masque animé pour frappe de la commande (largeur 825px exactement) -->
     <clipPath id="cmdClip">
-      <rect x="76" y="52" width="740" height="28">
-        <animate attributeName="width" values="0; 740; 740; 0" keyTimes="0; 0.28; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
+      <rect x="80" y="78" width="825" height="30">
+        <animate attributeName="width" values="0; 825; 825; 0" keyTimes="0; 0.28; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
   </defs>
@@ -280,92 +280,88 @@ function renderBio(theme) {
   <style>
     .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, "Fira Code", monospace; }
     .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
-    .cursor { animation: blink 1s steps(2, start) infinite; }
-    @keyframes blink { 50% { opacity: 0; } }
     @media (prefers-reduced-motion: reduce) {
-      .cursor { animation: none; }
-      #cmdClip rect { width: 740px !important; }
+      #cmdClip rect { width: 825px !important; }
       .anim-output { opacity: 1 !important; }
     }
   </style>
 
-  <!-- Fond global et halo d'ambiance -->
-  <rect width="1200" height="256" rx="22" fill="${theme.background}"/>
-  <rect x="1" y="1" width="1198" height="254" rx="21" fill="none" stroke="${theme.panelBorder}"/>
-  <circle cx="600" cy="128" r="300" fill="url(#term-glow)"/>
+  <!-- Fond global et halo d'ambiance néon -->
+  <rect width="1200" height="290" rx="24" fill="${theme.background}"/>
+  <rect x="1" y="1" width="1198" height="288" rx="23" fill="none" stroke="${theme.panelBorder}"/>
+  <circle cx="600" cy="145" r="320" fill="url(#term-glow)"/>
 
-  <!-- FENÊTRE TERMINAL CODE (Inspirée du composant IDE) -->
-  <g transform="translate(60 14)">
-    <!-- Cadre extérieur de la fenêtre -->
-    <rect width="1080" height="228" rx="16" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.6"/>
+  <!-- FENÊTRE TERMINAL CODE AÉRÉE -->
+  <g transform="translate(60 16)">
+    <!-- Cadre extérieur spacieux de la fenêtre -->
+    <rect width="1080" height="258" rx="18" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.6"/>
 
     <!-- Barre supérieure de titre -->
-    <path d="M0 16 C0 7.16 7.16 0 16 0 H1064 C1072.84 0 1080 7.16 1080 16 V38 H0 Z" fill="${theme.background === '#090510' ? '#180b30' : '#f3e8ff'}"/>
-    <line x1="0" y1="38" x2="1080" y2="38" stroke="${theme.panelBorder}" stroke-width="1"/>
+    <path d="M0 18 C0 8.06 8.06 0 18 0 H1062 C1071.94 0 1080 8.06 1080 18 V42 H0 Z" fill="${theme.background === '#090510' ? '#180b30' : '#f3e8ff'}"/>
+    <line x1="0" y1="42" x2="1080" y2="42" stroke="${theme.panelBorder}" stroke-width="1"/>
 
     <!-- Contrôles de fenêtre (Boutons macOS / IDE) -->
-    <circle cx="28" cy="19" r="6" fill="#ef4444"/>
-    <circle cx="48" cy="19" r="6" fill="#f59e0b"/>
-    <circle cx="68" cy="19" r="6" fill="#10b981"/>
+    <circle cx="28" cy="21" r="6" fill="#ef4444"/>
+    <circle cx="48" cy="21" r="6" fill="#f59e0b"/>
+    <circle cx="68" cy="21" r="6" fill="#10b981"/>
 
     <!-- Onglet central actif -->
-    <g transform="translate(420 7)">
-      <rect width="240" height="24" rx="6" fill="${theme.background === '#090510' ? '#090510' : '#ffffff'}" stroke="${theme.panelBorder}" stroke-width="0.9"/>
-      <text x="120" y="16.5" text-anchor="middle" class="mono" fill="${theme.accentTwo}" font-size="11.5" font-weight="700" letter-spacing="0.6">kyrris.vision.sh</text>
+    <g transform="translate(415 8)">
+      <rect width="250" height="26" rx="7" fill="${theme.background === '#090510' ? '#090510' : '#ffffff'}" stroke="${theme.panelBorder}" stroke-width="0.9"/>
+      <text x="125" y="18" text-anchor="middle" class="mono" fill="${theme.accentTwo}" font-size="12" font-weight="700" letter-spacing="0.6">kyrris.vision.sh</text>
     </g>
 
     <!-- Statut en ligne à droite -->
-    <text x="1004" y="23" text-anchor="end" class="mono" fill="#10b981" font-size="11" font-weight="750" letter-spacing="1.2">READY</text>
-    <circle cx="1022" cy="19" r="4.5" fill="#10b981">
+    <text x="1000" y="25" text-anchor="end" class="mono" fill="#10b981" font-size="11.5" font-weight="750" letter-spacing="1.2">READY</text>
+    <circle cx="1020" cy="21" r="4.5" fill="#10b981">
       <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Numéros de lignes sur le côté gauche -->
-    <text x="24" y="68" class="mono" fill="#8b5cf6" font-size="12" font-weight="600" opacity="0.65">1</text>
-    <text x="24" y="96" class="mono" fill="#8b5cf6" font-size="12" font-weight="600" opacity="0.65">2</text>
-    <text x="24" y="124" class="mono" fill="#8b5cf6" font-size="12" font-weight="600" opacity="0.65">3</text>
-    <text x="24" y="152" class="mono" fill="#8b5cf6" font-size="12" font-weight="600" opacity="0.65">4</text>
-    <text x="24" y="180" class="mono" fill="#8b5cf6" font-size="12" font-weight="600" opacity="0.65">5</text>
-    <text x="24" y="208" class="mono" fill="#8b5cf6" font-size="12" font-weight="600" opacity="0.65">6</text>
+    <!-- Numéros de lignes sur le côté gauche (1 à 5) -->
+    <text x="24" y="96" class="mono" fill="#8b5cf6" font-size="12.5" font-weight="600" opacity="0.65">1</text>
+    <text x="24" y="132" class="mono" fill="#8b5cf6" font-size="12.5" font-weight="600" opacity="0.65">2</text>
+    <text x="24" y="168" class="mono" fill="#8b5cf6" font-size="12.5" font-weight="600" opacity="0.65">3</text>
+    <text x="24" y="202" class="mono" fill="#8b5cf6" font-size="12.5" font-weight="600" opacity="0.65">4</text>
+    <text x="24" y="236" class="mono" fill="#8b5cf6" font-size="12.5" font-weight="600" opacity="0.65">5</text>
 
     <!-- Séparateur vertical entre numéros et contenu -->
-    <line x1="42" y1="44" x2="42" y2="218" stroke="${theme.panelBorder}" stroke-width="1" opacity="0.5"/>
+    <line x1="42" y1="52" x2="42" y2="248" stroke="${theme.panelBorder}" stroke-width="1" opacity="0.45"/>
 
     <!-- LIGNE 1: Commande tapée comme une commande shell -->
-    <text x="56" y="68" class="mono" fill="#ec4899" font-size="14.5" font-weight="800">❯</text>
+    <text x="56" y="96" class="mono" fill="#ec4899" font-size="15" font-weight="800">❯</text>
     
     <g clip-path="url(#cmdClip)">
-      <text x="76" y="68" class="mono" fill="#f5f3ff" font-size="13" font-weight="650" letter-spacing="-0.1">Spécialisé dans les stacks techniques SaaS modernes et l&apos;écosystème Google AI // Google Cloud.</text>
+      <text x="80" y="96" class="mono" fill="#f5f3ff" font-size="14.5" font-weight="650" letter-spacing="-0.1">Spécialisé dans les stacks techniques SaaS modernes et l&apos;écosystème Google AI // Google Cloud.</text>
     </g>
 
-    <!-- Curseur voyageur bleu qui s'arrête pile à la fin du texte puis disparaît complètement -->
-    <rect class="cursor" x="76" y="55" width="8" height="15" rx="1" fill="#38bdf8">
-      <animate attributeName="x" values="76; 814; 814; 76" keyTimes="0; 0.28; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1; 1; 0; 0; 1" keyTimes="0; 0.279; 0.28; 0.999; 1" dur="10.5s" repeatCount="indefinite"/>
-    </rect>
+    <!-- Curseur voyageur bleu : se déplace jusqu'à la fin exacte de la phrase, puis DISPARAÎT complètement dès que la commande est tapée -->
+    <g>
+      <animate attributeName="visibility" values="visible; hidden; hidden; visible" keyTimes="0; 0.28; 0.999; 1" dur="10.5s" repeatCount="indefinite"/>
+      <rect x="80" y="80" width="8" height="18" rx="1" fill="#38bdf8">
+        <animate attributeName="x" values="80; 902; 902; 80" keyTimes="0; 0.28; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
 
-    <!-- GROUPE ANIMÉ D'EXÉCUTION &amp; SORTIE (Apparaît dès que la commande est tapée) -->
+    <!-- GROUPE ANIMÉ D'EXÉCUTION &amp; SORTIE (Apparaît dès que la commande est terminée) -->
     <g opacity="1">
       <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.29; 0.33; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
 
       <!-- LIGNE 2: Résultat d'exécution de la commande -->
-      <text x="56" y="96" class="mono" fill="#10b981" font-size="13" font-weight="700">✔</text>
-      <text x="76" y="96" class="mono" fill="#10b981" font-size="12" font-weight="700">[EXECUTION OK]</text>
-      <text x="194" y="96" class="mono" fill="${theme.muted}" font-size="12" font-weight="500">Initialisation des principes d&apos;ingénierie &amp; R&amp;D :</text>
+      <text x="56" y="132" class="mono" fill="#10b981" font-size="14" font-weight="700">✔</text>
+      <text x="80" y="132" class="mono" fill="#10b981" font-size="13" font-weight="700">[EXECUTION OK]</text>
+      <text x="208" y="132" class="mono" fill="${theme.muted}" font-size="13.5" font-weight="500">Initialisation des principes d&apos;ingénierie &amp; R&amp;D :</text>
 
-      <!-- LIGNE 3: Texte de passion 1 (début) -->
-      <text x="56" y="124" class="mono" fill="#c084fc" font-size="13" font-weight="700">➜</text>
-      <text x="76" y="124" class="mono" fill="#f5f3ff" font-size="13" font-weight="550">Passionné d&apos;open source, de modèles d&apos;IA et de R&amp;D logicielle,</text>
+      <!-- LIGNE 3: Texte de passion 1 avec flèche ➜ -->
+      <text x="56" y="168" class="mono" fill="#c084fc" font-size="15" font-weight="750">➜</text>
+      <text x="80" y="168" class="mono" fill="#f5f3ff" font-size="15" font-weight="600">Passionné d&apos;open source, de modèles d&apos;IA et de R&amp;D logicielle,</text>
 
-      <!-- LIGNE 4: Texte de passion 1 (suite) -->
-      <text x="76" y="152" class="mono" fill="#f5f3ff" font-size="13" font-weight="550">j&apos;aime transformer des idées ambitieuses en solutions concrètes.</text>
+      <!-- LIGNE 4: Texte de passion 2 avec flèche ➜ -->
+      <text x="56" y="202" class="mono" fill="#c084fc" font-size="15" font-weight="750">➜</text>
+      <text x="80" y="202" class="mono" fill="#f5f3ff" font-size="15" font-weight="600">j&apos;aime transformer des idées ambitieuses en solutions concrètes.</text>
 
-      <!-- LIGNE 5: Texte de passion 2 avec mise en avant Google AI -->
-      <text x="76" y="180" class="mono" fill="#f5f3ff" font-size="13" font-weight="550">grâce aux outils avancés de l&apos;écosystème <tspan fill="#38bdf8" font-weight="750">Google AI</tspan>.</text>
-
-      <!-- LIGNE 6: Prompt prêt avec curseur clignotant violet -->
-      <text x="56" y="208" class="mono" fill="#a855f7" font-size="14.5" font-weight="800">❯</text>
-      <rect class="cursor" x="76" y="195" width="8" height="15" rx="1" fill="#a855f7"/>
+      <!-- LIGNE 5: Texte de passion 3 avec flèche ➜ et Google AI mis en valeur -->
+      <text x="56" y="236" class="mono" fill="#c084fc" font-size="15" font-weight="750">➜</text>
+      <text x="80" y="236" class="mono" fill="#f5f3ff" font-size="15" font-weight="600">grâce aux outils avancés de l&apos;écosystème <tspan fill="#38bdf8" font-weight="750">Google AI</tspan>.</text>
     </g>
   </g>
 </svg>`;
