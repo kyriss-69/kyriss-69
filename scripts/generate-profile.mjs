@@ -123,7 +123,7 @@ function renderBanner(theme) {
       <stop offset="1" stop-color="${theme.accentThree}"/>
     </linearGradient>
     <radialGradient id="card-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="${theme.accent}" stop-opacity="0.28"/>
+      <stop offset="0" stop-color="${theme.accent}" stop-opacity="0.30"/>
       <stop offset="1" stop-color="${theme.accent}" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
@@ -147,19 +147,23 @@ function renderBanner(theme) {
   <!-- Halo lumineux d'ambiance néon -->
   <circle cx="940" cy="180" r="230" fill="url(#card-glow)"/>
 
-  <!-- GAUCHE: IDENTITÉ & SLOGAN -->
+  <!-- GAUCHE: IDENTITÉ & BADGES PROPRES -->
   <path d="M42 40H246" stroke="url(#signal)" stroke-width="3.5" stroke-linecap="round"/>
   <circle cx="42" cy="40" r="5" fill="${theme.accent}" filter="url(#soft-glow)"/>
   
   <text x="72" y="93" class="mono" fill="${theme.accent}" font-size="16" font-weight="700" letter-spacing="3">${escapeXml(config.username.toUpperCase())} // ${escapeXml(config.identity)}</text>
-  <text x="68" y="169" class="sans" fill="${theme.text}" font-size="56" font-weight="800" letter-spacing="-1.2">${escapeXml(config.name.toUpperCase())}</text>
+  <text x="68" y="169" class="sans" fill="${theme.text}" font-size="58" font-weight="800" letter-spacing="-1.2">${escapeXml(config.name.toUpperCase())}</text>
   <text x="72" y="214" class="mono" fill="${theme.muted}" font-size="16.5" font-weight="600" letter-spacing="1.6">${escapeXml(config.headline)}</text>
   
-  <g transform="translate(72 258)">
-    <rect width="610" height="50" rx="25" fill="${theme.panel}" stroke="${theme.panelBorder}"/>
-    <circle cx="25" cy="25" r="6" fill="${theme.accent}" filter="url(#soft-glow)"/>
-    <text x="44" y="31" class="mono" fill="${theme.text}" font-size="11.5" font-weight="650" letter-spacing=".4">${escapeXml(config.statement)}</text>
-    <rect class="cursor" x="578" y="17" width="8" height="16" rx="1" fill="${theme.accentTwo}"/>
+  <!-- Badges de statut aérés et impeccables -->
+  <g transform="translate(70 252)">
+    <rect width="185" height="38" rx="19" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.4"/>
+    <circle cx="20" cy="19" r="4.5" fill="#10b981" filter="url(#soft-glow)"/>
+    <text x="35" y="24" class="mono" fill="${theme.text}" font-size="11.5" font-weight="650" letter-spacing="0.6">DISPONIBLE // ACTIF</text>
+  </g>
+  <g transform="translate(268 252)">
+    <rect width="215" height="38" rx="19" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.4"/>
+    <text x="20" y="24" class="mono" fill="${theme.accentTwo}" font-size="11.5" font-weight="650" letter-spacing="0.6">WEB FULLSTACK &amp; IA</text>
   </g>
 
   <!-- DROITE: FENÊTRE TERMINAL IDE CODE -->

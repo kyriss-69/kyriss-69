@@ -1,8 +1,14 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg">
-  <img alt="Kyrris — Développeur Web & Explorateur IA" src="./assets/generated/banner-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=3">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=3">
+  <img alt="Kyrris — Développeur Web & Explorateur IA" src="./assets/generated/banner-dark.svg?v=3" width="100%">
 </picture>
+
+<p align="center">
+  <a href="https://github.com/kyriss-69">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3200&pause=1200&color=C084FC&center=true&vCenter=true&width=650&lines=Construire+le+web+moderne+%F0%9F%9A%80;React+%E2%80%A2+Next.js+%E2%80%A2+TypeScript+%E2%80%A2+Node.js+%F0%9F%92%BB;Explorer+le+potentiel+des+agents+%26+de+l'IA+%F0%9F%A7%A0;En+qu%C3%AAte+constante+de+nouveaux+d%C3%A9fis+tech+%E2%9C%A8" alt="Animation Typing" />
+  </a>
+</p>
 
 <p align="center">
   <a href="https://github.com/kyriss-69?tab=followers"><img alt="Abonnés GitHub" src="https://img.shields.io/github/followers/kyriss-69?style=for-the-badge&logo=github&label=ABONNÉS&labelColor=130924&color=a855f7"></a>
@@ -37,17 +43,17 @@
 ## Boîte à outils
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/stack-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/stack-light.svg">
-  <img alt="Technologies utilisées : TypeScript, React, Next.js, JavaScript, Node.js, Tailwind CSS, Python, Docker, Git et VS Code" src="./assets/generated/stack-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/stack-dark.svg?v=3">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/stack-light.svg?v=3">
+  <img alt="Technologies utilisées : TypeScript, React, Next.js, JavaScript, Node.js, Tailwind CSS, Python, Docker, Git et VS Code" src="./assets/generated/stack-dark.svg?v=3" width="100%">
 </picture>
 
 ## Pouls GitHub
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/metrics-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/metrics-light.svg">
-  <img alt="Statistiques GitHub publiques de Kyrris" src="./assets/generated/metrics-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/metrics-dark.svg?v=3">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/metrics-light.svg?v=3">
+  <img alt="Statistiques GitHub publiques de Kyrris" src="./assets/generated/metrics-dark.svg?v=3" width="100%">
 </picture>
 
 <sub>Les données publiques sont actualisées automatiquement. Aucun nom de dépôt privé ni détail d’activité privée n’est exposé.</sub>
@@ -108,7 +114,7 @@ solutions modernes  ·  rigueur & autonomie  ·  passion du web & de l'IA
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/footer-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/footer-light.svg">
-  <img alt="Pied de page de Kyrris" src="./assets/generated/footer-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/footer-dark.svg?v=3">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/footer-light.svg?v=3">
+  <img alt="Pied de page de Kyrris" src="./assets/generated/footer-dark.svg?v=3" width="100%">
 </picture>
