@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=14">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=14">
-  <img alt="Kyrris — Développeur Fullstack TypeScript & Spécialiste Écosystème Google IA" src="./assets/generated/banner-dark.svg?v=14" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=20">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=20">
+  <img alt="Kyrris — Développeur Fullstack TypeScript & Spécialiste Écosystème Google IA" src="./assets/generated/banner-dark.svg?v=20" width="100%">
 </picture>
 
 <p align="center">

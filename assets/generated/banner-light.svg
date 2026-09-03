@@ -23,9 +23,9 @@
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
-    <!-- Chemins animés pour l'effet texte dactylographié en boucle -->
+    <!-- Chemins animés pour l'effet texte dactylographié en boucle (3 phrases) -->
     <path id="typePath0">
-      <animate id="t0" attributeName="d" begin="0s;t3.end" dur="4.2s" fill="remove"
+      <animate id="t0" attributeName="d" begin="0s;t2.end" dur="4.2s" fill="remove"
         values="m108,277 h0 ; m108,277 h540 ; m108,277 h540 ; m108,277 h0"
         keyTimes="0; 0.45; 0.82; 1" />
     </path>
@@ -36,11 +36,6 @@
     </path>
     <path id="typePath2">
       <animate id="t2" attributeName="d" begin="t1.end" dur="4.2s" fill="remove"
-        values="m108,277 h0 ; m108,277 h540 ; m108,277 h540 ; m108,277 h0"
-        keyTimes="0; 0.45; 0.82; 1" />
-    </path>
-    <path id="typePath3">
-      <animate id="t3" attributeName="d" begin="t2.end" dur="4.2s" fill="remove"
         values="m108,277 h0 ; m108,277 h540 ; m108,277 h540 ; m108,277 h0"
         keyTimes="0; 0.45; 0.82; 1" />
     </path>
@@ -74,16 +69,13 @@
 
   <!-- Textes animés le long des chemins dynamiques -->
   <text class="mono" fill="#2e1065" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
-    <textPath href="#typePath0" xlink:href="#typePath0">MONOREPO TURBOREPO PROPULSÉ PAR BUN ⚡</textPath>
+    <textPath href="#typePath0" xlink:href="#typePath0">FRONTEND : NUXT 3 · VUE 3 · TAILWIND · PINIA 🌐</textPath>
   </text>
   <text class="mono" fill="#2e1065" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
-    <textPath href="#typePath1" xlink:href="#typePath1">FRONTEND : NUXT 3 · VUE 3 · TAILWIND · PINIA 🌐</textPath>
+    <textPath href="#typePath1" xlink:href="#typePath1">BACKEND : NESTJS 11 · PRISMA · POSTGRESQL · REDIS ⚙️</textPath>
   </text>
   <text class="mono" fill="#2e1065" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
-    <textPath href="#typePath2" xlink:href="#typePath2">BACKEND : NESTJS 11 · PRISMA · POSTGRESQL · REDIS ⚙️</textPath>
-  </text>
-  <text class="mono" fill="#2e1065" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
-    <textPath href="#typePath3" xlink:href="#typePath3">SPÉCIALISATION GOOGLE : ANTIGRAVITY 2.0 &amp; GEMINI 🌌</textPath>
+    <textPath href="#typePath2" xlink:href="#typePath2">SPÉCIALISATION GOOGLE : ANTIGRAVITY 2.0 &amp; GEMINI 🌌</textPath>
   </text>
 
   <!-- DROITE: FENÊTRE TERMINAL IDE CODE AVEC SYNTAXE ÉCLATANTE -->
