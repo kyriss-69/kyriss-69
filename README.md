@@ -16,12 +16,12 @@
   alliant rigueur TypeScript, temps réel et exécution ultra-rapide avec Bun.
 </p>
 
-## Expertise SaaS & Focus Technique
+## Signal actuel
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/saas-focus-dark.svg?v=15">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/saas-focus-light.svg?v=15">
-  <img alt="Expertise SaaS : Architectures techniques &amp; projets en cours" src="./assets/generated/saas-focus-dark.svg?v=15" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/signal-v2-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/signal-v2-light.svg">
+  <img alt="Signal actuel : Expertise SaaS, Veille &amp; IA, Nouveaux Défis" src="./assets/generated/signal-v2-dark.svg" width="100%">
 </picture>
 
 ## Boîte à outils

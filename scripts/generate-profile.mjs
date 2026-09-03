@@ -60,6 +60,7 @@ await mkdir(outputDirectory, { recursive: true });
 for (const [name, theme] of Object.entries(themes)) {
   await writeSvg(`banner-${name}.svg`, renderBanner(theme));
   await writeSvg(`signal-${name}.svg`, renderSignal(theme));
+  await writeSvg(`signal-v2-${name}.svg`, renderSignal(theme));
   await writeSvg(`saas-focus-${name}.svg`, renderSignal(theme));
   await writeSvg(`google-clean-${name}.svg`, renderGoogleClean(theme));
   await writeSvg(`google-suite-${name}.svg`, renderGoogleClean(theme));
@@ -269,6 +270,7 @@ function renderSignal(theme) {
       x: 60,
       icon: "🚀",
       title: "EXPERTISE SAAS",
+      badge: null,
       lines: [
         "Spécialiste des stacks techniques SaaS :",
         "architectures monorepo, dashboards réactifs,",
@@ -280,6 +282,8 @@ function renderSignal(theme) {
       x: 428,
       icon: "🧪",
       title: "VEILLE & IA",
+      badge: "EXPÉRIMENTATION",
+      badgeColor: theme.accentTwo,
       lines: [
         "Exploration continue des technos émergentes :",
         "intégration de modèles d'IA, benchmarks",
@@ -291,6 +295,8 @@ function renderSignal(theme) {
       x: 796,
       icon: "🎯",
       title: "NOUVEAUX DÉFIS",
+      badge: "DISPONIBLE",
+      badgeColor: "#10b981",
       lines: [
         "En quête permanente de progression et de",
         "challenges stimulants : ouvert aux missions",
@@ -301,30 +307,37 @@ function renderSignal(theme) {
   ];
 
   const renderedCards = cards.map(c => `
-    <g transform="translate(${c.x} 74)">
-      <rect width="344" height="178" rx="16" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.4"/>
+    <g transform="translate(${c.x} 80)">
+      <rect width="344" height="174" rx="16" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.4"/>
       
-      <text x="22" y="34" class="sans" fill="${theme.text}" font-size="16" font-weight="750" letter-spacing="-0.2">${c.icon}  ${escapeXml(c.title)}</text>
+      <text x="20" y="34" class="sans" fill="${theme.text}" font-size="16" font-weight="750" letter-spacing="-0.3">${c.icon}  ${escapeXml(c.title)}</text>
+      
+      ${c.badge ? `
+      <g transform="translate(200 18)">
+        <rect width="124" height="22" rx="11" fill="${theme.background === '#090510' ? '#1c0e35' : '#f3e8ff'}" stroke="${theme.panelBorder}" stroke-width="1"/>
+        <circle cx="10" cy="11" r="3.5" fill="${c.badgeColor}"/>
+        <text x="18" y="15" class="mono" fill="${theme.text}" font-size="9" font-weight="700" letter-spacing="0.5">${escapeXml(c.badge)}</text>
+      </g>` : ''}
 
-      <line x1="22" y1="48" x2="322" y2="48" stroke="${theme.panelBorder}" stroke-width="0.9" opacity="0.6"/>
+      <line x1="20" y1="48" x2="324" y2="48" stroke="${theme.panelBorder}" stroke-width="0.9" opacity="0.6"/>
 
       <text class="sans" fill="${theme.muted}" font-size="12.5" font-weight="500">
-        <tspan x="22" y="72">${escapeXml(c.lines[0])}</tspan>
-        <tspan x="22" y="92">${escapeXml(c.lines[1])}</tspan>
-        <tspan x="22" y="112">${escapeXml(c.lines[2])}</tspan>
+        <tspan x="20" y="72">${escapeXml(c.lines[0])}</tspan>
+        <tspan x="20" y="92">${escapeXml(c.lines[1])}</tspan>
+        <tspan x="20" y="112">${escapeXml(c.lines[2])}</tspan>
       </text>
 
-      <g transform="translate(22 134)">
-        <rect width="300" height="28" rx="7" fill="${theme.background === '#090510' ? '#0d0618' : '#faf5ff'}" stroke="${theme.panelBorder}" stroke-width="0.8"/>
-        <text x="150" y="18" text-anchor="middle" class="mono" fill="${theme.accentTwo}" font-size="10.5" font-weight="650" letter-spacing="0.8">${escapeXml(c.tags)}</text>
+      <g transform="translate(20 134)">
+        <rect width="304" height="26" rx="6" fill="${theme.background === '#090510' ? '#0d0618' : '#faf5ff'}" stroke="${theme.panelBorder}" stroke-width="0.8"/>
+        <text x="152" y="17" text-anchor="middle" class="mono" fill="${theme.accentTwo}" font-size="10" font-weight="650" letter-spacing="0.8">${escapeXml(c.tags)}</text>
       </g>
     </g>
   `).join("");
 
   return `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title description">
-  <title id="title">Expertise SaaS et Axes de ${escapeXml(config.username)}</title>
-  <desc id="description">Spécialisation dans les architectures SaaS modernes et axes techniques.</desc>
+  <title id="title">Signal actuel de ${escapeXml(config.username)}</title>
+  <desc id="description">Axes stratégiques et projets en cours de ${escapeXml(config.username)}.</desc>
   <defs>
     <linearGradient id="accent-signal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="${theme.accent}"/><stop offset=".55" stop-color="${theme.accentTwo}"/><stop offset="1" stop-color="${theme.accentThree}"/></linearGradient>
   </defs>
@@ -333,8 +346,8 @@ function renderSignal(theme) {
     .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
   </style>
   <rect width="1200" height="280" rx="22" fill="${theme.background}"/>
-  <text x="60" y="46" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">EXPERTISE SAAS // ARCHITECTURES TECHNIQUES &amp; PROJETS EN COURS</text>
-  <path d="M780 41H1140" stroke="url(#accent-signal)" stroke-width="2" stroke-linecap="round"/>
+  <text x="60" y="48" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">SIGNAL ACTUEL // EXPERTISE SAAS &amp; PROJETS EN COURS</text>
+  <path d="M780 43H1140" stroke="url(#accent-signal)" stroke-width="2" stroke-linecap="round"/>
   ${renderedCards}
   <rect x="1" y="1" width="1198" height="278" rx="21" fill="none" stroke="${theme.panelBorder}"/>
 </svg>`;
