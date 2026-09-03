@@ -51,12 +51,13 @@ await mkdir(outputDirectory, { recursive: true });
 
 for (const [name, theme] of Object.entries(themes)) {
   await writeSvg(`banner-${name}.svg`, renderBanner(theme));
+  await writeSvg(`signal-${name}.svg`, renderSignal(theme));
   await writeSvg(`stack-${name}.svg`, renderStack(theme));
   await writeSvg(`metrics-${name}.svg`, renderMetrics(theme));
   await writeSvg(`footer-${name}.svg`, renderFooter(theme));
 }
 
-console.log(`Generated 8 SVG assets in ${path.relative(root, outputDirectory)}`);
+console.log(`Generated 10 SVG assets in ${path.relative(root, outputDirectory)}`);
 
 async function fetchPublicStats(username) {
   const headers = {
@@ -255,6 +256,100 @@ function renderBanner(theme) {
   </g>
 
   <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="${theme.panelBorder}"/>
+</svg>`;
+}
+
+function renderSignal(theme) {
+  const cards = [
+    {
+      x: 60,
+      icon: "🚀",
+      title: "PLATEFORME SAAS",
+      badge: "MONOREPO · BUN",
+      badgeColor: theme.accent,
+      lines: [
+        "Développement actif d'une application",
+        "moderne en monorepo : dashboard réactif,",
+        "flux temps réel et jobs asynchrones."
+      ],
+      tags: "TURBOREPO · NUXT 3 · NESTJS 11"
+    },
+    {
+      x: 428,
+      icon: "🧪",
+      title: "VEILLE &amp; IA",
+      badge: "EXPÉRIMENTATION",
+      badgeColor: theme.accentTwo,
+      lines: [
+        "Exploration continue des technos émergentes :",
+        "intégration de modèles d'IA, benchmarks",
+        "et prototypage d'architectures modernes."
+      ],
+      tags: "LLM · AGENTS · BENCHMARKS"
+    },
+    {
+      x: 796,
+      icon: "🎯",
+      title: "NOUVEAUX DÉFIS",
+      badge: "DISPONIBLE",
+      badgeColor: "#10b981",
+      lines: [
+        "En quête permanente de progression et de",
+        "challenges stimulants : ouvert aux missions",
+        "freelance, collaborations et projets pro."
+      ],
+      tags: "COLLABORATIONS · FREELANCE"
+    }
+  ];
+
+  const renderedCards = cards.map(c => `
+    <g transform="translate(${c.x} 80)">
+      <!-- Fond de carte avec bordure violette -->
+      <rect width="344" height="174" rx="16" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.4"/>
+      
+      <!-- En-tête : Titre & Badge -->
+      <text x="20" y="34" class="sans" fill="${theme.text}" font-size="16" font-weight="750" letter-spacing="-0.3">${c.icon}  ${c.title}</text>
+      
+      <g transform="translate(200 18)">
+        <rect width="124" height="22" rx="11" fill="${theme.background === '#090510' ? '#1c0e35' : '#f3e8ff'}" stroke="${theme.panelBorder}" stroke-width="1"/>
+        <circle cx="10" cy="11" r="3.5" fill="${c.badgeColor}"/>
+        <text x="18" y="15" class="mono" fill="${theme.text}" font-size="9" font-weight="700" letter-spacing="0.5">${c.badge}</text>
+      </g>
+
+      <!-- Ligne de séparation interne -->
+      <line x1="20" y1="48" x2="324" y2="48" stroke="${theme.panelBorder}" stroke-width="0.9" opacity="0.6"/>
+
+      <!-- Description sur 3 lignes -->
+      <text class="sans" fill="${theme.muted}" font-size="12.5" font-weight="500">
+        <tspan x="20" y="72">${c.lines[0]}</tspan>
+        <tspan x="20" y="92">${c.lines[1]}</tspan>
+        <tspan x="20" y="112">${c.lines[2]}</tspan>
+      </text>
+
+      <!-- Tags en bas de carte -->
+      <g transform="translate(20 134)">
+        <rect width="304" height="26" rx="6" fill="${theme.background === '#090510' ? '#0d0618' : '#faf5ff'}" stroke="${theme.panelBorder}" stroke-width="0.8"/>
+        <text x="152" y="17" text-anchor="middle" class="mono" fill="${theme.accentTwo}" font-size="10" font-weight="650" letter-spacing="0.8">${c.tags}</text>
+      </g>
+    </g>
+  `).join("");
+
+  return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title description">
+  <title id="title">Signal actuel de Kyrris</title>
+  <desc id="description">Axes stratégiques et projets en cours de Kyrris.</desc>
+  <defs>
+    <linearGradient id="accent-signal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="${theme.accent}"/><stop offset=".55" stop-color="${theme.accentTwo}"/><stop offset="1" stop-color="${theme.accentThree}"/></linearGradient>
+  </defs>
+  <style>
+    .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
+    .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+  </style>
+  <rect width="1200" height="280" rx="22" fill="${theme.background}"/>
+  <text x="60" y="48" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">SIGNAL ACTUEL // AXES STRATÉGIQUES &amp; PROJETS EN COURS</text>
+  <path d="M840 43H1140" stroke="url(#accent-signal)" stroke-width="2" stroke-linecap="round"/>
+  ${renderedCards}
+  <rect x="1" y="1" width="1198" height="278" rx="21" fill="none" stroke="${theme.panelBorder}"/>
 </svg>`;
 }
 
