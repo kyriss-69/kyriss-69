@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=9">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=9">
-  <img alt="Kyrris — Développeur Fullstack TypeScript & Spécialiste Écosystème Google IA" src="./assets/generated/banner-dark.svg?v=9" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=10">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=10">
+  <img alt="Kyrris — Développeur Fullstack TypeScript & Spécialiste Écosystème Google IA" src="./assets/generated/banner-dark.svg?v=10" width="100%">
 </picture>
 
 <p align="center">
@@ -12,35 +12,35 @@
 
 <p align="center">
   Je conçois des architectures monorepo haute performance et des applications intelligentes —<br>
-  spécialisé dans l'écosystème <b>Google AI</b> (Antigravity &amp; Gemini 2.0), alliant rigueur TypeScript, temps réel et exécution ultra-rapide avec Bun.
+  spécialisé dans l'écosystème <b>Google AI</b> (Antigravity &amp; Gemini), alliant rigueur TypeScript, temps réel et exécution ultra-rapide avec Bun.
 </p>
 
 ## Signal actuel
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/signal-dark.svg?v=9">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/signal-light.svg?v=9">
-  <img alt="Signal actuel : Plateforme SaaS, Veille & IA, Nouveaux Défis" src="./assets/generated/signal-dark.svg?v=9" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/signal-dark.svg?v=10">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/signal-light.svg?v=10">
+  <img alt="Signal actuel : Plateforme SaaS, Veille & IA, Nouveaux Défis" src="./assets/generated/signal-dark.svg?v=10" width="100%">
 </picture>
 
 ## Boîte à outils
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/stack-dark.svg?v=9">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/stack-light.svg?v=9">
-  <img alt="Stack technique : TypeScript, Nuxt 3, Vue 3, Tailwind CSS, Pinia, NestJS 11, Prisma, PostgreSQL 16, Redis, Socket.IO, Turborepo, Bun, BullMQ, Docker, GitHub Actions" src="./assets/generated/stack-dark.svg?v=9" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/stack-dark.svg?v=10">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/stack-light.svg?v=10">
+  <img alt="Stack technique : TypeScript, Nuxt 3, Vue 3, Tailwind CSS, Pinia, NestJS 11, Prisma, PostgreSQL 16, Redis, Socket.IO, Turborepo, Bun, BullMQ, Docker, GitHub Actions" src="./assets/generated/stack-dark.svg?v=10" width="100%">
 </picture>
 
 ## Spécialisation Écosystème Google & IA
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/google-ecosystem-dark.svg?v=9">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/google-ecosystem-light.svg?v=9">
-  <img alt="Spécialisation Écosystème Google & IA Agentique : Antigravity, Gemini 2.0, Cloud" src="./assets/generated/google-ecosystem-dark.svg?v=9" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/google-suite-dark.svg?v=1">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/google-suite-light.svg?v=1">
+  <img alt="Spécialisation Écosystème Google & IA : Antigravity (2.0 & IDE), Google Gemini, Google Cloud" src="./assets/generated/google-suite-dark.svg?v=1" width="100%">
 </picture>
 
 > [!TIP]
-> **Une approche axée sur l'intelligence agentique :** Plutôt que de simples requêtes d'assistance, j'utilise l'écosystème Google pour bâtir de véritables architectures augmentées : orchestration de sous-agents avec **Google Antigravity (AGY)**, intégration des serveurs de contexte **MCP (Model Context Protocol)**, et exploitation de la puissance de raisonnement multimodal de **Gemini 2.0** au cœur des applications web.
+> **Une approche axée sur l'intelligence agentique :** Plutôt que de simples requêtes d'assistance, j'utilise l'écosystème Google pour bâtir de véritables architectures augmentées : orchestration de sous-agents avec **Google Antigravity (2.0 & IDE)**, intégration des serveurs de contexte **MCP (Model Context Protocol)**, et exploitation de la puissance de raisonnement multimodal de **Google Gemini** au cœur des applications web.
 
 ## Projets choisis
 
@@ -65,8 +65,8 @@
     </td>
     <td width="50%" valign="top">
       <h3>🌌 <a href="https://github.com/kyriss-69">Agentic AI & Google Hub</a></h3>
-      Orchestration d'agents autonomes propulsés par Antigravity, serveurs MCP et intégration de modèles Gemini 2.0.<br><br>
-      <code>Antigravity</code> <code>Gemini 2.0</code> <code>MCP</code> <code>Socket.IO</code>
+      Orchestration d'agents autonomes propulsés par Antigravity 2.0, serveurs MCP et intégration de l'IA Google Gemini.<br><br>
+      <code>Antigravity</code> <code>Gemini</code> <code>MCP</code> <code>Socket.IO</code>
     </td>
   </tr>
 </table>
@@ -98,7 +98,7 @@ architecture NestJS  ·  Google Antigravity & Gemini  ·  CI/CD & Docker
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/footer-dark.svg?v=9">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/footer-light.svg?v=9">
-  <img alt="Pied de page de Kyrris" src="./assets/generated/footer-dark.svg?v=9" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/footer-dark.svg?v=10">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/footer-light.svg?v=10">
+  <img alt="Pied de page de Kyrris" src="./assets/generated/footer-dark.svg?v=10" width="100%">
 </picture>

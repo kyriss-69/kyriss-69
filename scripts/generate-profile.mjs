@@ -60,13 +60,14 @@ await mkdir(outputDirectory, { recursive: true });
 for (const [name, theme] of Object.entries(themes)) {
   await writeSvg(`banner-${name}.svg`, renderBanner(theme));
   await writeSvg(`signal-${name}.svg`, renderSignal(theme));
-  await writeSvg(`google-ecosystem-${name}.svg`, renderGoogleEcosystem(theme));
+  await writeSvg(`google-suite-${name}.svg`, renderGoogleSuite(theme));
+  await writeSvg(`google-ecosystem-${name}.svg`, renderGoogleSuite(theme));
   await writeSvg(`stack-${name}.svg`, renderStack(theme));
   await writeSvg(`metrics-${name}.svg`, renderMetrics(theme));
   await writeSvg(`footer-${name}.svg`, renderFooter(theme));
 }
 
-console.log(`Generated 12 SVG assets in ${path.relative(root, outputDirectory)}`);
+console.log(`Generated SVG assets in ${path.relative(root, outputDirectory)}`);
 
 async function fetchPublicStats(username) {
   const headers = {
@@ -204,7 +205,7 @@ function renderBanner(theme) {
     <textPath href="#typePath2" xlink:href="#typePath2">BACKEND : NESTJS 11 · PRISMA · POSTGRESQL · REDIS ⚙️</textPath>
   </text>
   <text class="mono" fill="${theme.text}" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
-    <textPath href="#typePath3" xlink:href="#typePath3">SPÉCIALISATION GOOGLE : ANTIGRAVITY &amp; GEMINI 🌌</textPath>
+    <textPath href="#typePath3" xlink:href="#typePath3">SPÉCIALISATION GOOGLE : ANTIGRAVITY 2.0 &amp; GEMINI 🌌</textPath>
   </text>
 
   <!-- DROITE: FENÊTRE TERMINAL IDE CODE AVEC SYNTAXE ÉCLATANTE -->
@@ -243,7 +244,7 @@ function renderBanner(theme) {
       <text x="56" y="148"><tspan fill="${theme.accentTwo}">backend</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff" font-weight="700">[</tspan><tspan fill="#a7f3d0">"NestJS 11"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#a7f3d0">"Prisma"</tspan><tspan fill="#f5f3ff" font-weight="700">],</tspan></text>
 
       <text x="18" y="174" fill="#8b5cf6" font-weight="600">5</text>
-      <text x="56" y="174"><tspan fill="${theme.accentTwo}">ai_suite</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff" font-weight="700">[</tspan><tspan fill="#60a5fa">"Antigravity"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#c084fc">"Gemini"</tspan><tspan fill="#f5f3ff" font-weight="700">],</tspan></text>
+      <text x="56" y="174"><tspan fill="${theme.accentTwo}">ai_suite</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff" font-weight="700">[</tspan><tspan fill="#60a5fa">"Antigravity 2.0"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#c084fc">"Gemini"</tspan><tspan fill="#f5f3ff" font-weight="700">],</tspan></text>
 
       <text x="18" y="200" fill="#8b5cf6" font-weight="600">6</text>
       <text x="56" y="200"><tspan fill="${theme.accentTwo}">runtime</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff">()</tspan> <tspan fill="#ec4899" font-weight="800">=&gt;</tspan> <tspan fill="#fbcfe8">"⚡ Turborepo + Bun"</tspan></text>
@@ -349,7 +350,7 @@ function renderSignal(theme) {
 </svg>`;
 }
 
-function renderGoogleEcosystem(theme) {
+function renderGoogleSuite(theme) {
   return `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title description">
   <title id="title">Spécialisation Écosystème Google &amp; IA de Kyrris</title>
@@ -389,23 +390,23 @@ function renderGoogleEcosystem(theme) {
   <text x="60" y="48" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">SPÉCIALISATION // ÉCOSYSTÈME GOOGLE &amp; IA AGENTIQUE</text>
   <path d="M780 43H1140" stroke="url(#google-gradient)" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- PANNEAU GAUCHE : LES 3 PILIERS GOOGLE AVEC BADGES ALIGNÉS À DROITE (ZÉRO CHEVAUCHEMENT) -->
+  <!-- PANNEAU GAUCHE : LES 3 PILIERS GOOGLE (TITRES & BADGES PARFAITEMENT DISSOCIÉS) -->
   <g transform="translate(60 76)">
     <!-- Fond panneau -->
     <rect width="680" height="236" rx="18" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.4"/>
 
-    <!-- PILIER 1 : GOOGLE ANTIGRAVITY -->
+    <!-- PILIER 1 : GOOGLE ANTIGRAVITY (2.0 & IDE) -->
     <g transform="translate(24 16)">
       <!-- Pastille icône -->
       <circle cx="16" cy="16" r="16" fill="#1e1035" stroke="#a855f7" stroke-width="1.2"/>
       <text x="16" y="22" text-anchor="middle" font-size="15">🌌</text>
       
       <!-- Titre principal -->
-      <text x="46" y="21" class="sans" fill="${theme.text}" font-size="15" font-weight="750" letter-spacing="-0.2">Google Antigravity (AGY)</text>
+      <text x="46" y="21" class="sans" fill="${theme.text}" font-size="15" font-weight="750" letter-spacing="-0.2">Google Antigravity (2.0 &amp; IDE)</text>
       
-      <!-- Badge aligné proprement à droite -->
-      <g transform="translate(488 5)">
-        <rect width="144" height="22" rx="11" fill="#2a124a" stroke="#a855f7" stroke-width="1"/>
+      <!-- Badge aligné à l'extrême droite -->
+      <g transform="translate(480 5)">
+        <rect width="150" height="22" rx="11" fill="#2a124a" stroke="#a855f7" stroke-width="1"/>
         <circle cx="12" cy="11" r="3.5" fill="#c084fc"/>
         <text x="22" y="15" class="mono" fill="#c084fc" font-size="9" font-weight="700" letter-spacing="0.6">AGENTIC WORKFLOWS</text>
       </g>
@@ -415,32 +416,32 @@ function renderGoogleEcosystem(theme) {
         Maîtrise avancée du développement assisté par agents : subagents autonomes,
       </text>
       <text x="46" y="60" class="sans" fill="${theme.muted}" font-size="12" font-weight="500">
-        protocoles MCP (Model Context Protocol), skills et orchestration de contextes.
+        protocoles MCP (Model Context Protocol), skills et orchestration de contextes complexes.
       </text>
     </g>
 
     <!-- Séparateur 1 -->
     <line x1="24" y1="88" x2="656" y2="88" stroke="${theme.panelBorder}" stroke-width="0.8" opacity="0.6"/>
 
-    <!-- PILIER 2 : GOOGLE GEMINI 2.0 -->
+    <!-- PILIER 2 : GOOGLE GEMINI -->
     <g transform="translate(24 96)">
       <!-- Pastille icône -->
       <circle cx="16" cy="16" r="16" fill="#151b3b" stroke="#60a5fa" stroke-width="1.2"/>
       <text x="16" y="22" text-anchor="middle" font-size="15">✨</text>
       
       <!-- Titre principal -->
-      <text x="46" y="21" class="sans" fill="${theme.text}" font-size="15" font-weight="750" letter-spacing="-0.2">Google Gemini 2.0 (Flash &amp; Pro)</text>
+      <text x="46" y="21" class="sans" fill="${theme.text}" font-size="15" font-weight="750" letter-spacing="-0.2">Google Gemini</text>
       
-      <!-- Badge aligné proprement à droite -->
-      <g transform="translate(488 5)">
-        <rect width="144" height="22" rx="11" fill="#14214d" stroke="#60a5fa" stroke-width="1"/>
+      <!-- Badge aligné à l'extrême droite -->
+      <g transform="translate(470 5)">
+        <rect width="160" height="22" rx="11" fill="#14214d" stroke="#60a5fa" stroke-width="1"/>
         <circle cx="12" cy="11" r="3.5" fill="#60a5fa"/>
-        <text x="22" y="15" class="mono" fill="#93c5fd" font-size="9" font-weight="700" letter-spacing="0.6">CONTEXT &amp; REASONING</text>
+        <text x="22" y="15" class="mono" fill="#93c5fd" font-size="9" font-weight="700" letter-spacing="0.6">REASONING &amp; MULTIMODAL</text>
       </g>
 
       <!-- Description nette sur 2 lignes -->
       <text x="46" y="44" class="sans" fill="${theme.muted}" font-size="12" font-weight="500">
-        Exploitation des fenêtres de contexte ultra-larges (1M+ tokens), function calling,
+        Exploitation de l&apos;intelligence artificielle Google : contexte étendu, function calling,
       </text>
       <text x="46" y="60" class="sans" fill="${theme.muted}" font-size="12" font-weight="500">
         raisonnement multimodal et intégration directe dans des APIs TypeScript (Nest/Nuxt).
@@ -450,18 +451,18 @@ function renderGoogleEcosystem(theme) {
     <!-- Séparateur 2 -->
     <line x1="24" y1="168" x2="656" y2="168" stroke="${theme.panelBorder}" stroke-width="0.8" opacity="0.6"/>
 
-    <!-- PILIER 3 : GOOGLE CLOUD & DEV ECOSYSTEM -->
+    <!-- PILIER 3 : GOOGLE CLOUD & VERTEX AI -->
     <g transform="translate(24 176)">
       <!-- Pastille icône -->
       <circle cx="16" cy="16" r="16" fill="#0f2926" stroke="#34d399" stroke-width="1.2"/>
       <text x="16" y="22" text-anchor="middle" font-size="15">☁️</text>
       
-      <!-- Titre principal -->
-      <text x="46" y="21" class="sans" fill="${theme.text}" font-size="15" font-weight="750" letter-spacing="-0.2">Google Cloud Platform &amp; Vertex AI</text>
+      <!-- Titre principal plus compact -->
+      <text x="46" y="21" class="sans" fill="${theme.text}" font-size="15" font-weight="750" letter-spacing="-0.2">Google Cloud &amp; Vertex AI</text>
       
-      <!-- Badge aligné proprement à droite -->
+      <!-- Badge aligné à l'extrême droite -->
       <g transform="translate(488 5)">
-        <rect width="144" height="22" rx="11" fill="#0d3329" stroke="#34d399" stroke-width="1"/>
+        <rect width="142" height="22" rx="11" fill="#0d3329" stroke="#34d399" stroke-width="1"/>
         <circle cx="12" cy="11" r="3.5" fill="#34d399"/>
         <text x="22" y="15" class="mono" fill="#6ee7b7" font-size="9" font-weight="700" letter-spacing="0.6">INFRASTRUCTURE IA</text>
       </g>
@@ -495,22 +496,22 @@ function renderGoogleEcosystem(theme) {
       <circle cx="955" cy="194" r="5" fill="#ffffff"/>
     </g>
 
-    <!-- Satellite Haut : ANTIGRAVITY -->
-    <g transform="translate(875 106)">
-      <rect width="160" height="24" rx="12" fill="${theme.panel}" stroke="#a855f7" stroke-width="1"/>
+    <!-- Satellite Haut : ANTIGRAVITY 2.0 & IDE -->
+    <g transform="translate(865 106)">
+      <rect width="180" height="24" rx="12" fill="${theme.panel}" stroke="#a855f7" stroke-width="1"/>
       <circle cx="12" cy="12" r="3.5" fill="#c084fc"/>
-      <text x="24" y="16" class="mono" fill="${theme.text}" font-size="9.5" font-weight="700" letter-spacing="0.8">ANTIGRAVITY // AGY</text>
+      <text x="24" y="16" class="mono" fill="${theme.text}" font-size="9.5" font-weight="700" letter-spacing="0.6">ANTIGRAVITY // 2.0 &amp; IDE</text>
     </g>
 
-    <!-- Satellite Bas : GEMINI 2.0 -->
+    <!-- Satellite Bas : GOOGLE GEMINI -->
     <g transform="translate(885 258)">
       <rect width="140" height="24" rx="12" fill="${theme.panel}" stroke="#60a5fa" stroke-width="1"/>
       <circle cx="12" cy="12" r="3.5" fill="#60a5fa"/>
-      <text x="24" y="16" class="mono" fill="${theme.text}" font-size="9.5" font-weight="700" letter-spacing="0.8">GEMINI 2.0 CORE</text>
+      <text x="24" y="16" class="mono" fill="${theme.text}" font-size="9.5" font-weight="700" letter-spacing="0.8">GOOGLE GEMINI</text>
     </g>
 
     <!-- Statut en bas -->
-    <text x="955" y="306" text-anchor="middle" class="mono" fill="${theme.accentTwo}" font-size="10.5" font-weight="700" letter-spacing="2">GOOGLE AI // OPTIMISÉ</text>
+    <text x="955" y="306" text-anchor="middle" class="mono" fill="${theme.accentTwo}" font-size="10" font-weight="700" letter-spacing="2">GOOGLE AI // ÉCOSYSTÈME MAÎTRISÉ</text>
   </g>
 </svg>`;
 }

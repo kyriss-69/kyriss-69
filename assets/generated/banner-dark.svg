@@ -83,7 +83,7 @@
     <textPath href="#typePath2" xlink:href="#typePath2">BACKEND : NESTJS 11 · PRISMA · POSTGRESQL · REDIS ⚙️</textPath>
   </text>
   <text class="mono" fill="#f5f3ff" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
-    <textPath href="#typePath3" xlink:href="#typePath3">SPÉCIALISATION GOOGLE : ANTIGRAVITY &amp; GEMINI 🌌</textPath>
+    <textPath href="#typePath3" xlink:href="#typePath3">SPÉCIALISATION GOOGLE : ANTIGRAVITY 2.0 &amp; GEMINI 🌌</textPath>
   </text>
 
   <!-- DROITE: FENÊTRE TERMINAL IDE CODE AVEC SYNTAXE ÉCLATANTE -->
@@ -122,7 +122,7 @@
       <text x="56" y="148"><tspan fill="#c084fc">backend</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff" font-weight="700">[</tspan><tspan fill="#a7f3d0">"NestJS 11"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#a7f3d0">"Prisma"</tspan><tspan fill="#f5f3ff" font-weight="700">],</tspan></text>
 
       <text x="18" y="174" fill="#8b5cf6" font-weight="600">5</text>
-      <text x="56" y="174"><tspan fill="#c084fc">ai_suite</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff" font-weight="700">[</tspan><tspan fill="#60a5fa">"Antigravity"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#c084fc">"Gemini"</tspan><tspan fill="#f5f3ff" font-weight="700">],</tspan></text>
+      <text x="56" y="174"><tspan fill="#c084fc">ai_suite</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff" font-weight="700">[</tspan><tspan fill="#60a5fa">"Antigravity 2.0"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#c084fc">"Gemini"</tspan><tspan fill="#f5f3ff" font-weight="700">],</tspan></text>
 
       <text x="18" y="200" fill="#8b5cf6" font-weight="600">6</text>
       <text x="56" y="200"><tspan fill="#c084fc">runtime</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff">()</tspan> <tspan fill="#ec4899" font-weight="800">=&gt;</tspan> <tspan fill="#fbcfe8">"⚡ Turborepo + Bun"</tspan></text>
