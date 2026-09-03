@@ -280,7 +280,7 @@ function renderBio(theme) {
     .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
   </style>
 
-  <!-- Fond global & bordure -->
+  <!-- Fond global et bordure -->
   <rect width="1200" height="150" rx="22" fill="${theme.background}"/>
   <rect x="1" y="1" width="1198" height="148" rx="21" fill="none" stroke="${theme.panelBorder}"/>
 
