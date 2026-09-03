@@ -22,6 +22,9 @@
       <stop offset="60%" stop-color="#4285f4" stop-opacity="0.10"/>
       <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
     </radialGradient>
+    <pattern id="google-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#240f42" stroke-width="1"/>
+    </pattern>
     <filter id="glow-filter" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -39,6 +42,7 @@
 
   <!-- Fond et Bordure externe -->
   <rect width="1200" height="380" rx="22" fill="#090510"/>
+  <rect width="1200" height="380" rx="22" fill="url(#google-grid)" opacity=".75"/>
   <rect x="1" y="1" width="1198" height="378" rx="21" fill="none" stroke="#3b1569"/>
 
   <!-- En-tête -->

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 290" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 348" role="img" aria-labelledby="title description">
   <title id="title">Terminal de vision de kyriss-69</title>
   <desc id="description">Terminal exécutant la spécialisation et la vision technique de Kyrris.</desc>
   <defs>
@@ -6,6 +6,14 @@
       <stop offset="0%" stop-color="#a855f7" stop-opacity="0.24"/>
       <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
     </radialGradient>
+    <pattern id="bio-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#240f42" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="accent-signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#a855f7"/>
+      <stop offset=".55" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#ec4899"/>
+    </linearGradient>
 
     <!-- Masque animé pour frappe de la commande (largeur 825px exactement) -->
     <clipPath id="cmdClip">
@@ -25,12 +33,17 @@
   </style>
 
   <!-- Fond global et halo d'ambiance néon -->
-  <rect width="1200" height="290" rx="24" fill="#090510"/>
-  <rect x="1" y="1" width="1198" height="288" rx="23" fill="none" stroke="#3b1569"/>
-  <circle cx="600" cy="145" r="320" fill="url(#term-glow)"/>
+  <rect width="1200" height="348" rx="22" fill="#090510"/>
+  <rect width="1200" height="348" rx="22" fill="url(#bio-grid)" opacity=".75"/>
+  <rect x="1" y="1" width="1198" height="346" rx="21" fill="none" stroke="#3b1569"/>
+  <circle cx="600" cy="195" r="320" fill="url(#term-glow)"/>
+
+  <!-- En-tête de section intégrée -->
+  <text x="60" y="46" class="mono" fill="#a855f7" font-size="14" font-weight="700" letter-spacing="3">MA VISION // TERMINAL &amp; PHILOSOPHIE TECHNIQUE</text>
+  <path d="M580 41H1140" stroke="url(#accent-signal)" stroke-width="2.5" stroke-linecap="round"/>
 
   <!-- FENÊTRE TERMINAL CODE AÉRÉE -->
-  <g transform="translate(60 16)">
+  <g transform="translate(60 66)">
     <!-- Cadre extérieur spacieux de la fenêtre -->
     <rect width="1080" height="258" rx="18" fill="#130924" stroke="#3b1569" stroke-width="1.6"/>
 

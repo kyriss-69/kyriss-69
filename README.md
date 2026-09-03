@@ -1,7 +1,31 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=20">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=20">
-  <img alt="Kyrris — Développeur Fullstack TypeScript &amp; Spécialiste Écosystème Google IA" src="./assets/generated/banner-dark.svg?v=20" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=30">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=30">
+  <img alt="Kyrris — Développeur Fullstack TypeScript &amp; Spécialiste Écosystème Google IA" src="./assets/generated/banner-dark.svg?v=30" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/bio-dark.svg?v=30">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/bio-light.svg?v=30">
+  <img alt="Ma Vision : Spécialisé dans les stacks SaaS modernes et l'écosystème Google AI" src="./assets/generated/bio-dark.svg?v=30" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/signal-v2-dark.svg?v=30">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/signal-v2-light.svg?v=30">
+  <img alt="Signal actuel : Expertise SaaS, Veille &amp; IA, Nouveaux Défis" src="./assets/generated/signal-v2-dark.svg?v=30" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/tools-dark.svg?v=30">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/tools-light.svg?v=30">
+  <img alt="Boîte à outils logicielle : Hugging Face, Ollama, LM Studio, Antigravity 2.0 &amp; IDE, Open Code, Obsidian, Docker, GitHub, Open Source" src="./assets/generated/tools-dark.svg?v=30" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/google-final-dark.svg?v=30">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/google-final-light.svg?v=30">
+  <img alt="Spécialisation Écosystème Google &amp; IA : Antigravity (2.0 &amp; IDE), Google Gemini, Google Cloud" src="./assets/generated/google-final-dark.svg?v=30" width="100%">
 </picture>
 
 <br><br>
@@ -12,37 +36,7 @@
   <a href="https://github.com/zcorp69" target="_blank"><img alt="Organisation" src="https://img.shields.io/badge/Organisation-zcorp69-a855f7?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
-## Ma Vision
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/bio-dark.svg?v=10">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/bio-light.svg?v=10">
-  <img alt="Ma Vision : Spécialisé dans les stacks SaaS modernes et l'écosystème Google AI" src="./assets/generated/bio-dark.svg?v=10" width="100%">
-</picture>
-
-## Signal actuel
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/signal-v2-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/signal-v2-light.svg">
-  <img alt="Signal actuel : Expertise SaaS, Veille & IA, Nouveaux Défis" src="./assets/generated/signal-v2-dark.svg" width="100%">
-</picture>
-
-## Boîte à outils
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/tools-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/tools-light.svg">
-  <img alt="Boîte à outils logicielle : Hugging Face, Ollama, LM Studio, Antigravity 2.0 & IDE, Open Code, Obsidian, Docker, GitHub, Open Source" src="./assets/generated/tools-dark.svg" width="100%">
-</picture>
-
-## Spécialisation Écosystème Google & IA
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/google-final-dark.svg?v=2">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/google-final-light.svg?v=2">
-  <img alt="Spécialisation Écosystème Google & IA : Antigravity (2.0 & IDE), Google Gemini, Google Cloud" src="./assets/generated/google-final-dark.svg?v=2" width="100%">
-</picture>
+<br>
 
 ## Projets choisis
 

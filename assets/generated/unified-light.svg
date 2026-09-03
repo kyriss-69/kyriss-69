@@ -191,11 +191,16 @@
     <g transform="translate(0 15)">
       <!-- Fond global et halo d'ambiance néon -->
 
+  <rect width="1200" height="348" rx="22" fill="url(#bio-grid)" opacity=".75"/>
 
-  <circle cx="600" cy="145" r="320" fill="url(#term-glow)"/>
+  <circle cx="600" cy="195" r="320" fill="url(#term-glow)"/>
+
+  <!-- En-tête de section intégrée -->
+  <text x="60" y="46" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">MA VISION // TERMINAL &amp; PHILOSOPHIE TECHNIQUE</text>
+  <path d="M580 41H1140" stroke="url(#accent-signal)" stroke-width="2.5" stroke-linecap="round"/>
 
   <!-- FENÊTRE TERMINAL CODE AÉRÉE -->
-  <g transform="translate(60 16)">
+  <g transform="translate(60 66)">
     <!-- Cadre extérieur spacieux de la fenêtre -->
     <rect width="1080" height="258" rx="18" fill="#ffffff" stroke="#e9d5ff" stroke-width="1.6"/>
 
@@ -272,7 +277,8 @@
 
   <!-- SECTION 3 : SIGNAL ACTUEL (EXPERTISE SAAS) -->
   <g transform="translate(0 680)">
-    <text x="60" y="48" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">SIGNAL ACTUEL // EXPERTISE SAAS &amp; PROJETS EN COURS</text>
+    <rect width="1200" height="280" rx="22" fill="url(#signal-grid)" opacity=".75"/>
+  <text x="60" y="48" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">SIGNAL ACTUEL // EXPERTISE SAAS &amp; PROJETS EN COURS</text>
   <path d="M780 43H1140" stroke="url(#accent-signal)" stroke-width="2" stroke-linecap="round"/>
 
     <g transform="translate(60 80)">
@@ -351,7 +357,8 @@
 
   <!-- SECTION 4 : BOÎTE À OUTILS (LOGICIELS &amp; IA) -->
   <g transform="translate(0 965)">
-    <text x="60" y="46" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">BOÎTE À OUTILS // LOGICIELS, ÉCOSYSTÈME IA &amp; OPEN SOURCE</text>
+    <rect width="1200" height="300" rx="22" fill="url(#tools-grid)" opacity=".75"/>
+  <text x="60" y="46" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">BOÎTE À OUTILS // LOGICIELS, ÉCOSYSTÈME IA &amp; OPEN SOURCE</text>
   <path d="M780 41H1140" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>
 
       <g transform="translate(60 74)">
@@ -515,6 +522,7 @@
   <g transform="translate(0 1260)">
     <!-- Fond et Bordure externe -->
 
+  <rect width="1200" height="380" rx="22" fill="url(#google-grid)" opacity=".75"/>
 
 
   <!-- En-tête -->

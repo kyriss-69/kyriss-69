@@ -262,7 +262,7 @@ function renderBanner(theme) {
 
 function renderBio(theme) {
   return `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 290" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 348" role="img" aria-labelledby="title description">
   <title id="title">Terminal de vision de ${escapeXml(config.username)}</title>
   <desc id="description">Terminal exécutant la spécialisation et la vision technique de Kyrris.</desc>
   <defs>
@@ -270,6 +270,14 @@ function renderBio(theme) {
       <stop offset="0%" stop-color="${theme.accent}" stop-opacity="0.24"/>
       <stop offset="100%" stop-color="${theme.accent}" stop-opacity="0"/>
     </radialGradient>
+    <pattern id="bio-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="${theme.grid}" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="accent-signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="${theme.accent}"/>
+      <stop offset=".55" stop-color="${theme.accentTwo}"/>
+      <stop offset="1" stop-color="${theme.accentThree}"/>
+    </linearGradient>
     
     <!-- Masque animé pour frappe de la commande (largeur 825px exactement) -->
     <clipPath id="cmdClip">
@@ -289,12 +297,17 @@ function renderBio(theme) {
   </style>
 
   <!-- Fond global et halo d'ambiance néon -->
-  <rect width="1200" height="290" rx="24" fill="${theme.background}"/>
-  <rect x="1" y="1" width="1198" height="288" rx="23" fill="none" stroke="${theme.panelBorder}"/>
-  <circle cx="600" cy="145" r="320" fill="url(#term-glow)"/>
+  <rect width="1200" height="348" rx="22" fill="${theme.background}"/>
+  <rect width="1200" height="348" rx="22" fill="url(#bio-grid)" opacity=".75"/>
+  <rect x="1" y="1" width="1198" height="346" rx="21" fill="none" stroke="${theme.panelBorder}"/>
+  <circle cx="600" cy="195" r="320" fill="url(#term-glow)"/>
+
+  <!-- En-tête de section intégrée -->
+  <text x="60" y="46" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">MA VISION // TERMINAL &amp; PHILOSOPHIE TECHNIQUE</text>
+  <path d="M580 41H1140" stroke="url(#accent-signal)" stroke-width="2.5" stroke-linecap="round"/>
 
   <!-- FENÊTRE TERMINAL CODE AÉRÉE -->
-  <g transform="translate(60 16)">
+  <g transform="translate(60 66)">
     <!-- Cadre extérieur spacieux de la fenêtre -->
     <rect width="1080" height="258" rx="18" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.6"/>
 
@@ -445,12 +458,16 @@ function renderSignal(theme) {
   <desc id="description">Axes stratégiques et projets en cours de ${escapeXml(config.username)}.</desc>
   <defs>
     <linearGradient id="accent-signal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="${theme.accent}"/><stop offset=".55" stop-color="${theme.accentTwo}"/><stop offset="1" stop-color="${theme.accentThree}"/></linearGradient>
+    <pattern id="signal-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="${theme.grid}" stroke-width="1"/>
+    </pattern>
   </defs>
   <style>
     .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
     .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
   </style>
   <rect width="1200" height="280" rx="22" fill="${theme.background}"/>
+  <rect width="1200" height="280" rx="22" fill="url(#signal-grid)" opacity=".75"/>
   <text x="60" y="48" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">SIGNAL ACTUEL // EXPERTISE SAAS &amp; PROJETS EN COURS</text>
   <path d="M780 43H1140" stroke="url(#accent-signal)" stroke-width="2" stroke-linecap="round"/>
   ${renderedCards}
@@ -484,6 +501,9 @@ function renderGoogleClean(theme) {
       <stop offset="60%" stop-color="#4285f4" stop-opacity="0.10"/>
       <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
     </radialGradient>
+    <pattern id="google-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="${theme.grid}" stroke-width="1"/>
+    </pattern>
     <filter id="glow-filter" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -501,6 +521,7 @@ function renderGoogleClean(theme) {
 
   <!-- Fond et Bordure externe -->
   <rect width="1200" height="380" rx="22" fill="${theme.background}"/>
+  <rect width="1200" height="380" rx="22" fill="url(#google-grid)" opacity=".75"/>
   <rect x="1" y="1" width="1198" height="378" rx="21" fill="none" stroke="${theme.panelBorder}"/>
 
   <!-- En-tête -->
@@ -758,12 +779,16 @@ function renderStack(theme) {
   <desc id="description">Logiciels et outils maîtrisés : Hugging Face, Ollama, LM Studio, Antigravity 2.0 &amp; IDE, Open Code, Obsidian, Docker, GitHub, Open Source.</desc>
   <defs>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="${theme.accent}"/><stop offset=".55" stop-color="${theme.accentTwo}"/><stop offset="1" stop-color="${theme.accentThree}"/></linearGradient>
+    <pattern id="tools-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="${theme.grid}" stroke-width="1"/>
+    </pattern>
   </defs>
   <style>
     .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
     .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
   </style>
   <rect width="1200" height="300" rx="22" fill="${theme.background}"/>
+  <rect width="1200" height="300" rx="22" fill="url(#tools-grid)" opacity=".75"/>
   <text x="60" y="46" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">BOÎTE À OUTILS // LOGICIELS, ÉCOSYSTÈME IA &amp; OPEN SOURCE</text>
   <path d="M780 41H1140" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>
   ${renderedGrid}

@@ -3,12 +3,16 @@
   <desc id="description">Axes stratégiques et projets en cours de kyriss-69.</desc>
   <defs>
     <linearGradient id="accent-signal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7e22ce"/><stop offset=".55" stop-color="#9333ea"/><stop offset="1" stop-color="#c026d3"/></linearGradient>
+    <pattern id="signal-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#e9d5ff" stroke-width="1"/>
+    </pattern>
   </defs>
   <style>
     .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
     .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
   </style>
   <rect width="1200" height="280" rx="22" fill="#faf5ff"/>
+  <rect width="1200" height="280" rx="22" fill="url(#signal-grid)" opacity=".75"/>
   <text x="60" y="48" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">SIGNAL ACTUEL // EXPERTISE SAAS &amp; PROJETS EN COURS</text>
   <path d="M780 43H1140" stroke="url(#accent-signal)" stroke-width="2" stroke-linecap="round"/>
 

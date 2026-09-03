@@ -3,12 +3,16 @@
   <desc id="description">Logiciels et outils maîtrisés : Hugging Face, Ollama, LM Studio, Antigravity 2.0 &amp; IDE, Open Code, Obsidian, Docker, GitHub, Open Source.</desc>
   <defs>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#a855f7"/><stop offset=".55" stop-color="#c084fc"/><stop offset="1" stop-color="#ec4899"/></linearGradient>
+    <pattern id="tools-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#240f42" stroke-width="1"/>
+    </pattern>
   </defs>
   <style>
     .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
     .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
   </style>
   <rect width="1200" height="300" rx="22" fill="#090510"/>
+  <rect width="1200" height="300" rx="22" fill="url(#tools-grid)" opacity=".75"/>
   <text x="60" y="46" class="mono" fill="#a855f7" font-size="14" font-weight="700" letter-spacing="3">BOÎTE À OUTILS // LOGICIELS, ÉCOSYSTÈME IA &amp; OPEN SOURCE</text>
   <path d="M780 41H1140" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>
 
