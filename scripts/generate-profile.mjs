@@ -60,6 +60,7 @@ await mkdir(outputDirectory, { recursive: true });
 for (const [name, theme] of Object.entries(themes)) {
   await writeSvg(`banner-${name}.svg`, renderBanner(theme));
   await writeSvg(`bio-${name}.svg`, renderBio(theme));
+  await writeSvg(`vision-${name}.svg`, renderBio(theme));
   await writeSvg(`signal-${name}.svg`, renderSignal(theme));
   await writeSvg(`signal-v2-${name}.svg`, renderSignal(theme));
   await writeSvg(`saas-focus-${name}.svg`, renderSignal(theme));
