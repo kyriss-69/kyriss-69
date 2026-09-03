@@ -13,10 +13,8 @@
   <path d="M840 43H1140" stroke="url(#accent-signal)" stroke-width="2" stroke-linecap="round"/>
 
     <g transform="translate(60 80)">
-      <!-- Fond de carte avec bordure violette -->
       <rect width="344" height="174" rx="16" fill="#130924" stroke="#3b1569" stroke-width="1.4"/>
 
-      <!-- En-tête : Titre & Badge -->
       <text x="20" y="34" class="sans" fill="#f5f3ff" font-size="16" font-weight="750" letter-spacing="-0.3">🚀  PLATEFORME SAAS</text>
 
       <g transform="translate(200 18)">
@@ -25,17 +23,14 @@
         <text x="18" y="15" class="mono" fill="#f5f3ff" font-size="9" font-weight="700" letter-spacing="0.5">MONOREPO · BUN</text>
       </g>
 
-      <!-- Ligne de séparation interne -->
       <line x1="20" y1="48" x2="324" y2="48" stroke="#3b1569" stroke-width="0.9" opacity="0.6"/>
 
-      <!-- Description sur 3 lignes -->
       <text class="sans" fill="#a78bfa" font-size="12.5" font-weight="500">
         <tspan x="20" y="72">Développement actif d'une application</tspan>
         <tspan x="20" y="92">moderne en monorepo : dashboard réactif,</tspan>
         <tspan x="20" y="112">flux temps réel et jobs asynchrones.</tspan>
       </text>
 
-      <!-- Tags en bas de carte -->
       <g transform="translate(20 134)">
         <rect width="304" height="26" rx="6" fill="#0d0618" stroke="#3b1569" stroke-width="0.8"/>
         <text x="152" y="17" text-anchor="middle" class="mono" fill="#c084fc" font-size="10" font-weight="650" letter-spacing="0.8">TURBOREPO · NUXT 3 · NESTJS 11</text>
@@ -43,10 +38,8 @@
     </g>
 
     <g transform="translate(428 80)">
-      <!-- Fond de carte avec bordure violette -->
       <rect width="344" height="174" rx="16" fill="#130924" stroke="#3b1569" stroke-width="1.4"/>
 
-      <!-- En-tête : Titre & Badge -->
       <text x="20" y="34" class="sans" fill="#f5f3ff" font-size="16" font-weight="750" letter-spacing="-0.3">🧪  VEILLE &amp; IA</text>
 
       <g transform="translate(200 18)">
@@ -55,17 +48,14 @@
         <text x="18" y="15" class="mono" fill="#f5f3ff" font-size="9" font-weight="700" letter-spacing="0.5">EXPÉRIMENTATION</text>
       </g>
 
-      <!-- Ligne de séparation interne -->
       <line x1="20" y1="48" x2="324" y2="48" stroke="#3b1569" stroke-width="0.9" opacity="0.6"/>
 
-      <!-- Description sur 3 lignes -->
       <text class="sans" fill="#a78bfa" font-size="12.5" font-weight="500">
         <tspan x="20" y="72">Exploration continue des technos émergentes :</tspan>
         <tspan x="20" y="92">intégration de modèles d'IA, benchmarks</tspan>
         <tspan x="20" y="112">et prototypage d'architectures modernes.</tspan>
       </text>
 
-      <!-- Tags en bas de carte -->
       <g transform="translate(20 134)">
         <rect width="304" height="26" rx="6" fill="#0d0618" stroke="#3b1569" stroke-width="0.8"/>
         <text x="152" y="17" text-anchor="middle" class="mono" fill="#c084fc" font-size="10" font-weight="650" letter-spacing="0.8">LLM · AGENTS · BENCHMARKS</text>
@@ -73,10 +63,8 @@
     </g>
 
     <g transform="translate(796 80)">
-      <!-- Fond de carte avec bordure violette -->
       <rect width="344" height="174" rx="16" fill="#130924" stroke="#3b1569" stroke-width="1.4"/>
 
-      <!-- En-tête : Titre & Badge -->
       <text x="20" y="34" class="sans" fill="#f5f3ff" font-size="16" font-weight="750" letter-spacing="-0.3">🎯  NOUVEAUX DÉFIS</text>
 
       <g transform="translate(200 18)">
@@ -85,17 +73,14 @@
         <text x="18" y="15" class="mono" fill="#f5f3ff" font-size="9" font-weight="700" letter-spacing="0.5">DISPONIBLE</text>
       </g>
 
-      <!-- Ligne de séparation interne -->
       <line x1="20" y1="48" x2="324" y2="48" stroke="#3b1569" stroke-width="0.9" opacity="0.6"/>
 
-      <!-- Description sur 3 lignes -->
       <text class="sans" fill="#a78bfa" font-size="12.5" font-weight="500">
         <tspan x="20" y="72">En quête permanente de progression et de</tspan>
         <tspan x="20" y="92">challenges stimulants : ouvert aux missions</tspan>
         <tspan x="20" y="112">freelance, collaborations et projets pro.</tspan>
       </text>
 
-      <!-- Tags en bas de carte -->
       <g transform="translate(20 134)">
         <rect width="304" height="26" rx="6" fill="#0d0618" stroke="#3b1569" stroke-width="0.8"/>
         <text x="152" y="17" text-anchor="middle" class="mono" fill="#c084fc" font-size="10" font-weight="650" letter-spacing="0.8">COLLABORATIONS · FREELANCE</text>
