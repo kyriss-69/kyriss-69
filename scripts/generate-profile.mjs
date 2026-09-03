@@ -71,6 +71,7 @@ for (const [name, theme] of Object.entries(themes)) {
   await writeSvg(`metrics-${name}.svg`, renderMetrics(theme));
   await writeSvg(`footer-${name}.svg`, renderFooter(theme));
   await writeSvg(`unified-${name}.svg`, renderUnified(theme));
+  await writeSvg(`profile-canvas-${name}.svg`, renderUnified(theme));
 }
 
 console.log(`Generated SVG assets in ${path.relative(root, outputDirectory)}`);
