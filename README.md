@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=13">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=13">
-  <img alt="Kyrris — Développeur Fullstack TypeScript & Spécialiste Écosystème Google IA" src="./assets/generated/banner-dark.svg?v=13" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=14">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=14">
+  <img alt="Kyrris — Développeur Fullstack TypeScript & Spécialiste Écosystème Google IA" src="./assets/generated/banner-dark.svg?v=14" width="100%">
 </picture>
 
 <p align="center">
@@ -12,31 +12,32 @@
 
 <p align="center">
   Je conçois des architectures monorepo haute performance et des applications intelligentes —<br>
-  spécialisé dans l'écosystème <b>Google AI</b> (Antigravity &amp; Gemini), alliant rigueur TypeScript, temps réel et exécution ultra-rapide avec Bun.
+  spécialisé dans les stacks techniques <b>SaaS modernes</b> et l'écosystème <b>Google AI</b> (Antigravity &amp; Gemini),<br>
+  alliant rigueur TypeScript, temps réel et exécution ultra-rapide avec Bun.
 </p>
 
-## Signal actuel
+## Expertise SaaS & Focus Technique
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/signal-dark.svg?v=13">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/signal-light.svg?v=13">
-  <img alt="Signal actuel : Plateforme SaaS, Veille & IA, Nouveaux Défis" src="./assets/generated/signal-dark.svg?v=13" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/saas-focus-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/saas-focus-light.svg">
+  <img alt="Expertise SaaS : Architectures techniques & projets en cours" src="./assets/generated/saas-focus-dark.svg" width="100%">
 </picture>
 
 ## Boîte à outils
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/stack-dark.svg?v=13">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/stack-light.svg?v=13">
-  <img alt="Stack technique : TypeScript, Nuxt 3, Vue 3, Tailwind CSS, Pinia, NestJS 11, Prisma, PostgreSQL 16, Redis, Socket.IO, Turborepo, Bun, BullMQ, Docker, GitHub Actions" src="./assets/generated/stack-dark.svg?v=13" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/stack-dark.svg?v=14">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/stack-light.svg?v=14">
+  <img alt="Stack technique : TypeScript, Nuxt 3, Vue 3, Tailwind CSS, Pinia, NestJS 11, Prisma, PostgreSQL 16, Redis, Socket.IO, Turborepo, Bun, BullMQ, Docker, GitHub Actions" src="./assets/generated/stack-dark.svg?v=14" width="100%">
 </picture>
 
 ## Spécialisation Écosystème Google & IA
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/google-final-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/google-final-light.svg">
-  <img alt="Spécialisation Écosystème Google & IA : Antigravity (2.0 & IDE), Google Gemini, Google Cloud" src="./assets/generated/google-final-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/google-final-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/google-final-light.svg?v=2">
+  <img alt="Spécialisation Écosystème Google & IA : Antigravity (2.0 & IDE), Google Gemini, Google Cloud" src="./assets/generated/google-final-dark.svg?v=2" width="100%">
 </picture>
 
 > [!TIP]
@@ -98,7 +99,7 @@ architecture NestJS  ·  Google Antigravity & Gemini  ·  CI/CD & Docker
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/footer-dark.svg?v=13">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/footer-light.svg?v=13">
-  <img alt="Pied de page de Kyrris" src="./assets/generated/footer-dark.svg?v=13" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/footer-dark.svg?v=14">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/footer-light.svg?v=14">
+  <img alt="Pied de page de Kyrris" src="./assets/generated/footer-dark.svg?v=14" width="100%">
 </picture>
