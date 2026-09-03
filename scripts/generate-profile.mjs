@@ -260,7 +260,7 @@ function renderBanner(theme) {
 
 function renderBio(theme) {
   return `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 230" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 256" role="img" aria-labelledby="title description">
   <title id="title">Terminal de vision de ${escapeXml(config.username)}</title>
   <desc id="description">Terminal exécutant la spécialisation et la vision technique de Kyrris.</desc>
   <defs>
@@ -269,10 +269,10 @@ function renderBio(theme) {
       <stop offset="100%" stop-color="${theme.accent}" stop-opacity="0"/>
     </radialGradient>
     
-    <!-- Masque animé pour effet frappe de la commande (0s -> 2.8s) -->
+    <!-- Masque animé pour effet frappe de la commande (s'arrête exactement à la fin du texte) -->
     <clipPath id="cmdClip">
-      <rect x="76" y="52" width="940" height="28">
-        <animate attributeName="width" values="0; 940; 940; 0" keyTimes="0; 0.28; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
+      <rect x="76" y="52" width="740" height="28">
+        <animate attributeName="width" values="0; 740; 740; 0" keyTimes="0; 0.28; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
   </defs>
@@ -284,20 +284,20 @@ function renderBio(theme) {
     @keyframes blink { 50% { opacity: 0; } }
     @media (prefers-reduced-motion: reduce) {
       .cursor { animation: none; }
-      #cmdClip rect { width: 940px !important; }
+      #cmdClip rect { width: 740px !important; }
       .anim-output { opacity: 1 !important; }
     }
   </style>
 
   <!-- Fond global et halo d'ambiance -->
-  <rect width="1200" height="230" rx="22" fill="${theme.background}"/>
-  <rect x="1" y="1" width="1198" height="228" rx="21" fill="none" stroke="${theme.panelBorder}"/>
-  <circle cx="600" cy="115" r="300" fill="url(#term-glow)"/>
+  <rect width="1200" height="256" rx="22" fill="${theme.background}"/>
+  <rect x="1" y="1" width="1198" height="254" rx="21" fill="none" stroke="${theme.panelBorder}"/>
+  <circle cx="600" cy="128" r="300" fill="url(#term-glow)"/>
 
   <!-- FENÊTRE TERMINAL CODE (Inspirée du composant IDE) -->
   <g transform="translate(60 14)">
     <!-- Cadre extérieur de la fenêtre -->
-    <rect width="1080" height="202" rx="16" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.6"/>
+    <rect width="1080" height="228" rx="16" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.6"/>
 
     <!-- Barre supérieure de titre -->
     <path d="M0 16 C0 7.16 7.16 0 16 0 H1064 C1072.84 0 1080 7.16 1080 16 V38 H0 Z" fill="${theme.background === '#090510' ? '#180b30' : '#f3e8ff'}"/>
@@ -326,9 +326,10 @@ function renderBio(theme) {
     <text x="24" y="124" class="mono" fill="#8b5cf6" font-size="12" font-weight="600" opacity="0.65">3</text>
     <text x="24" y="152" class="mono" fill="#8b5cf6" font-size="12" font-weight="600" opacity="0.65">4</text>
     <text x="24" y="180" class="mono" fill="#8b5cf6" font-size="12" font-weight="600" opacity="0.65">5</text>
+    <text x="24" y="208" class="mono" fill="#8b5cf6" font-size="12" font-weight="600" opacity="0.65">6</text>
 
     <!-- Séparateur vertical entre numéros et contenu -->
-    <line x1="42" y1="44" x2="42" y2="194" stroke="${theme.panelBorder}" stroke-width="1" opacity="0.5"/>
+    <line x1="42" y1="44" x2="42" y2="218" stroke="${theme.panelBorder}" stroke-width="1" opacity="0.5"/>
 
     <!-- LIGNE 1: Commande tapée comme une commande shell -->
     <text x="56" y="68" class="mono" fill="#ec4899" font-size="14.5" font-weight="800">❯</text>
@@ -337,10 +338,10 @@ function renderBio(theme) {
       <text x="76" y="68" class="mono" fill="#f5f3ff" font-size="13" font-weight="650" letter-spacing="-0.1">Spécialisé dans les stacks techniques SaaS modernes et l&apos;écosystème Google AI // Google Cloud.</text>
     </g>
 
-    <!-- Curseur voyageur de frappe qui avance avec la commande -->
+    <!-- Curseur voyageur bleu qui s'arrête pile à la fin du texte puis disparaît complètement -->
     <rect class="cursor" x="76" y="55" width="8" height="15" rx="1" fill="#38bdf8">
-      <animate attributeName="x" values="76; 920; 920; 76" keyTimes="0; 0.28; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.28; 0.30; 1" dur="10.5s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="76; 814; 814; 76" keyTimes="0; 0.28; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1; 1; 0; 0; 1" keyTimes="0; 0.279; 0.28; 0.999; 1" dur="10.5s" repeatCount="indefinite"/>
     </rect>
 
     <!-- GROUPE ANIMÉ D'EXÉCUTION &amp; SORTIE (Apparaît dès que la commande est tapée) -->
@@ -352,16 +353,19 @@ function renderBio(theme) {
       <text x="76" y="96" class="mono" fill="#10b981" font-size="12" font-weight="700">[EXECUTION OK]</text>
       <text x="194" y="96" class="mono" fill="${theme.muted}" font-size="12" font-weight="500">Initialisation des principes d&apos;ingénierie &amp; R&amp;D :</text>
 
-      <!-- LIGNE 3: Texte de passion 1 -->
+      <!-- LIGNE 3: Texte de passion 1 (début) -->
       <text x="56" y="124" class="mono" fill="#c084fc" font-size="13" font-weight="700">➜</text>
-      <text x="76" y="124" class="mono" fill="#f5f3ff" font-size="13" font-weight="550">Passionné d&apos;open source, de modèles d&apos;IA et de R&amp;D logicielle, j&apos;aime transformer des idées ambitieuses</text>
+      <text x="76" y="124" class="mono" fill="#f5f3ff" font-size="13" font-weight="550">Passionné d&apos;open source, de modèles d&apos;IA et de R&amp;D logicielle,</text>
 
-      <!-- LIGNE 4: Texte de passion 2 avec mise en avant Google AI -->
-      <text x="76" y="152" class="mono" fill="#f5f3ff" font-size="13" font-weight="550">en solutions concrètes, grâce aux outils avancés de l&apos;écosystème <tspan fill="#38bdf8" font-weight="750">Google AI</tspan>.</text>
+      <!-- LIGNE 4: Texte de passion 1 (suite) -->
+      <text x="76" y="152" class="mono" fill="#f5f3ff" font-size="13" font-weight="550">j&apos;aime transformer des idées ambitieuses en solutions concrètes.</text>
 
-      <!-- LIGNE 5: Prompt prêt avec curseur clignotant -->
-      <text x="56" y="180" class="mono" fill="#a855f7" font-size="14.5" font-weight="800">❯</text>
-      <rect class="cursor" x="76" y="167" width="8" height="15" rx="1" fill="#a855f7"/>
+      <!-- LIGNE 5: Texte de passion 2 avec mise en avant Google AI -->
+      <text x="76" y="180" class="mono" fill="#f5f3ff" font-size="13" font-weight="550">grâce aux outils avancés de l&apos;écosystème <tspan fill="#38bdf8" font-weight="750">Google AI</tspan>.</text>
+
+      <!-- LIGNE 6: Prompt prêt avec curseur clignotant violet -->
+      <text x="56" y="208" class="mono" fill="#a855f7" font-size="14.5" font-weight="800">❯</text>
+      <rect class="cursor" x="76" y="195" width="8" height="15" rx="1" fill="#a855f7"/>
     </g>
   </g>
 </svg>`;
