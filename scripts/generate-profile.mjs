@@ -175,7 +175,7 @@ function renderBanner(theme) {
   
   <text x="72" y="93" class="mono" fill="${theme.accent}" font-size="16" font-weight="700" letter-spacing="3">${escapeXml(config.username.toUpperCase())} // ${escapeXml(config.identity)}</text>
   <text x="68" y="169" class="sans" fill="${theme.text}" font-size="58" font-weight="800" letter-spacing="-1.2">${escapeXml(config.name.toUpperCase())}</text>
-  <text x="72" y="214" class="mono" fill="${theme.muted}" font-size="16.5" font-weight="600" letter-spacing="1.6">${escapeXml(config.headline)}</text>
+  <text x="72" y="214" class="mono" fill="${theme.muted}" font-size="16" font-weight="600" letter-spacing="1.4">${escapeXml(config.headline)}</text>
   
   <!-- Pilule avec effet texte dactylographié (s'écrit, s'efface et boucle) -->
   <g transform="translate(68 252)">
@@ -185,16 +185,16 @@ function renderBanner(theme) {
 
   <!-- Textes animés le long des chemins dynamiques -->
   <text class="mono" fill="${theme.text}" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
-    <textPath href="#typePath0" xlink:href="#typePath0">CONSTRUIRE LE WEB MODERNE ET PERFORMANT 🚀</textPath>
+    <textPath href="#typePath0" xlink:href="#typePath0">MONOREPO TURBOREPO PROPULSÉ PAR BUN ⚡</textPath>
   </text>
   <text class="mono" fill="${theme.text}" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
-    <textPath href="#typePath1" xlink:href="#typePath1">EXPLORER LE POTENTIEL DES AGENTS &amp; DE L&apos;IA 🧠</textPath>
+    <textPath href="#typePath1" xlink:href="#typePath1">FRONTEND : NUXT 3 · VUE 3 · TAILWIND · PINIA 🌐</textPath>
   </text>
   <text class="mono" fill="${theme.text}" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
-    <textPath href="#typePath2" xlink:href="#typePath2">REACT · NEXT.JS · TYPESCRIPT · NODE.JS 💻</textPath>
+    <textPath href="#typePath2" xlink:href="#typePath2">BACKEND : NESTJS 11 · PRISMA · POSTGRESQL · REDIS ⚙️</textPath>
   </text>
   <text class="mono" fill="${theme.text}" font-size="12" font-weight="650" letter-spacing="0.4" dominant-baseline="middle">
-    <textPath href="#typePath3" xlink:href="#typePath3">EN QUÊTE DE NOUVEAUX DÉFIS TECH ⚡</textPath>
+    <textPath href="#typePath3" xlink:href="#typePath3">TEMPS RÉEL &amp; QUEUES : SOCKET.IO · BULLMQ 🚀</textPath>
   </text>
 
   <!-- DROITE: FENÊTRE TERMINAL IDE CODE AVEC SYNTAXE ÉCLATANTE -->
@@ -230,19 +230,19 @@ function renderBanner(theme) {
 
       <!-- Ligne 3 -->
       <text x="18" y="122" fill="#8b5cf6" font-weight="600">3</text>
-      <text x="56" y="122"><tspan fill="${theme.accentTwo}">role</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#a7f3d0">"Fullstack &amp; AI Explorer"</tspan><tspan fill="#f5f3ff" font-weight="700">,</tspan></text>
+      <text x="56" y="122"><tspan fill="${theme.accentTwo}">frontend</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff" font-weight="700">[</tspan><tspan fill="#a7f3d0">"Nuxt 3"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#a7f3d0">"Vue 3"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#a7f3d0">"Pinia"</tspan><tspan fill="#f5f3ff" font-weight="700">],</tspan></text>
 
       <!-- Ligne 4 -->
       <text x="18" y="148" fill="#8b5cf6" font-weight="600">4</text>
-      <text x="56" y="148"><tspan fill="${theme.accentTwo}">stack</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff" font-weight="700">[</tspan><tspan fill="#a7f3d0">"Next.js"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#a7f3d0">"React"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#a7f3d0">"Node.js"</tspan><tspan fill="#f5f3ff" font-weight="700">],</tspan></text>
+      <text x="56" y="148"><tspan fill="${theme.accentTwo}">backend</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff" font-weight="700">[</tspan><tspan fill="#a7f3d0">"NestJS 11"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#a7f3d0">"Prisma"</tspan><tspan fill="#f5f3ff" font-weight="700">],</tspan></text>
 
       <!-- Ligne 5 -->
       <text x="18" y="174" fill="#8b5cf6" font-weight="600">5</text>
-      <text x="56" y="174"><tspan fill="${theme.accentTwo}">passion</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#a7f3d0">"AI Agents &amp; Modern Web"</tspan><tspan fill="#f5f3ff" font-weight="700">,</tspan></text>
+      <text x="56" y="174"><tspan fill="${theme.accentTwo}">data</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff" font-weight="700">[</tspan><tspan fill="#a7f3d0">"PostgreSQL 16"</tspan><tspan fill="#f5f3ff">, </tspan><tspan fill="#a7f3d0">"Redis"</tspan><tspan fill="#f5f3ff" font-weight="700">],</tspan></text>
 
       <!-- Ligne 6 -->
       <text x="18" y="200" fill="#8b5cf6" font-weight="600">6</text>
-      <text x="56" y="200"><tspan fill="${theme.accentTwo}">build</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff">()</tspan> <tspan fill="#ec4899" font-weight="800">=&gt;</tspan> <tspan fill="#fbcfe8">"🚀 Ship clean code"</tspan></text>
+      <text x="56" y="200"><tspan fill="${theme.accentTwo}">runtime</tspan><tspan fill="#a78bfa" font-weight="700">:</tspan> <tspan fill="#f5f3ff">()</tspan> <tspan fill="#ec4899" font-weight="800">=&gt;</tspan> <tspan fill="#fbcfe8">"⚡ Turborepo + Bun"</tspan></text>
 
       <!-- Ligne 7 -->
       <text x="18" y="226" fill="#8b5cf6" font-weight="600">7</text>
@@ -268,28 +268,28 @@ function renderStack(theme) {
     const row = Math.floor(index / 5);
     const x = startX + column * (badgeWidth + gap);
     const y = 86 + row * 66;
-    const dotStroke = item.label === "Next.js" && theme.background === "#faf5ff" ? "#000000" : item.color;
+    const dotStroke = item.label === "Socket.IO" && theme.background === "#090510" ? "#ffffff" : item.color;
     return `
       <g transform="translate(${x} ${y})">
         <rect width="${badgeWidth}" height="${badgeHeight}" rx="14" fill="${theme.panel}" stroke="${theme.panelBorder}"/>
         <circle cx="25" cy="24" r="8" fill="${escapeXml(item.color)}" stroke="${dotStroke}"/>
-        <text x="44" y="30" class="mono" fill="${theme.text}" font-size="15" font-weight="650">${escapeXml(item.label)}</text>
+        <text x="44" y="30" class="mono" fill="${theme.text}" font-size="14.5" font-weight="650">${escapeXml(item.label)}</text>
       </g>`;
   }).join("");
 
   return `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 230" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 295" role="img" aria-labelledby="title description">
   <title id="title">Boîte à outils technique de Kyrris</title>
   <desc id="description">Badges générés pour les langages, frameworks et outils maîtrisés par Kyrris.</desc>
   <defs>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="${theme.accent}"/><stop offset=".55" stop-color="${theme.accentTwo}"/><stop offset="1" stop-color="${theme.accentThree}"/></linearGradient>
   </defs>
   <style>.mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }</style>
-  <rect width="1200" height="230" rx="22" fill="${theme.background}"/>
-  <text x="60" y="48" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">BOÎTE À OUTILS // STACK TECHNIQUE</text>
-  <path d="M850 43H1140" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>
+  <rect width="1200" height="295" rx="22" fill="${theme.background}"/>
+  <text x="60" y="48" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">BOÎTE À OUTILS // STACK TECHNIQUE DU PROJET</text>
+  <path d="M920 43H1140" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>
   ${rows}
-  <rect x="1" y="1" width="1198" height="228" rx="21" fill="none" stroke="${theme.panelBorder}"/>
+  <rect x="1" y="1" width="1198" height="293" rx="21" fill="none" stroke="${theme.panelBorder}"/>
 </svg>`;
 }
 

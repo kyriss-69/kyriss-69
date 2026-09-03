@@ -1,63 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 230" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 295" role="img" aria-labelledby="title description">
   <title id="title">Boîte à outils technique de Kyrris</title>
   <desc id="description">Badges générés pour les langages, frameworks et outils maîtrisés par Kyrris.</desc>
   <defs>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7e22ce"/><stop offset=".55" stop-color="#9333ea"/><stop offset="1" stop-color="#c026d3"/></linearGradient>
   </defs>
   <style>.mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }</style>
-  <rect width="1200" height="230" rx="22" fill="#faf5ff"/>
-  <text x="60" y="48" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">BOÎTE À OUTILS // STACK TECHNIQUE</text>
-  <path d="M850 43H1140" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>
+  <rect width="1200" height="295" rx="22" fill="#faf5ff"/>
+  <text x="60" y="48" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">BOÎTE À OUTILS // STACK TECHNIQUE DU PROJET</text>
+  <path d="M920 43H1140" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>
 
       <g transform="translate(60 86)">
         <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
         <circle cx="25" cy="24" r="8" fill="#3178c6" stroke="#3178c6"/>
-        <text x="44" y="30" class="mono" fill="#2e1065" font-size="15" font-weight="650">TypeScript</text>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">TypeScript</text>
       </g>
       <g transform="translate(280 86)">
         <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
-        <circle cx="25" cy="24" r="8" fill="#61dafb" stroke="#61dafb"/>
-        <text x="44" y="30" class="mono" fill="#2e1065" font-size="15" font-weight="650">React</text>
+        <circle cx="25" cy="24" r="8" fill="#00dc82" stroke="#00dc82"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">Nuxt 3</text>
       </g>
       <g transform="translate(500 86)">
         <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
-        <circle cx="25" cy="24" r="8" fill="#ffffff" stroke="#000000"/>
-        <text x="44" y="30" class="mono" fill="#2e1065" font-size="15" font-weight="650">Next.js</text>
+        <circle cx="25" cy="24" r="8" fill="#42b883" stroke="#42b883"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">Vue 3</text>
       </g>
       <g transform="translate(720 86)">
         <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
-        <circle cx="25" cy="24" r="8" fill="#f7df1e" stroke="#f7df1e"/>
-        <text x="44" y="30" class="mono" fill="#2e1065" font-size="15" font-weight="650">JavaScript</text>
+        <circle cx="25" cy="24" r="8" fill="#38b2ac" stroke="#38b2ac"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">Tailwind CSS</text>
       </g>
       <g transform="translate(940 86)">
         <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
-        <circle cx="25" cy="24" r="8" fill="#339933" stroke="#339933"/>
-        <text x="44" y="30" class="mono" fill="#2e1065" font-size="15" font-weight="650">Node.js</text>
+        <circle cx="25" cy="24" r="8" fill="#ffd859" stroke="#ffd859"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">Pinia</text>
       </g>
       <g transform="translate(60 152)">
         <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
-        <circle cx="25" cy="24" r="8" fill="#38b2ac" stroke="#38b2ac"/>
-        <text x="44" y="30" class="mono" fill="#2e1065" font-size="15" font-weight="650">Tailwind CSS</text>
+        <circle cx="25" cy="24" r="8" fill="#ea2845" stroke="#ea2845"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">NestJS 11</text>
       </g>
       <g transform="translate(280 152)">
         <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
-        <circle cx="25" cy="24" r="8" fill="#3776ab" stroke="#3776ab"/>
-        <text x="44" y="30" class="mono" fill="#2e1065" font-size="15" font-weight="650">Python</text>
+        <circle cx="25" cy="24" r="8" fill="#5a67d8" stroke="#5a67d8"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">Prisma</text>
       </g>
       <g transform="translate(500 152)">
         <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
-        <circle cx="25" cy="24" r="8" fill="#2496ed" stroke="#2496ed"/>
-        <text x="44" y="30" class="mono" fill="#2e1065" font-size="15" font-weight="650">Docker</text>
+        <circle cx="25" cy="24" r="8" fill="#336791" stroke="#336791"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">PostgreSQL 16</text>
       </g>
       <g transform="translate(720 152)">
         <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
-        <circle cx="25" cy="24" r="8" fill="#f05032" stroke="#f05032"/>
-        <text x="44" y="30" class="mono" fill="#2e1065" font-size="15" font-weight="650">Git</text>
+        <circle cx="25" cy="24" r="8" fill="#dc382d" stroke="#dc382d"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">Redis</text>
       </g>
       <g transform="translate(940 152)">
         <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
-        <circle cx="25" cy="24" r="8" fill="#0078d4" stroke="#0078d4"/>
-        <text x="44" y="30" class="mono" fill="#2e1065" font-size="15" font-weight="650">VS Code</text>
+        <circle cx="25" cy="24" r="8" fill="#00dc82" stroke="#00dc82"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">Socket.IO</text>
       </g>
-  <rect x="1" y="1" width="1198" height="228" rx="21" fill="none" stroke="#e9d5ff"/>
+      <g transform="translate(60 218)">
+        <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
+        <circle cx="25" cy="24" r="8" fill="#ef4444" stroke="#ef4444"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">Turborepo</text>
+      </g>
+      <g transform="translate(280 218)">
+        <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
+        <circle cx="25" cy="24" r="8" fill="#f472b6" stroke="#f472b6"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">Bun</text>
+      </g>
+      <g transform="translate(500 218)">
+        <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
+        <circle cx="25" cy="24" r="8" fill="#a855f7" stroke="#a855f7"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">BullMQ</text>
+      </g>
+      <g transform="translate(720 218)">
+        <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
+        <circle cx="25" cy="24" r="8" fill="#2496ed" stroke="#2496ed"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">Docker</text>
+      </g>
+      <g transform="translate(940 218)">
+        <rect width="200" height="48" rx="14" fill="#ffffff" stroke="#e9d5ff"/>
+        <circle cx="25" cy="24" r="8" fill="#2088ff" stroke="#2088ff"/>
+        <text x="44" y="30" class="mono" fill="#2e1065" font-size="14.5" font-weight="650">GitHub Actions</text>
+      </g>
+  <rect x="1" y="1" width="1198" height="293" rx="21" fill="none" stroke="#e9d5ff"/>
 </svg>

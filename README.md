@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=4">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=4">
-  <img alt="Kyrris — Développeur Web & Explorateur IA" src="./assets/generated/banner-dark.svg?v=4" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/banner-dark.svg?v=5">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/banner-light.svg?v=5">
+  <img alt="Kyrris — Développeur Fullstack TypeScript" src="./assets/generated/banner-dark.svg?v=5" width="100%">
 </picture>
 
 <p align="center">
@@ -11,8 +11,8 @@
 </p>
 
 <p align="center">
-  Je conçois des applications web modernes et j’explore le potentiel des agents et de l’IA —<br>
-  alliant rigueur de code, interfaces fluides et curiosité sans limite.
+  Je conçois des architectures monorepo haute performance et des applications fullstack modernes —<br>
+  alliant rigueur TypeScript, temps réel, exécution ultra-rapide avec Bun et interfaces réactives.
 </p>
 
 ## Signal actuel
@@ -20,16 +20,16 @@
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h3>🌐 Applications Web</h3>
-      Conception d'interfaces dynamiques, modernes et réactives propulsées par l'écosystème <b>React</b>, <b>Next.js</b> et <b>TypeScript</b>.
+      <h3>⚡ Monorepo & Runtime</h3>
+      Architecture monorepo ultra-rapide pilotée par <b>Turborepo</b> et exécutée exclusivement avec le runtime <b>Bun</b>.
     </td>
     <td width="33%" valign="top">
-      <h3>🤖 Projets & Agents IA</h3>
-      Exploration active des modèles d'IA, automatisation intelligente, prompt engineering et intégration d'agents autonomes.
+      <h3>🌐 Frontend Réactif</h3>
+      Interfaces modernes et fluides conçues avec <b>Nuxt 3</b>, <b>Vue 3</b>, <b>Nuxt UI</b>, <b>Tailwind CSS</b> et <b>Pinia</b> en TypeScript strict.
     </td>
     <td width="33%" valign="top">
-      <h3>🎯 Nouveaux défis & Projets</h3>
-      En apprentissage actif continu, soif d'apprendre chaque jour et ouvert aux collaborations stimulantes et opportunités professionnelles.
+      <h3>⚙️ Backend & Temps Réel</h3>
+      Services modulaires avec <b>NestJS 11</b>, <b>Prisma</b>, <b>PostgreSQL 16</b>, cache <b>Redis</b>, files d'attente <b>BullMQ</b> et <b>Socket.IO</b>.
     </td>
   </tr>
 </table>
@@ -37,17 +37,17 @@
 ## Boîte à outils
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/stack-dark.svg?v=4">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/stack-light.svg?v=4">
-  <img alt="Technologies utilisées : TypeScript, React, Next.js, JavaScript, Node.js, Tailwind CSS, Python, Docker, Git et VS Code" src="./assets/generated/stack-dark.svg?v=4" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/stack-dark.svg?v=5">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/stack-light.svg?v=5">
+  <img alt="Stack technique : TypeScript, Nuxt 3, Vue 3, Tailwind CSS, Pinia, NestJS 11, Prisma, PostgreSQL 16, Redis, Socket.IO, Turborepo, Bun, BullMQ, Docker, GitHub Actions" src="./assets/generated/stack-dark.svg?v=5" width="100%">
 </picture>
 
 ## Pouls GitHub
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/metrics-dark.svg?v=4">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/metrics-light.svg?v=4">
-  <img alt="Statistiques GitHub publiques de Kyrris" src="./assets/generated/metrics-dark.svg?v=4" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/metrics-dark.svg?v=5">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/metrics-light.svg?v=5">
+  <img alt="Statistiques GitHub publiques de Kyrris" src="./assets/generated/metrics-dark.svg?v=5" width="100%">
 </picture>
 
 <sub>Les données publiques sont actualisées automatiquement. Aucun nom de dépôt privé ni détail d’activité privée n’est exposé.</sub>
@@ -57,32 +57,32 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🌐 <a href="https://github.com/kyriss-69">Portfolio Interactif</a></h3>
-      Un univers personnel moderne conçu pour exposer mes réalisations, mes stacks et mon parcours avec des animations fluides.<br><br>
-      <code>Next.js</code> <code>TypeScript</code> <code>Tailwind CSS</code>
+      <h3>⚡ <a href="https://github.com/kyriss-69">Core Monorepo Platform</a></h3>
+      Plateforme fullstack organisée en monorepo, optimisée pour des builds ultra-rapides et un partage de packages efficace.<br><br>
+      <code>Turborepo</code> <code>Bun</code> <code>TypeScript</code> <code>Docker</code>
     </td>
     <td width="50%" valign="top">
-      <h3>🤖 <a href="https://github.com/kyriss-69">AI Assistant & Agent</a></h3>
-      Outil d'assistance intelligent explorant l'orchestration de modèles de langage (LLM) et le raisonnement contextuel.<br><br>
-      <code>agents IA</code> <code>LLM</code> <code>TypeScript</code> <code>Node.js</code>
+      <h3>🌐 <a href="https://github.com/kyriss-69">Nuxt 3 Client & UI</a></h3>
+      Application web réactive intégrant Nuxt 3, Vue 3, Nuxt UI, Pinia et Tailwind CSS avec gestion d'état centralisée.<br><br>
+      <code>Nuxt 3</code> <code>Vue 3</code> <code>Tailwind CSS</code> <code>Pinia</code>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>⚡ <a href="https://github.com/kyriss-69">Fullstack Web App</a></h3>
-      Application web complète avec tableau de bord réactif, gestion d'utilisateurs et architecture de données robuste.<br><br>
-      <code>React</code> <code>Node.js</code> <code>Fullstack</code> <code>PostgreSQL</code>
+      <h3>⚙️ <a href="https://github.com/kyriss-69">NestJS 11 API Gateway</a></h3>
+      Architecture backend modulaire avec NestJS 11, Prisma ORM, base de données PostgreSQL 16 et cache Redis.<br><br>
+      <code>NestJS 11</code> <code>Prisma</code> <code>PostgreSQL 16</code> <code>Redis</code>
     </td>
     <td width="50%" valign="top">
-      <h3>🛠️ <a href="https://github.com/kyriss-69">API REST & Microservices</a></h3>
-      Architecture de services backend sécurisés et modulaires, testés et conteneurisés avec Docker.<br><br>
-      <code>Node.js</code> <code>Express</code> <code>Docker</code> <code>REST API</code>
+      <h3>🚀 <a href="https://github.com/kyriss-69">Realtime & Queue Engine</a></h3>
+      Système de communication bidirectionnelle en direct et traitement de tâches d'arrière-plan résilient.<br><br>
+      <code>Socket.IO</code> <code>BullMQ</code> <code>Redis</code> <code>GitHub Actions</code>
     </td>
   </tr>
 </table>
 
 > [!NOTE]
-> Plusieurs projets sont en cours de consolidation ou en développement actif. Leurs cartes sont déjà en place pour préparer leur ouverture publique.
+> Plusieurs projets et packages du monorepo sont en cours de consolidation active avant leur ouverture publique.
 
 ## Activité & Contributions
 
@@ -97,8 +97,8 @@
 ## Principes de fonctionnement
 
 ```text
-code propre  ·  apprentissage continu  ·  curiosité technologique
-solutions modernes  ·  rigueur & autonomie  ·  passion du web & de l'IA
+TypeScript strict  ·  monorepo Turborepo  ·  performance Bun
+architecture NestJS  ·  réactivité Nuxt 3  ·  CI/CD & Docker
 ```
 
 <p align="center">
@@ -108,7 +108,7 @@ solutions modernes  ·  rigueur & autonomie  ·  passion du web & de l'IA
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/footer-dark.svg?v=4">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/footer-light.svg?v=4">
-  <img alt="Pied de page de Kyrris" src="./assets/generated/footer-dark.svg?v=4" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/footer-dark.svg?v=5">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/footer-light.svg?v=5">
+  <img alt="Pied de page de Kyrris" src="./assets/generated/footer-dark.svg?v=5" width="100%">
 </picture>
