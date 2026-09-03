@@ -70,6 +70,7 @@ for (const [name, theme] of Object.entries(themes)) {
   await writeSvg(`tools-${name}.svg`, renderStack(theme));
   await writeSvg(`metrics-${name}.svg`, renderMetrics(theme));
   await writeSvg(`footer-${name}.svg`, renderFooter(theme));
+  await writeSvg(`unified-${name}.svg`, renderUnified(theme));
 }
 
 console.log(`Generated SVG assets in ${path.relative(root, outputDirectory)}`);
@@ -853,6 +854,173 @@ function renderFooter(theme) {
   <rect x="420" y="28" width="360" height="38" rx="19" fill="${theme.panel}" stroke="${theme.panelBorder}"/>
   <text x="600" y="52" text-anchor="middle" class="mono" fill="${theme.text}" font-size="12" font-weight="650" letter-spacing="2">CONSTRUIRE AVEC PASSION // EXPLORER L'AVENIR</text>
   <rect x="1" y="1" width="1198" height="118" rx="19" fill="none" stroke="${theme.panelBorder}"/>
+</svg>`;
+}
+
+function renderUnified(theme) {
+  const bannerSvg = renderBanner(theme);
+  const bioSvg = renderBio(theme);
+  const signalSvg = renderSignal(theme);
+  const stackSvg = renderStack(theme);
+  const googleSvg = renderGoogleClean(theme);
+
+  function getCleanBody(svg) {
+    return svg
+      .replace(/<svg[\s\S]*?>/, '')
+      .replace(/<title[\s\S]*?<\/title>/, '')
+      .replace(/<desc[\s\S]*?<\/desc>/, '')
+      .replace(/<defs[\s\S]*?<\/defs>/, '')
+      .replace(/<style[\s\S]*?<\/style>/, '')
+      .replace(/<\/svg>\s*$/, '')
+      .replace(/<rect width="1200" height="\d+" rx="\d+" fill="[^"]+"\/>/, '')
+      .replace(/<rect x="1" y="1" width="1198" height="\d+" rx="\d+" fill="none" stroke="[^"]+"\/>/, '')
+      .trim();
+  }
+
+  const bannerBody = getCleanBody(bannerSvg);
+  const bioBody = getCleanBody(bioSvg);
+  const signalBody = getCleanBody(signalSvg);
+  const stackBody = getCleanBody(stackSvg);
+  const googleBody = getCleanBody(googleSvg);
+
+  const totalHeight = 1660;
+
+  return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 ${totalHeight}" role="img" aria-labelledby="title description">
+  <title id="title">Profil Développeur Complet de ${escapeXml(config.username)}</title>
+  <desc id="description">Présentation complète unifiée de Kyrris : Identité, Vision, Signal SaaS, Boîte à outils et Écosystème Google AI.</desc>
+  <defs>
+    <linearGradient id="unified-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="${theme.background}"/>
+      <stop offset="100%" stop-color="${theme.background}"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="${theme.grid}" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="${theme.accent}"/>
+      <stop offset=".6" stop-color="${theme.accentTwo}"/>
+      <stop offset="1" stop-color="${theme.accentThree}"/>
+    </linearGradient>
+    <linearGradient id="accent-signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="${theme.accent}"/>
+      <stop offset=".55" stop-color="${theme.accentTwo}"/>
+      <stop offset="1" stop-color="${theme.accentThree}"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="${theme.accent}"/>
+      <stop offset=".55" stop-color="${theme.accentTwo}"/>
+      <stop offset="1" stop-color="${theme.accentThree}"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="card-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="${theme.accent}" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="${theme.accent}" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="term-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="${theme.accent}" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="${theme.accent}" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="google-gradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4285f4"/>
+      <stop offset="33%" stop-color="#a855f7"/>
+      <stop offset="66%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#34a853"/>
+    </linearGradient>
+    <linearGradient id="gemini-logo-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1ba1e3"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ea4335"/>
+    </linearGradient>
+    <linearGradient id="antigravity-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <radialGradient id="ai-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Chemins animés bannière (3 phrases) -->
+    <path id="typePath0">
+      <animate id="t0" attributeName="d" begin="0s;t2.end" dur="4.2s" fill="remove"
+        values="m108,277 h0 ; m108,277 h540 ; m108,277 h540 ; m108,277 h0"
+        keyTimes="0; 0.45; 0.82; 1" />
+    </path>
+    <path id="typePath1">
+      <animate id="t1" attributeName="d" begin="t0.end" dur="4.2s" fill="remove"
+        values="m108,277 h0 ; m108,277 h540 ; m108,277 h540 ; m108,277 h0"
+        keyTimes="0; 0.45; 0.82; 1" />
+    </path>
+    <path id="typePath2">
+      <animate id="t2" attributeName="d" begin="t1.end" dur="4.2s" fill="remove"
+        values="m108,277 h0 ; m108,277 h540 ; m108,277 h540 ; m108,277 h0"
+        keyTimes="0; 0.45; 0.82; 1" />
+    </path>
+
+    <!-- Masque frappe commande vision terminal -->
+    <clipPath id="cmdClip">
+      <rect x="80" y="78" width="825" height="30">
+        <animate attributeName="width" values="0; 825; 825; 0" keyTimes="0; 0.28; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, "Fira Code", monospace; }
+    .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+    .cursor { animation: blink 1.1s steps(2, start) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .cursor { animation: none; }
+      #cmdClip rect { width: 825px !important; }
+      .anim-output { opacity: 1 !important; }
+    }
+  </style>
+
+  <!-- FOND UNIFIÉ SOMBRE IDENTIQUE AVEC GRILLE ET HALOS D'AMBIANCE CONTINUS -->
+  <rect width="1200" height="${totalHeight}" rx="24" fill="${theme.background}"/>
+  <rect width="1200" height="${totalHeight}" rx="24" fill="url(#grid)" opacity=".75"/>
+
+  <!-- Halos néon répartis sur toute la hauteur -->
+  <circle cx="940" cy="180" r="240" fill="url(#card-glow)"/>
+  <circle cx="600" cy="520" r="300" fill="url(#term-glow)"/>
+  <circle cx="920" cy="1440" r="250" fill="url(#card-glow)"/>
+
+  <!-- SECTION 1 : BANNIÈRE -->
+  <g transform="translate(0 0)">
+    ${bannerBody}
+  </g>
+
+  <!-- SECTION 2 : MA VISION (TERMINAL) -->
+  <g transform="translate(0 355)">
+    <text x="60" y="24" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">MA VISION // TERMINAL &amp; PHILOSOPHIE TECHNIQUE</text>
+    <path d="M570 19H1140" stroke="url(#accent-signal)" stroke-width="2" stroke-linecap="round"/>
+    <g transform="translate(0 15)">
+      ${bioBody}
+    </g>
+  </g>
+
+  <!-- SECTION 3 : SIGNAL ACTUEL (EXPERTISE SAAS) -->
+  <g transform="translate(0 680)">
+    ${signalBody}
+  </g>
+
+  <!-- SECTION 4 : BOÎTE À OUTILS (LOGICIELS &amp; IA) -->
+  <g transform="translate(0 965)">
+    ${stackBody}
+  </g>
+
+  <!-- SECTION 5 : SPÉCIALISATION GOOGLE &amp; IA -->
+  <g transform="translate(0 1260)">
+    ${googleBody}
+  </g>
+
+  <!-- BORDURE EXTÉRIEURE ÉLÉGANTE UNIQUE SANS COUPURE -->
+  <rect x="1" y="1" width="1198" height="${totalHeight - 2}" rx="23" fill="none" stroke="${theme.panelBorder}"/>
 </svg>`;
 }
 
