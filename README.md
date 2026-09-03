@@ -16,8 +16,8 @@
 
 <p align="center">
   Spécialisé dans les stacks techniques SaaS modernes et l'écosystème Google AI // Google Cloud.<br>
-  Passionné par l'open source et l'intelligence artificielle, j'explore en continu de nouvelles architectures<br>
-  pour concevoir des solutions performantes, scalables et centrées sur l'expérience utilisateur.
+  Passionné d'open source, de modèles d'IA et de R&amp;D logicielle, j'aime transformer des idées ambitieuses<br>
+  en solutions concrètes grâce aux outils avancés de l'écosystème Google AI.
 </p>
 
 ## Signal actuel
