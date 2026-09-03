@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 348" role="img" aria-labelledby="title description">
+  <title id="title">Terminal de vision de kyriss-69</title>
+  <desc id="description">Terminal exécutant la spécialisation et la vision technique de Kyrris.</desc>
+  <defs>
+    <radialGradient id="term-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="bio-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#240f42" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="accent-signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#a855f7"/>
+      <stop offset=".55" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <!-- Masque animé pour frappe de la commande (largeur 825px exactement) -->
+    <clipPath id="cmdClip">
+      <rect x="80" y="78" width="825" height="30">
+        <animate attributeName="width" values="0; 825; 825; 0" keyTimes="0; 0.28; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, "Fira Code", monospace; }
+    .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+    @media (prefers-reduced-motion: reduce) {
+      #cmdClip rect { width: 825px !important; }
+      .anim-output { opacity: 1 !important; }
+    }
+  </style>
+
+  <!-- Fond global et halo d'ambiance néon -->
+  <rect width="1200" height="348" rx="22" fill="#090510"/>
+  <rect width="1200" height="348" rx="22" fill="url(#bio-grid)" opacity=".75"/>
+  <rect x="1" y="1" width="1198" height="346" rx="21" fill="none" stroke="#3b1569"/>
+  <circle cx="600" cy="195" r="320" fill="url(#term-glow)"/>
+
+  <!-- En-tête de section intégrée -->
+  <text x="60" y="46" class="mono" fill="#a855f7" font-size="14" font-weight="700" letter-spacing="3">MA VISION // PHILOSOPHIE TECHNIQUE</text>
+  <path d="M460 41H1140" stroke="url(#accent-signal)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- FENÊTRE TERMINAL CODE AÉRÉE -->
+  <g transform="translate(60 66)">
+    <!-- Cadre extérieur spacieux de la fenêtre -->
+    <rect width="1080" height="258" rx="18" fill="#130924" stroke="#3b1569" stroke-width="1.6"/>
+
+    <!-- Barre supérieure de titre -->
+    <path d="M0 18 C0 8.06 8.06 0 18 0 H1062 C1071.94 0 1080 8.06 1080 18 V42 H0 Z" fill="#180b30"/>
+    <line x1="0" y1="42" x2="1080" y2="42" stroke="#3b1569" stroke-width="1"/>
+
+    <!-- Contrôles de fenêtre (Boutons macOS / IDE) -->
+    <circle cx="28" cy="21" r="6" fill="#ef4444"/>
+    <circle cx="48" cy="21" r="6" fill="#f59e0b"/>
+    <circle cx="68" cy="21" r="6" fill="#10b981"/>
+
+    <!-- Onglet central actif -->
+    <g transform="translate(415 8)">
+      <rect width="250" height="26" rx="7" fill="#090510" stroke="#3b1569" stroke-width="0.9"/>
+      <text x="125" y="18" text-anchor="middle" class="mono" fill="#c084fc" font-size="12" font-weight="700" letter-spacing="0.6">kyrris.vision.sh</text>
+    </g>
+
+    <!-- Statut en ligne à droite -->
+    <text x="1000" y="25" text-anchor="end" class="mono" fill="#10b981" font-size="11.5" font-weight="750" letter-spacing="1.2">READY</text>
+    <circle cx="1020" cy="21" r="4.5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Numéros de lignes sur le côté gauche (1 à 5) -->
+    <text x="24" y="96" class="mono" fill="#8b5cf6" font-size="12.5" font-weight="600" opacity="0.65">1</text>
+    <text x="24" y="132" class="mono" fill="#8b5cf6" font-size="12.5" font-weight="600" opacity="0.65">2</text>
+    <text x="24" y="168" class="mono" fill="#8b5cf6" font-size="12.5" font-weight="600" opacity="0.65">3</text>
+    <text x="24" y="202" class="mono" fill="#8b5cf6" font-size="12.5" font-weight="600" opacity="0.65">4</text>
+    <text x="24" y="236" class="mono" fill="#8b5cf6" font-size="12.5" font-weight="600" opacity="0.65">5</text>
+
+    <!-- Séparateur vertical entre numéros et contenu -->
+    <line x1="42" y1="52" x2="42" y2="248" stroke="#3b1569" stroke-width="1" opacity="0.45"/>
+
+    <!-- LIGNE 1: Commande tapée comme une commande shell -->
+    <text x="56" y="96" class="mono" fill="#ec4899" font-size="15" font-weight="800">❯</text>
+
+    <g clip-path="url(#cmdClip)">
+      <text x="80" y="96" class="mono" fill="#f5f3ff" font-size="14.5" font-weight="650" letter-spacing="-0.1">Spécialisé dans les stacks techniques SaaS modernes et l&apos;écosystème Google AI // Google Cloud.</text>
+    </g>
+
+    <!-- Curseur voyageur bleu : se déplace jusqu'à la fin exacte de la phrase, puis DISPARAÎT complètement dès que la commande est tapée -->
+    <g>
+      <animate attributeName="visibility" values="visible; hidden; hidden; visible" keyTimes="0; 0.28; 0.999; 1" dur="10.5s" repeatCount="indefinite"/>
+      <rect x="80" y="80" width="8" height="18" rx="1" fill="#38bdf8">
+        <animate attributeName="x" values="80; 902; 902; 80" keyTimes="0; 0.28; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- GROUPE ANIMÉ D'EXÉCUTION &amp; SORTIE (Apparaît dès que la commande est terminée) -->
+    <g opacity="1">
+      <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.29; 0.33; 0.94; 1" dur="10.5s" repeatCount="indefinite"/>
+
+      <!-- LIGNE 2: Résultat d'exécution de la commande -->
+      <text x="56" y="132" class="mono" fill="#10b981" font-size="14" font-weight="700">✔</text>
+      <text x="80" y="132" class="mono" fill="#10b981" font-size="13" font-weight="700">[EXECUTION OK]</text>
+      <text x="208" y="132" class="mono" fill="#a78bfa" font-size="13.5" font-weight="500">Initialisation des principes d&apos;ingénierie &amp; R&amp;D :</text>
+
+      <!-- LIGNE 3: Texte de passion 1 avec flèche ➜ -->
+      <text x="56" y="168" class="mono" fill="#c084fc" font-size="15" font-weight="750">➜</text>
+      <text x="80" y="168" class="mono" fill="#f5f3ff" font-size="15" font-weight="600">Passionné d&apos;open source, de modèles d&apos;IA et de R&amp;D logicielle,</text>
+
+      <!-- LIGNE 4: Texte de passion 2 avec flèche ➜ -->
+      <text x="56" y="202" class="mono" fill="#c084fc" font-size="15" font-weight="750">➜</text>
+      <text x="80" y="202" class="mono" fill="#f5f3ff" font-size="15" font-weight="600">j&apos;aime transformer des idées ambitieuses en solutions concrètes.</text>
+
+      <!-- LIGNE 5: Texte de passion 3 avec flèche ➜ et Google AI mis en valeur -->
+      <text x="56" y="236" class="mono" fill="#c084fc" font-size="15" font-weight="750">➜</text>
+      <text x="80" y="236" class="mono" fill="#f5f3ff" font-size="15" font-weight="600">grâce aux outils avancés de l&apos;écosystème <tspan fill="#38bdf8" font-weight="750">Google AI</tspan>.</text>
+    </g>
+  </g>
+</svg>
