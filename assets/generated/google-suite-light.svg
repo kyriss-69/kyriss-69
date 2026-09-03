@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
   <title id="title">Spécialisation Écosystème Google &amp; IA de Kyrris</title>
   <desc id="description">Présentation de la spécialisation dans les outils Google, Antigravity et Gemini.</desc>
   <defs>
@@ -21,43 +21,33 @@
   <style>
     .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
     .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
-    .rotate-orbit { transform-origin: 955px 194px; animation: rot-orbit 20s linear infinite; }
-    .pulse-gemini { transform-origin: 955px 194px; animation: pulse-gem 3.5s ease-in-out infinite; }
+    .rotate-orbit { transform-origin: 955px 195px; animation: rot-orbit 20s linear infinite; }
+    .pulse-gemini { transform-origin: 955px 195px; animation: pulse-gem 3.5s ease-in-out infinite; }
     @keyframes rot-orbit { to { transform: rotate(360deg); } }
     @keyframes pulse-gem { 0%, 100% { transform: scale(0.94); opacity: 0.85; } 50% { transform: scale(1.06); opacity: 1; } }
     @media (prefers-reduced-motion: reduce) { .rotate-orbit, .pulse-gemini { animation: none; } }
   </style>
 
-  <!-- Fond & Bordure -->
-  <rect width="1200" height="350" rx="22" fill="#faf5ff"/>
-  <rect x="1" y="1" width="1198" height="348" rx="21" fill="none" stroke="#e9d5ff"/>
+  <!-- Fond & Bordure externe -->
+  <rect width="1200" height="360" rx="22" fill="#faf5ff"/>
+  <rect x="1" y="1" width="1198" height="358" rx="21" fill="none" stroke="#e9d5ff"/>
 
   <!-- En-tête -->
   <text x="60" y="48" class="mono" fill="#7e22ce" font-size="14" font-weight="700" letter-spacing="3">SPÉCIALISATION // ÉCOSYSTÈME GOOGLE &amp; IA AGENTIQUE</text>
   <path d="M780 43H1140" stroke="url(#google-gradient)" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- PANNEAU GAUCHE : LES 3 PILIERS GOOGLE (TITRES & BADGES PARFAITEMENT DISSOCIÉS) -->
-  <g transform="translate(60 76)">
-    <!-- Fond panneau -->
-    <rect width="680" height="236" rx="18" fill="#ffffff" stroke="#e9d5ff" stroke-width="1.4"/>
+  <!-- PANNEAU GAUCHE : ÉPURÉ SANS BADGES, AVEC RESPIRATION EN BAS -->
+  <g transform="translate(60 70)">
+    <!-- Fond panneau élargi pour laisser respirer le bas -->
+    <rect width="680" height="260" rx="18" fill="#ffffff" stroke="#e9d5ff" stroke-width="1.4"/>
 
     <!-- PILIER 1 : GOOGLE ANTIGRAVITY (2.0 & IDE) -->
     <g transform="translate(24 16)">
-      <!-- Pastille icône -->
       <circle cx="16" cy="16" r="16" fill="#1e1035" stroke="#a855f7" stroke-width="1.2"/>
       <text x="16" y="22" text-anchor="middle" font-size="15">🌌</text>
 
-      <!-- Titre principal -->
-      <text x="46" y="21" class="sans" fill="#2e1065" font-size="15" font-weight="750" letter-spacing="-0.2">Google Antigravity (2.0 &amp; IDE)</text>
+      <text x="46" y="21" class="sans" fill="#2e1065" font-size="16" font-weight="750" letter-spacing="-0.2">Google Antigravity (2.0 &amp; IDE)</text>
 
-      <!-- Badge aligné à l'extrême droite -->
-      <g transform="translate(480 5)">
-        <rect width="150" height="22" rx="11" fill="#2a124a" stroke="#a855f7" stroke-width="1"/>
-        <circle cx="12" cy="11" r="3.5" fill="#c084fc"/>
-        <text x="22" y="15" class="mono" fill="#c084fc" font-size="9" font-weight="700" letter-spacing="0.6">AGENTIC WORKFLOWS</text>
-      </g>
-
-      <!-- Description nette sur 2 lignes -->
       <text x="46" y="44" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
         Maîtrise avancée du développement assisté par agents : subagents autonomes,
       </text>
@@ -67,25 +57,15 @@
     </g>
 
     <!-- Séparateur 1 -->
-    <line x1="24" y1="88" x2="656" y2="88" stroke="#e9d5ff" stroke-width="0.8" opacity="0.6"/>
+    <line x1="24" y1="92" x2="656" y2="92" stroke="#e9d5ff" stroke-width="0.8" opacity="0.6"/>
 
     <!-- PILIER 2 : GOOGLE GEMINI -->
-    <g transform="translate(24 96)">
-      <!-- Pastille icône -->
+    <g transform="translate(24 102)">
       <circle cx="16" cy="16" r="16" fill="#151b3b" stroke="#60a5fa" stroke-width="1.2"/>
       <text x="16" y="22" text-anchor="middle" font-size="15">✨</text>
 
-      <!-- Titre principal -->
-      <text x="46" y="21" class="sans" fill="#2e1065" font-size="15" font-weight="750" letter-spacing="-0.2">Google Gemini</text>
+      <text x="46" y="21" class="sans" fill="#2e1065" font-size="16" font-weight="750" letter-spacing="-0.2">Google Gemini</text>
 
-      <!-- Badge aligné à l'extrême droite -->
-      <g transform="translate(470 5)">
-        <rect width="160" height="22" rx="11" fill="#14214d" stroke="#60a5fa" stroke-width="1"/>
-        <circle cx="12" cy="11" r="3.5" fill="#60a5fa"/>
-        <text x="22" y="15" class="mono" fill="#93c5fd" font-size="9" font-weight="700" letter-spacing="0.6">REASONING &amp; MULTIMODAL</text>
-      </g>
-
-      <!-- Description nette sur 2 lignes -->
       <text x="46" y="44" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
         Exploitation de l&apos;intelligence artificielle Google : contexte étendu, function calling,
       </text>
@@ -95,25 +75,15 @@
     </g>
 
     <!-- Séparateur 2 -->
-    <line x1="24" y1="168" x2="656" y2="168" stroke="#e9d5ff" stroke-width="0.8" opacity="0.6"/>
+    <line x1="24" y1="178" x2="656" y2="178" stroke="#e9d5ff" stroke-width="0.8" opacity="0.6"/>
 
-    <!-- PILIER 3 : GOOGLE CLOUD & VERTEX AI -->
-    <g transform="translate(24 176)">
-      <!-- Pastille icône -->
+    <!-- PILIER 3 : GOOGLE CLOUD & VERTEX AI (AVEC 20PX DE MARGE EN BAS) -->
+    <g transform="translate(24 188)">
       <circle cx="16" cy="16" r="16" fill="#0f2926" stroke="#34d399" stroke-width="1.2"/>
       <text x="16" y="22" text-anchor="middle" font-size="15">☁️</text>
 
-      <!-- Titre principal plus compact -->
-      <text x="46" y="21" class="sans" fill="#2e1065" font-size="15" font-weight="750" letter-spacing="-0.2">Google Cloud &amp; Vertex AI</text>
+      <text x="46" y="21" class="sans" fill="#2e1065" font-size="16" font-weight="750" letter-spacing="-0.2">Google Cloud &amp; Vertex AI</text>
 
-      <!-- Badge aligné à l'extrême droite -->
-      <g transform="translate(488 5)">
-        <rect width="142" height="22" rx="11" fill="#0d3329" stroke="#34d399" stroke-width="1"/>
-        <circle cx="12" cy="11" r="3.5" fill="#34d399"/>
-        <text x="22" y="15" class="mono" fill="#6ee7b7" font-size="9" font-weight="700" letter-spacing="0.6">INFRASTRUCTURE IA</text>
-      </g>
-
-      <!-- Description nette sur 2 lignes -->
       <text x="46" y="42" class="sans" fill="#6b21a8" font-size="12" font-weight="500">
         Déploiement conteneurisé sur Cloud Run, gestion d&apos;infrastructures modernes,
       </text>
@@ -126,37 +96,37 @@
   <!-- PANNEAU DROIT : HOLOGRAPHIC GEMINI & ANTIGRAVITY CORE -->
   <g id="google-hologram">
     <!-- Halo d'ambiance -->
-    <circle cx="955" cy="194" r="126" fill="url(#ai-glow)"/>
+    <circle cx="955" cy="195" r="126" fill="url(#ai-glow)"/>
 
     <!-- Anneau radar extérieur avec rotation -->
-    <circle cx="955" cy="194" r="105" fill="none" stroke="#e9d5ff" stroke-width="1.4"/>
-    <circle cx="955" cy="194" r="105" fill="none" stroke="url(#google-gradient)" stroke-width="2" stroke-dasharray="14 36 6 18" class="rotate-orbit"/>
+    <circle cx="955" cy="195" r="105" fill="none" stroke="#e9d5ff" stroke-width="1.4"/>
+    <circle cx="955" cy="195" r="105" fill="none" stroke="url(#google-gradient)" stroke-width="2" stroke-dasharray="14 36 6 18" class="rotate-orbit"/>
 
     <!-- Anneau intermédiaire -->
-    <circle cx="955" cy="194" r="76" fill="#ffffff" stroke="#e9d5ff" stroke-width="1.5"/>
+    <circle cx="955" cy="195" r="76" fill="#ffffff" stroke="#e9d5ff" stroke-width="1.5"/>
 
     <!-- Étoile Gemini 4 branches holographique -->
     <g class="pulse-gemini">
-      <path d="M 955 152 Q 955 194 997 194 Q 955 194 955 236 Q 955 194 913 194 Q 955 194 955 152 Z"
+      <path d="M 955 153 Q 955 195 997 195 Q 955 195 955 237 Q 955 195 913 195 Q 955 195 955 153 Z"
             fill="url(#google-gradient)" filter="url(#glow-filter)"/>
-      <circle cx="955" cy="194" r="5" fill="#ffffff"/>
+      <circle cx="955" cy="195" r="5" fill="#ffffff"/>
     </g>
 
     <!-- Satellite Haut : ANTIGRAVITY 2.0 & IDE -->
-    <g transform="translate(865 106)">
+    <g transform="translate(865 107)">
       <rect width="180" height="24" rx="12" fill="#ffffff" stroke="#a855f7" stroke-width="1"/>
       <circle cx="12" cy="12" r="3.5" fill="#c084fc"/>
       <text x="24" y="16" class="mono" fill="#2e1065" font-size="9.5" font-weight="700" letter-spacing="0.6">ANTIGRAVITY // 2.0 &amp; IDE</text>
     </g>
 
     <!-- Satellite Bas : GOOGLE GEMINI -->
-    <g transform="translate(885 258)">
+    <g transform="translate(885 259)">
       <rect width="140" height="24" rx="12" fill="#ffffff" stroke="#60a5fa" stroke-width="1"/>
       <circle cx="12" cy="12" r="3.5" fill="#60a5fa"/>
       <text x="24" y="16" class="mono" fill="#2e1065" font-size="9.5" font-weight="700" letter-spacing="0.8">GOOGLE GEMINI</text>
     </g>
 
     <!-- Statut en bas -->
-    <text x="955" y="306" text-anchor="middle" class="mono" fill="#9333ea" font-size="10" font-weight="700" letter-spacing="2">GOOGLE AI // ÉCOSYSTÈME MAÎTRISÉ</text>
+    <text x="955" y="310" text-anchor="middle" class="mono" fill="#9333ea" font-size="10" font-weight="700" letter-spacing="2">GOOGLE AI // ÉCOSYSTÈME MAÎTRISÉ</text>
   </g>
 </svg>
