@@ -181,7 +181,7 @@ function renderBanner(theme) {
   <!-- Halo lumineux d'ambiance néon -->
   <circle cx="940" cy="180" r="230" fill="url(#card-glow)"/>
 
-  <!-- GAUCHE: IDENTITÉ & SLOGAN -->
+  <!-- GAUCHE: IDENTITÉ et SLOGAN -->
   <path d="M42 40H246" stroke="url(#signal)" stroke-width="3.5" stroke-linecap="round"/>
   <circle cx="42" cy="40" r="5" fill="${theme.accent}" filter="url(#soft-glow)"/>
   
@@ -498,7 +498,7 @@ function renderGoogleClean(theme) {
     @media (prefers-reduced-motion: reduce) { .rotate-orbit, .pulse-gemini { animation: none; } }
   </style>
 
-  <!-- Fond & Bordure externe -->
+  <!-- Fond et Bordure externe -->
   <rect width="1200" height="380" rx="22" fill="${theme.background}"/>
   <rect x="1" y="1" width="1198" height="378" rx="21" fill="none" stroke="${theme.panelBorder}"/>
 
@@ -506,11 +506,11 @@ function renderGoogleClean(theme) {
   <text x="60" y="46" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">SPÉCIALISATION // ÉCOSYSTÈME GOOGLE &amp; IA AGENTIQUE</text>
   <path d="M780 41H1140" stroke="url(#google-gradient)" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- PANNEAU GAUCHE : LES 3 PILIERS GOOGLE AVEC VRAIS LOGOS & 30PX DE MARGE EN BAS -->
+  <!-- PANNEAU GAUCHE : LES 3 PILIERS GOOGLE AVEC VRAIS LOGOS et 30PX DE MARGE EN BAS -->
   <g transform="translate(60 66)">
     <rect width="640" height="282" rx="18" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.4"/>
 
-    <!-- PILIER 1 : GOOGLE ANTIGRAVITY (2.0 & IDE) -->
+    <!-- PILIER 1 : GOOGLE ANTIGRAVITY (2.0 et IDE) -->
     <g transform="translate(24 16)">
       <!-- VRAI LOGO GOOGLE ANTIGRAVITY (Marque AGY / Prisme dimensionnel en suspension zéro-G) -->
       <g transform="translate(0 2)">
@@ -556,7 +556,7 @@ function renderGoogleClean(theme) {
     <!-- Séparateur 2 -->
     <line x1="24" y1="188" x2="616" y2="188" stroke="${theme.panelBorder}" stroke-width="0.8" opacity="0.6"/>
 
-    <!-- PILIER 3 : GOOGLE CLOUD & VERTEX AI (30PX DE RESPIRATION EN BAS) -->
+    <!-- PILIER 3 : GOOGLE CLOUD et VERTEX AI (30PX DE RESPIRATION EN BAS) -->
     <g transform="translate(24 200)">
       <!-- VRAI LOGO GOOGLE CLOUD MULTICOLORE -->
       <g transform="translate(0 2)">
@@ -605,7 +605,7 @@ function renderGoogleClean(theme) {
     <line x1="846" y1="200" x2="862" y2="200" stroke="#34d399" stroke-width="1.2" stroke-dasharray="2 2"/>
     <line x1="1028" y1="200" x2="1044" y2="200" stroke="#ec4899" stroke-width="1.2" stroke-dasharray="2 2"/>
 
-    <!-- 1. AU-DESSUS (12H) : ANTIGRAVITY // 2.0 & IDE -->
+    <!-- 1. AU-DESSUS (12H) : ANTIGRAVITY // 2.0 et IDE -->
     <g transform="translate(850 76)">
       <rect width="190" height="26" rx="13" fill="${theme.panel}" stroke="#a855f7" stroke-width="1.2"/>
       <circle cx="14" cy="13" r="3.5" fill="#c084fc"/>
