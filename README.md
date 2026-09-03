@@ -15,9 +15,9 @@
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/bio-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/bio-light.svg">
-  <img alt="Spécialisé dans les stacks SaaS modernes et l'écosystème Google AI" src="./assets/generated/bio-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/bio-dark.svg?v=1">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/bio-light.svg?v=1">
+  <img alt="Spécialisé dans les stacks SaaS modernes et l'écosystème Google AI" src="./assets/generated/bio-dark.svg?v=1" width="100%">
 </picture>
 
 ## Signal actuel
