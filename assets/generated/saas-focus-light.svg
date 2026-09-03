@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title description">
-  <title id="title">Expertise SaaS et Axes de Kyrris</title>
+  <title id="title">Expertise SaaS et Axes de kyriss-69</title>
   <desc id="description">Spécialisation dans les architectures SaaS modernes et axes techniques.</desc>
   <defs>
     <linearGradient id="accent-signal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7e22ce"/><stop offset=".55" stop-color="#9333ea"/><stop offset="1" stop-color="#c026d3"/></linearGradient>
@@ -22,7 +22,7 @@
       <text class="sans" fill="#6b21a8" font-size="12.5" font-weight="500">
         <tspan x="22" y="72">Spécialiste des stacks techniques SaaS :</tspan>
         <tspan x="22" y="92">architectures monorepo, dashboards réactifs,</tspan>
-        <tspan x="22" y="112">flux temps réel et backends scalables & robustes.</tspan>
+        <tspan x="22" y="112">flux temps réel et backends scalables &amp; robustes.</tspan>
       </text>
 
       <g transform="translate(22 134)">
@@ -40,8 +40,8 @@
 
       <text class="sans" fill="#6b21a8" font-size="12.5" font-weight="500">
         <tspan x="22" y="72">Exploration continue des technos émergentes :</tspan>
-        <tspan x="22" y="92">intégration de modèles d'IA, benchmarks</tspan>
-        <tspan x="22" y="112">et prototypage d'architectures modernes.</tspan>
+        <tspan x="22" y="92">intégration de modèles d&apos;IA, benchmarks</tspan>
+        <tspan x="22" y="112">et prototypage d&apos;architectures modernes.</tspan>
       </text>
 
       <g transform="translate(22 134)">

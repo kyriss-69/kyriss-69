@@ -279,7 +279,7 @@ function renderSignal(theme) {
     {
       x: 428,
       icon: "🧪",
-      title: "VEILLE &amp; IA",
+      title: "VEILLE & IA",
       lines: [
         "Exploration continue des technos émergentes :",
         "intégration de modèles d'IA, benchmarks",
@@ -304,26 +304,26 @@ function renderSignal(theme) {
     <g transform="translate(${c.x} 74)">
       <rect width="344" height="178" rx="16" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.4"/>
       
-      <text x="22" y="34" class="sans" fill="${theme.text}" font-size="16" font-weight="750" letter-spacing="-0.2">${c.icon}  ${c.title}</text>
+      <text x="22" y="34" class="sans" fill="${theme.text}" font-size="16" font-weight="750" letter-spacing="-0.2">${c.icon}  ${escapeXml(c.title)}</text>
 
       <line x1="22" y1="48" x2="322" y2="48" stroke="${theme.panelBorder}" stroke-width="0.9" opacity="0.6"/>
 
       <text class="sans" fill="${theme.muted}" font-size="12.5" font-weight="500">
-        <tspan x="22" y="72">${c.lines[0]}</tspan>
-        <tspan x="22" y="92">${c.lines[1]}</tspan>
-        <tspan x="22" y="112">${c.lines[2]}</tspan>
+        <tspan x="22" y="72">${escapeXml(c.lines[0])}</tspan>
+        <tspan x="22" y="92">${escapeXml(c.lines[1])}</tspan>
+        <tspan x="22" y="112">${escapeXml(c.lines[2])}</tspan>
       </text>
 
       <g transform="translate(22 134)">
         <rect width="300" height="28" rx="7" fill="${theme.background === '#090510' ? '#0d0618' : '#faf5ff'}" stroke="${theme.panelBorder}" stroke-width="0.8"/>
-        <text x="150" y="18" text-anchor="middle" class="mono" fill="${theme.accentTwo}" font-size="10.5" font-weight="650" letter-spacing="0.8">${c.tags}</text>
+        <text x="150" y="18" text-anchor="middle" class="mono" fill="${theme.accentTwo}" font-size="10.5" font-weight="650" letter-spacing="0.8">${escapeXml(c.tags)}</text>
       </g>
     </g>
   `).join("");
 
   return `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title description">
-  <title id="title">Expertise SaaS et Axes de Kyrris</title>
+  <title id="title">Expertise SaaS et Axes de ${escapeXml(config.username)}</title>
   <desc id="description">Spécialisation dans les architectures SaaS modernes et axes techniques.</desc>
   <defs>
     <linearGradient id="accent-signal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="${theme.accent}"/><stop offset=".55" stop-color="${theme.accentTwo}"/><stop offset="1" stop-color="${theme.accentThree}"/></linearGradient>

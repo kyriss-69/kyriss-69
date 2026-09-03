@@ -19,9 +19,9 @@
 ## Expertise SaaS & Focus Technique
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/saas-focus-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/saas-focus-light.svg">
-  <img alt="Expertise SaaS : Architectures techniques & projets en cours" src="./assets/generated/saas-focus-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/saas-focus-dark.svg?v=15">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/saas-focus-light.svg?v=15">
+  <img alt="Expertise SaaS : Architectures techniques &amp; projets en cours" src="./assets/generated/saas-focus-dark.svg?v=15" width="100%">
 </picture>
 
 ## Boîte à outils
