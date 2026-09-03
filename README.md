@@ -27,9 +27,9 @@
 ## Boîte à outils
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/stack-dark.svg?v=14">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/stack-light.svg?v=14">
-  <img alt="Stack technique : TypeScript, Nuxt 3, Vue 3, Tailwind CSS, Pinia, NestJS 11, Prisma, PostgreSQL 16, Redis, Socket.IO, Turborepo, Bun, BullMQ, Docker, GitHub Actions" src="./assets/generated/stack-dark.svg?v=14" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/tools-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/tools-light.svg">
+  <img alt="Boîte à outils logicielle : Hugging Face, Ollama, LM Studio, Antigravity 2.0 &amp; IDE, Open Code, Obsidian, Docker, GitHub, Open Source" src="./assets/generated/tools-dark.svg" width="100%">
 </picture>
 
 ## Spécialisation Écosystème Google & IA

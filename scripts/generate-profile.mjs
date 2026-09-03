@@ -66,6 +66,7 @@ for (const [name, theme] of Object.entries(themes)) {
   await writeSvg(`google-suite-${name}.svg`, renderGoogleClean(theme));
   await writeSvg(`google-final-${name}.svg`, renderGoogleClean(theme));
   await writeSvg(`stack-${name}.svg`, renderStack(theme));
+  await writeSvg(`tools-${name}.svg`, renderStack(theme));
   await writeSvg(`metrics-${name}.svg`, renderMetrics(theme));
   await writeSvg(`footer-${name}.svg`, renderFooter(theme));
 }
@@ -533,37 +534,136 @@ function renderGoogleClean(theme) {
 }
 
 function renderStack(theme) {
-  const badgeWidth = 200;
-  const badgeHeight = 48;
-  const gap = 20;
+  const cardWidth = 344;
+  const cardHeight = 54;
+  const gapX = 24;
+  const gapY = 16;
   const startX = 60;
-  const rows = config.stack.map((item, index) => {
-    const column = index % 5;
-    const row = Math.floor(index / 5);
-    const x = startX + column * (badgeWidth + gap);
-    const y = 86 + row * 66;
-    const dotStroke = item.label === "Socket.IO" && theme.background === "#090510" ? "#ffffff" : item.color;
+  const startY = 74;
+
+  const softwareList = [
+    {
+      label: "Hugging Face",
+      logo: `
+        <circle cx="12" cy="12" r="11" fill="#FFD21E"/>
+        <path d="M7.5 10c0-1.2 1-1.8 1.8-1.8s1.8.6 1.8 1.8" stroke="#333333" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+        <path d="M12.9 10c0-1.2 1-1.8 1.8-1.8s1.8.6 1.8 1.8" stroke="#333333" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+        <path d="M8 14c1 2 2.5 2.8 4 2.8s3-.8 4-2.8" stroke="#333333" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+        <path d="M2.5 14.5c.8-.8 2-.6 2.5.5" stroke="#FFA000" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M21.5 14.5c-.8-.8-2-.6-2.5.5" stroke="#FFA000" stroke-width="2.2" stroke-linecap="round"/>
+      `
+    },
+    {
+      label: "Ollama",
+      logo: `
+        <path d="M8 21v-5h1.5v-3.5L8 10V6.5l1.5-2 1.5 2v2.5l2-1 2 1V6.5l1.5-2 1.5 2V10l-1.5 2.5V16H18v5" fill="${theme.text}"/>
+        <circle cx="10.5" cy="8.5" r="1" fill="${theme.background === '#090510' ? '#090510' : '#ffffff'}"/>
+        <circle cx="15.5" cy="8.5" r="1" fill="${theme.background === '#090510' ? '#090510' : '#ffffff'}"/>
+      `
+    },
+    {
+      label: "LM Studio",
+      logo: `
+        <polygon points="12,3 20,7.5 12,12 4,7.5" fill="#c084fc"/>
+        <polygon points="4,7.5 12,12 12,21 4,16.5" fill="#7e22ce"/>
+        <polygon points="12,12 20,7.5 20,16.5 12,21" fill="#a855f7"/>
+        <circle cx="12" cy="12" r="2" fill="#ffffff"/>
+      `
+    },
+    {
+      label: "Antigravity 2.0 & IDE",
+      logo: `
+        <polygon points="12,4 20,17 4,17" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linejoin="round"/>
+        <polygon points="12,7 16.5,15.5 7.5,15.5" fill="#a855f7" opacity="0.85"/>
+        <circle cx="12" cy="13.5" r="1.8" fill="#ffffff"/>
+        <ellipse cx="12" cy="19.5" rx="6.5" ry="2" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.8"/>
+      `
+    },
+    {
+      label: "Open Code",
+      logo: `
+        <rect x="2" y="2" width="20" height="20" rx="5" fill="#0284c7" opacity="0.2"/>
+        <path d="M7 8l-4 4 4 4" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17 8l4 4-4 4" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 6l-4 12" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+      `
+    },
+    {
+      label: "Obsidian",
+      logo: `
+        <polygon points="12,2 5,7.5 7,18.5 12,22 17,18.5 19,7.5" fill="#6d28d9"/>
+        <polygon points="12,2 19,7.5 12,12" fill="#8b5cf6"/>
+        <polygon points="12,2 5,7.5 12,12" fill="#a78bfa"/>
+        <polygon points="12,12 19,7.5 17,18.5 12,22" fill="#7c3aed"/>
+        <polygon points="12,12 5,7.5 7,18.5 12,22" fill="#5b21b6"/>
+        <circle cx="12" cy="12" r="1.5" fill="#ffffff" opacity="0.9"/>
+      `
+    },
+    {
+      label: "Docker",
+      logo: `
+        <rect x="5" y="8" width="2.2" height="2" fill="#2496ED"/>
+        <rect x="8" y="8" width="2.2" height="2" fill="#2496ED"/>
+        <rect x="11" y="8" width="2.2" height="2" fill="#2496ED"/>
+        <rect x="8" y="5.2" width="2.2" height="2" fill="#2496ED"/>
+        <rect x="11" y="5.2" width="2.2" height="2" fill="#2496ED"/>
+        <rect x="14" y="8" width="2.2" height="2" fill="#2496ED"/>
+        <path d="M22 12.5c-.3 0-1.4.2-2.2.8-.8-.4-1.8-.4-2.8 0-.4-1.4-1.8-2.3-3.2-2.3H3c-.5 0-1 .4-1 1 0 4.8 3.2 8.5 9.5 8.5 6 0 9.2-3.5 9.5-7.8.1 0 .2 0 .2-.1.6-.4.8-1 .8-1.7H22z" fill="#2496ED"/>
+        <circle cx="4.5" cy="13.5" r="0.7" fill="#ffffff"/>
+      `
+    },
+    {
+      label: "GitHub",
+      logo: `
+        <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill="${theme.text}"/>
+      `
+    },
+    {
+      label: "Open Source",
+      logo: `
+        <path d="M12 2.5a9.5 9.5 0 0 0-8.5 13.8l3.9-2.6a5.7 5.7 0 0 1 1.6-4.5 5.7 5.7 0 0 1 5.9 0 5.7 5.7 0 0 1 1.6 4.5l3.9 2.6A9.5 9.5 0 0 0 12 2.5z" fill="#22c55e"/>
+        <path d="M12 9a3 3 0 0 0-3 3v7.5a3 3 0 0 0 6 0V12a3 3 0 0 0-3-3z" fill="#22c55e"/>
+      `
+    }
+  ];
+
+  const renderedGrid = softwareList.map((item, index) => {
+    const col = index % 3;
+    const row = Math.floor(index / 3);
+    const x = startX + col * (cardWidth + gapX);
+    const y = startY + row * (cardHeight + gapY);
+
     return `
       <g transform="translate(${x} ${y})">
-        <rect width="${badgeWidth}" height="${badgeHeight}" rx="14" fill="${theme.panel}" stroke="${theme.panelBorder}"/>
-        <circle cx="25" cy="24" r="8" fill="${escapeXml(item.color)}" stroke="${dotStroke}"/>
-        <text x="44" y="30" class="mono" fill="${theme.text}" font-size="14.5" font-weight="650">${escapeXml(item.label)}</text>
+        <rect width="${cardWidth}" height="${cardHeight}" rx="14" fill="${theme.panel}" stroke="${theme.panelBorder}" stroke-width="1.3"/>
+        
+        <!-- Boîte de logo avec fond dédié -->
+        <rect x="10" y="9" width="36" height="36" rx="9" fill="${theme.background === '#090510' ? '#180e30' : '#f3e8ff'}" stroke="${theme.panelBorder}" stroke-width="0.9"/>
+        <g transform="translate(16 15)">
+          ${item.logo}
+        </g>
+        
+        <!-- Nom du logiciel -->
+        <text x="58" y="33" class="sans" fill="${theme.text}" font-size="15" font-weight="750" letter-spacing="-0.2">${escapeXml(item.label)}</text>
       </g>`;
   }).join("");
 
   return `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 295" role="img" aria-labelledby="title description">
-  <title id="title">Boîte à outils technique de Kyrris</title>
-  <desc id="description">Badges générés pour les langages, frameworks et outils maîtrisés par Kyrris.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title description">
+  <title id="title">Boîte à outils logicielle de ${escapeXml(config.username)}</title>
+  <desc id="description">Logiciels et outils maîtrisés : Hugging Face, Ollama, LM Studio, Antigravity 2.0 &amp; IDE, Open Code, Obsidian, Docker, GitHub, Open Source.</desc>
   <defs>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="${theme.accent}"/><stop offset=".55" stop-color="${theme.accentTwo}"/><stop offset="1" stop-color="${theme.accentThree}"/></linearGradient>
   </defs>
-  <style>.mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }</style>
-  <rect width="1200" height="295" rx="22" fill="${theme.background}"/>
-  <text x="60" y="48" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">BOÎTE À OUTILS // STACK TECHNIQUE DU PROJET</text>
-  <path d="M920 43H1140" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>
-  ${rows}
-  <rect x="1" y="1" width="1198" height="293" rx="21" fill="none" stroke="${theme.panelBorder}"/>
+  <style>
+    .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
+    .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+  </style>
+  <rect width="1200" height="300" rx="22" fill="${theme.background}"/>
+  <text x="60" y="46" class="mono" fill="${theme.accent}" font-size="14" font-weight="700" letter-spacing="3">BOÎTE À OUTILS // LOGICIELS, ÉCOSYSTÈME IA &amp; OPEN SOURCE</text>
+  <path d="M780 41H1140" stroke="url(#accent)" stroke-width="2" stroke-linecap="round"/>
+  ${renderedGrid}
+  <rect x="1" y="1" width="1198" height="298" rx="21" fill="none" stroke="${theme.panelBorder}"/>
 </svg>`;
 }
 
