@@ -40,8 +40,6 @@
   <img alt="Spécialisation Écosystème Google & IA : Antigravity (2.0 & IDE), Google Gemini, Google Cloud" src="./assets/generated/google-final-dark.svg?v=2" width="100%">
 </picture>
 
-> [!TIP]
-> **Une approche axée sur l'intelligence agentique :** Plutôt que de simples requêtes d'assistance, j'utilise l'écosystème Google pour bâtir de véritables architectures augmentées : orchestration de sous-agents avec **Google Antigravity (2.0 & IDE)**, intégration des serveurs de contexte **MCP (Model Context Protocol)**, et exploitation de la puissance de raisonnement multimodal de **Google Gemini** au cœur des applications web.
 
 ## Projets choisis
 
